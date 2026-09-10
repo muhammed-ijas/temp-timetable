@@ -1,0 +1,4026 @@
+[
+  {
+    "id": "117530b9-4033-41ec-a752-2eac30e41d9f",
+    "period_id": "22f1cdd2-e159-4160-9671-3a2ffe534164",
+    "subject": "Computer",
+    "teacher_name": "Anirban Dutta",
+    "created_at": "2026-06-16T07:00:29.282617+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "a6809a68-32da-4506-9ce3-fd06f8fc0ae6",
+    "period_id": "2aa92f61-14a9-4860-92f9-5584b1a89928",
+    "subject": "Computer",
+    "teacher_name": "Anirban Dutta",
+    "created_at": "2026-06-16T07:00:53.484245+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "1d620493-0515-4227-a5d1-76a44f8fac6b",
+    "period_id": "0d6e6c6b-ba70-43f3-b379-7a79d8f8dc3a",
+    "subject": "Computer",
+    "teacher_name": "Anirban Dutta",
+    "created_at": "2026-06-16T07:01:03.948033+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "3dce4040-324b-42cc-907d-01a23a748c6a",
+    "period_id": "80a3972c-9ff3-4f5e-b7b9-c56eee636b57",
+    "subject": "Arabic",
+    "teacher_name": "Mohamed Lukhman A",
+    "created_at": "2026-07-09T02:47:07.914672+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "07430b46-9a18-4acf-9b68-23229571334b",
+    "period_id": "db55dfc2-c2ad-4b61-ac58-9d8fb71128b1",
+    "subject": "Chemistry",
+    "teacher_name": "Sabiha Yasmin",
+    "created_at": "2026-05-06T08:30:37.747353+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "d561d0f2-d2ee-4afb-b852-df897aeaeea7",
+    "period_id": "44d8c0ab-b256-4fd5-be3b-126553f64643",
+    "subject": "2nd L - Bengali",
+    "teacher_name": "Nilakshi Khatoon",
+    "created_at": "2026-05-06T08:32:08.293778+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "6528d642-200d-4f91-b8c9-26098cb63ff1",
+    "period_id": "309c4203-9e7f-4d38-bffc-c75783ceade5",
+    "subject": "Maths",
+    "teacher_name": "Samprikta Chakraborty",
+    "created_at": "2026-05-06T08:32:30.10715+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "ce11c677-660a-4814-977d-215179ec36d2",
+    "period_id": "79c036eb-57ff-45f9-a2f4-1ebf38f971cc",
+    "subject": "English Literature",
+    "teacher_name": "Megha Barui",
+    "created_at": "2026-07-11T07:41:06.461553+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "4a13aefd-b947-4352-b771-3356c705ed56",
+    "period_id": "44d8c0ab-b256-4fd5-be3b-126553f64643",
+    "subject": "2nd L - Hindi",
+    "teacher_name": "Hindi Teacher",
+    "created_at": "2026-05-06T08:32:08.293778+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "6dbf0b68-1ceb-466e-8ac4-5dd3469bc446",
+    "period_id": "b9b599ab-424f-46dc-8e4b-975f9113f313",
+    "subject": "2nd L - Hindi",
+    "teacher_name": "Hindi Teacher",
+    "created_at": "2026-05-06T08:37:01.419771+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "6c418b8f-4537-4ea6-b379-9bbe047ae888",
+    "period_id": "32944eef-f510-4fc7-a6fd-da7c396386ae",
+    "subject": "2nd L - Hindi",
+    "teacher_name": "Hindi Teacher",
+    "created_at": "2026-05-06T08:56:22.817876+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "76a20cf1-4a89-4afd-9046-ca8cc1416be2",
+    "period_id": "8d256852-21f4-4d33-82e3-54fa4cec45ab",
+    "subject": "2nd L - Hindi",
+    "teacher_name": "Hindi Teacher",
+    "created_at": "2026-05-06T09:00:30.403032+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "0bf7495d-7ffb-4134-a06d-00ef20496f3c",
+    "period_id": "696498ae-c6db-420d-9f7c-6046a36108ee",
+    "subject": "2nd L - Hindi",
+    "teacher_name": "Hindi Teacher",
+    "created_at": "2026-05-07T04:13:36.551986+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "3ecc9226-9d90-462b-99c5-1224cc11a75a",
+    "period_id": "d24f2ffb-329f-4c6e-b5e6-9fa1aa90c382",
+    "subject": "Arabic",
+    "teacher_name": "Mohd Ashique Raza",
+    "created_at": "2026-07-20T03:54:24.45829+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "15fe93fe-4944-4c41-8778-4e074bcaf732",
+    "period_id": "69eef254-f010-472a-8c48-eff24d8f1d9e",
+    "subject": "E V S",
+    "teacher_name": "Saima Bux Siddiqui",
+    "created_at": "2026-07-20T03:54:49.046726+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "aa49f053-f061-4202-aad4-4c15e80e29d1",
+    "period_id": "b9b599ab-424f-46dc-8e4b-975f9113f313",
+    "subject": "2nd L - Bengali",
+    "teacher_name": "Nilakshi Khatoon",
+    "created_at": "2026-05-06T08:37:01.419771+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "1f6eed20-8ccc-4bc9-9f0d-3081503b164d",
+    "period_id": "86fd20e1-286a-49d1-9d4a-04ca928bdad4",
+    "subject": "Chemistry",
+    "teacher_name": "Sabiha Yasmin",
+    "created_at": "2026-05-06T08:37:24.103216+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "466e0cf4-6298-49c8-996d-f99ba5849258",
+    "period_id": "b5d47df3-c6e5-40c0-a157-a756f9ae99e4",
+    "subject": "Arabic",
+    "teacher_name": "Mohamed Lukhman A",
+    "created_at": "2026-05-06T08:38:02.640645+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "5413826d-39af-4b5d-ad45-7d95213c0993",
+    "period_id": "edfba435-d8cc-4e6b-ac75-5397bd1f0a09",
+    "subject": "Maths",
+    "teacher_name": "Samprikta Chakraborty",
+    "created_at": "2026-05-06T08:38:30.12782+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "d532cb67-184b-4769-b76f-0932f105f756",
+    "period_id": "7925bd9d-62ea-4f6b-8ee0-a8feab25ce78",
+    "subject": "Geography",
+    "teacher_name": "Geography SST Teacher",
+    "created_at": "2026-07-20T04:25:17.220157+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "d5628449-7422-4558-9bc0-67879de12fb2",
+    "period_id": "97415f1f-eabb-4b7e-a2e9-84d36af2c71f",
+    "subject": "Geography",
+    "teacher_name": "Geography SST Teacher",
+    "created_at": "2026-05-12T05:22:39.913945+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "badbd555-7f37-40f3-a4bb-ca6e124d2aba",
+    "period_id": "09a3d680-479c-4b0f-8195-0dea078a7f10",
+    "subject": "Biology",
+    "teacher_name": "Sabiha Yasmin",
+    "created_at": "2026-05-06T08:40:31.782844+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "7a04faed-c716-4133-aa6e-5f21e301100e",
+    "period_id": "5e3e0a61-ec9e-4f02-a673-f6a42ce5a834",
+    "subject": "Maths",
+    "teacher_name": "Samprikta Chakraborty",
+    "created_at": "2026-05-06T08:42:37.410086+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "20c6c6cd-55cf-4aa5-8f91-c3b8dbadc252",
+    "period_id": "ea5879a8-f75c-48ad-b38b-202f65c55572",
+    "subject": "Maths",
+    "teacher_name": "Samprikta Chakraborty",
+    "created_at": "2026-05-06T08:42:51.395059+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "1b55e071-9761-44c7-8dcb-d4b0b381f639",
+    "period_id": "9320b43e-ac2f-4e4a-8cf1-af0f9496b5cf",
+    "subject": "English Literature",
+    "teacher_name": "Megha Barui",
+    "created_at": "2026-05-06T08:50:28.64875+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "b2845e1d-f71a-45de-bad3-db068e7c08b4",
+    "period_id": "32944eef-f510-4fc7-a6fd-da7c396386ae",
+    "subject": "2nd L - Bengali",
+    "teacher_name": "Nilakshi Khatoon",
+    "created_at": "2026-05-06T08:56:22.817876+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "41e41dc6-2ad2-4727-8298-29bdb93b8bb9",
+    "period_id": "f5f2e7b2-c9ed-417a-a633-9fe52bb5230d",
+    "subject": "Physics",
+    "teacher_name": "Sabiha Yasmin",
+    "created_at": "2026-05-06T08:59:01.101592+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "67b49648-fafa-4be7-8ae3-bae5cadbde1d",
+    "period_id": "ddfd56e4-9e42-40d9-9288-3e1baaae9eb0",
+    "subject": "Physics",
+    "teacher_name": "Sabiha Yasmin",
+    "created_at": "2026-05-06T08:59:08.776607+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "7e54d3d6-b0a6-4aa2-8120-1e612bf60b4f",
+    "period_id": "8d256852-21f4-4d33-82e3-54fa4cec45ab",
+    "subject": "2nd L - Bengali",
+    "teacher_name": "Nilakshi Khatoon",
+    "created_at": "2026-05-06T09:00:30.403032+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "114b2858-a815-4fb7-9876-cf7ccafbb165",
+    "period_id": "e0a6bd20-7c0b-4891-b63d-1637950f3454",
+    "subject": "Arabic",
+    "teacher_name": "Mohamed Lukhman A",
+    "created_at": "2026-05-06T09:00:44.943057+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "4fa74297-14f6-4f91-b866-5bdcc85efa9b",
+    "period_id": "a05b47f5-c2a5-4e8a-979e-ee3a7d71ea45",
+    "subject": "Chemistry",
+    "teacher_name": "Sabiha Yasmin",
+    "created_at": "2026-05-06T09:01:26.466164+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "f3567ebd-1b99-4115-8230-7f9354b37e8b",
+    "period_id": "fb871afb-5f5a-4549-ae04-feddf945a05f",
+    "subject": "English Literature",
+    "teacher_name": "Megha Barui",
+    "created_at": "2026-05-06T09:01:47.974998+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "13bad5d8-ada0-4ab9-908a-5b1eb3972567",
+    "period_id": "1a6e611b-5112-40ba-a9f8-8492f493349f",
+    "subject": "Maths",
+    "teacher_name": "Samprikta Chakraborty",
+    "created_at": "2026-05-06T09:02:16.094719+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "ff31b055-0ddd-473d-b3d9-943826fdd4ee",
+    "period_id": "f6df9d65-7ae7-4061-af88-b2b4098eafca",
+    "subject": "PE/LIB/GK",
+    "teacher_name": "Mohamed Lukhman A",
+    "created_at": "2026-05-07T04:09:47.830463+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "520286ac-f794-46a5-95eb-3e97e5a920c4",
+    "period_id": "1e1aa5fd-f827-4624-a0ee-1ec225c7566d",
+    "subject": "Maths",
+    "teacher_name": "Samprikta Chakraborty",
+    "created_at": "2026-05-07T04:10:58.980731+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "c264a0c9-6281-403d-9172-729b9c92285d",
+    "period_id": "738434ec-86b8-4755-ae7e-c5d6fc523a2a",
+    "subject": "Biology",
+    "teacher_name": "Sabiha Yasmin",
+    "created_at": "2026-05-07T04:11:16.713703+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "4a49a638-5064-4075-9a03-16f09014757b",
+    "period_id": "67ff715d-4991-476f-906d-a64791b50ed8",
+    "subject": "Physics",
+    "teacher_name": "Sabiha Yasmin",
+    "created_at": "2026-05-07T04:12:02.682396+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "915ba4e1-5295-4942-96c1-2f9f1bbc2c3b",
+    "period_id": "696498ae-c6db-420d-9f7c-6046a36108ee",
+    "subject": "2nd L - Bengali",
+    "teacher_name": "Nilakshi Khatoon",
+    "created_at": "2026-05-07T04:13:36.551986+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "d7bdfcdb-d00d-4563-9d32-7197aa96d71b",
+    "period_id": "d7432c87-45b3-4d3e-9e9e-cbbb5578b5bb",
+    "subject": "English Language",
+    "teacher_name": "Megha Barui",
+    "created_at": "2026-05-07T04:14:06.297332+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "d4811726-c588-44cc-863e-895d15347d83",
+    "period_id": "e620d40d-f0c7-4ef6-bfa1-aeee5d57efee",
+    "subject": "Biology",
+    "teacher_name": "Sabiha Yasmin",
+    "created_at": "2026-05-12T05:21:08.762346+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "d7672304-bfc3-4eba-8c9e-58f6f48c93c2",
+    "period_id": "5237f206-0569-4451-b828-5aa24faf7704",
+    "subject": "Physics",
+    "teacher_name": "Sabiha Yasmin",
+    "created_at": "2026-05-12T05:22:54.764985+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "d6b8800f-c71f-4b31-bc32-ac246139845d",
+    "period_id": "252d4b18-d46c-42f8-95b2-b2b588943ffb",
+    "subject": "English Literature",
+    "teacher_name": "Megha Barui",
+    "created_at": "2026-05-12T05:23:43.24141+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "e0b7c115-7d43-486d-a580-83401f0c66e6",
+    "period_id": "345694fb-a660-4ef0-a943-974173f2fff0",
+    "subject": "Maths",
+    "teacher_name": "Samprikta Chakraborty",
+    "created_at": "2026-05-12T05:26:35.040514+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "ec17bdc1-669e-4025-aec8-fe0044d5de43",
+    "period_id": "e9f367ef-5d57-4360-980f-875cec2426a8",
+    "subject": "Maths",
+    "teacher_name": "Samprikta Chakraborty",
+    "created_at": "2026-05-12T05:26:47.018795+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "bddbfc18-a48b-4322-bfa2-e828b350d9b0",
+    "period_id": "94a948db-c13b-4306-b677-8440bee57afd",
+    "subject": "Chemistry",
+    "teacher_name": "Sabiha Yasmin",
+    "created_at": "2026-05-12T05:27:00.770535+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "51e78636-b331-468e-a3c6-b9b51b11ac42",
+    "period_id": "23c42f8d-6586-4ed1-bc6d-dec47ef571d0",
+    "subject": "English Literature",
+    "teacher_name": "Megha Barui",
+    "created_at": "2026-05-12T05:27:19.348208+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "dbc9f9b5-a5c6-4790-aaa7-dfa49d582aad",
+    "period_id": "7f082c74-be08-46f2-9926-ad3631acf728",
+    "subject": "Arabic",
+    "teacher_name": "Mohd Ashique Raza",
+    "created_at": "2026-05-12T05:27:36.882811+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "a4cc3e1a-29fe-44cd-94ee-757f66fbd15e",
+    "period_id": "ae04e1d8-f72d-4663-891d-d1e956a812cd",
+    "subject": "Physics",
+    "teacher_name": "Sabiha Yasmin",
+    "created_at": "2026-05-12T05:27:46.663955+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "49c40530-b738-4fb8-ad23-c135f5d5fc12",
+    "period_id": "696c6ae6-aad2-48a9-a8a2-b7ec2b8b71a4",
+    "subject": "English Language",
+    "teacher_name": "Megha Barui",
+    "created_at": "2026-05-12T05:29:31.400238+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "c5e7017c-7ed3-422d-90bd-52bf089c7c18",
+    "period_id": "9394e1f2-6da3-4f13-95b3-0a03ad93dfb4",
+    "subject": "English Language",
+    "teacher_name": "Megha Barui",
+    "created_at": "2026-05-12T05:29:46.518643+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "76d32f9b-88a1-4822-8e0d-249e225145ab",
+    "period_id": "973c2609-b719-4d03-834e-a3fdef7b5165",
+    "subject": "Maths",
+    "teacher_name": "Samprikta Chakraborty",
+    "created_at": "2026-05-12T05:30:00.386187+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "3f2a12f1-dc5a-45f7-a397-015bc8cd1982",
+    "period_id": "915b8b06-30b4-4244-8e1a-17a8b9795d93",
+    "subject": "Chemistry",
+    "teacher_name": "Sabiha Yasmin",
+    "created_at": "2026-05-12T05:30:51.849139+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "c4990dfb-ed35-4560-85ad-10d5b236e3eb",
+    "period_id": "577a47df-1ed5-4e33-a4e3-8615b3ec5710",
+    "subject": "Computer",
+    "teacher_name": "Anirban Dutta",
+    "created_at": "2026-06-16T07:01:26.870739+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "76e9b7c3-a083-48fb-853c-7c1f77d3adc7",
+    "period_id": "a10716e7-b605-4d7e-aa48-8b893a7bc1da",
+    "subject": "Computer",
+    "teacher_name": "Anirban Dutta",
+    "created_at": "2026-06-16T07:01:49.387436+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "2da65d74-898d-4748-92eb-f253458499ea",
+    "period_id": "cb87fc70-2349-4137-b6f6-4650da785539",
+    "subject": "Computer",
+    "teacher_name": "Anirban Dutta",
+    "created_at": "2026-06-16T07:01:59.028907+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "2536fd9e-1268-4360-a984-ec577c81aa0d",
+    "period_id": "bf6867e2-0b49-4c8e-9746-48a974c51c90",
+    "subject": "Islamic Studies",
+    "teacher_name": "Mohd Fasihul Qamar",
+    "created_at": "2026-07-09T02:48:38.326892+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "09d9e6dd-33ff-49a8-87f0-c8d6345e1966",
+    "period_id": "f68e4f68-34f7-4682-8fe9-accc9e6ad3e7",
+    "subject": "English Literature",
+    "teacher_name": "Megha Barui",
+    "created_at": "2026-07-09T02:48:55.840123+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "bc6040c7-2e0a-41f0-b732-2e4f05ea4bd1",
+    "period_id": "6c91a88d-ffd0-42c5-8d2a-9eeed4a56b18",
+    "subject": "Science",
+    "teacher_name": "Shavian Affrin",
+    "created_at": "2026-07-09T02:49:12.532406+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "acdc42f4-a943-47e9-ab1c-b156d490a95d",
+    "period_id": "84b8a536-5bf5-4e48-bef3-00cb5a1d1f89",
+    "subject": "Science",
+    "teacher_name": "Shavian Affrin",
+    "created_at": "2026-07-09T02:49:23.387368+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "199d7242-10b0-43f2-aecd-8b8e5b972b5a",
+    "period_id": "6251d4ce-578f-4977-a0da-852fa0ee5bce",
+    "subject": "Science",
+    "teacher_name": "Shavian Affrin",
+    "created_at": "2026-07-09T02:49:35.470146+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "326134ac-82de-4c77-a8f1-f8f6b6f01f99",
+    "period_id": "c2718aee-bca1-450f-a775-2ac19570bb68",
+    "subject": "G K",
+    "teacher_name": "Saima Bux Siddiqui",
+    "created_at": "2026-07-13T04:05:21.408747+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "4f7f0090-0c93-4dfb-9a1f-633f5f7de4e8",
+    "period_id": "1b567814-df5c-4145-a5e5-db149dc204a8",
+    "subject": "P E T",
+    "teacher_name": "Munazza Tabrez",
+    "created_at": "2026-07-20T03:56:17.149037+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "008db660-bdb1-4333-86da-a1360ffd2e74",
+    "period_id": "495fef12-3966-4230-954f-5755b2a12494",
+    "subject": "Library",
+    "teacher_name": "Mohamed Lukhman A",
+    "created_at": "2026-07-20T04:26:51.651408+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "cde82d2e-6b92-4773-b26c-c104a0736083",
+    "period_id": "285bbeb0-8492-4634-95f9-5e4f733e0b7b",
+    "subject": "E V S",
+    "teacher_name": "Gulfiishan Nikhat",
+    "created_at": "2026-07-20T04:27:03.998082+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "cb8ed1ab-0163-40c4-8ecf-57ef082c77ee",
+    "period_id": "88a78fca-2d24-471f-bc0d-dfe1b58007f7",
+    "subject": "Computer",
+    "teacher_name": "Anirban Dutta",
+    "created_at": "2026-06-16T07:02:29.82948+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "86b6d8e8-7cee-4dd5-8438-a6f8e32533ad",
+    "period_id": "6b031425-d8b9-4856-9459-7f8bcfa4ce0a",
+    "subject": "2 nd L - Bengali",
+    "teacher_name": "Nilakshi Khatoon",
+    "created_at": "2026-05-12T05:31:53.356136+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "67305ddb-73ae-41d8-8a27-822a127a876a",
+    "period_id": "53bbb65d-d7b1-45ce-8793-d5af12beabe8",
+    "subject": "3 rd L",
+    "teacher_name": "Gulfiishan Nikhat",
+    "created_at": "2026-05-12T05:32:30.944091+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "0fe27e32-75ba-4767-9806-4f37712670a4",
+    "period_id": "53bbb65d-d7b1-45ce-8793-d5af12beabe8",
+    "subject": "3 rd L",
+    "teacher_name": "Afreen Sultana",
+    "created_at": "2026-05-12T05:32:30.944091+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "25b0ae36-8200-49c9-983d-0cbb154b6a4b",
+    "period_id": "d5c94518-a094-4a1a-a3d6-d430c9613f5e",
+    "subject": "Science",
+    "teacher_name": "Shavian Affrin",
+    "created_at": "2026-07-09T02:52:06.914037+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "997bce95-7c8b-4966-bf9c-e018769f244e",
+    "period_id": "ee394431-2f89-4c6b-86f9-67ee3d5d6081",
+    "subject": "Physics",
+    "teacher_name": "Sabiha Yasmin",
+    "created_at": "2026-05-12T05:36:57.387429+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "7bfa2350-a09f-4dbe-9ba2-d29232ddfce9",
+    "period_id": "cc8742bc-3757-46db-8791-f52024f3eeaf",
+    "subject": "Arabic",
+    "teacher_name": "Mohd Ashique Raza",
+    "created_at": "2026-05-12T05:37:14.155566+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "cfb18959-47b8-4348-999f-3d63d2131b91",
+    "period_id": "7c248782-f72e-432d-af7d-f46c7d13f8c2",
+    "subject": "SST",
+    "teacher_name": "Geography SST Teacher",
+    "created_at": "2026-07-09T02:51:52.949276+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "d62fd191-7b30-4f8f-a14e-90a52d9ad141",
+    "period_id": "8b7a1e03-5932-4634-a526-435859e018b2",
+    "subject": "Biology",
+    "teacher_name": "Sabiha Yasmin",
+    "created_at": "2026-05-12T05:38:10.578756+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "cb89bddf-0d02-475b-926c-c9a76aaead7f",
+    "period_id": "b8999e0d-3f85-41bd-a235-46c68da181e6",
+    "subject": "2 nd L - Bengali",
+    "teacher_name": "Nilakshi Khatoon",
+    "created_at": "2026-05-12T05:38:39.113343+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "4e6856c4-c9a9-4447-85e7-52bfba0192d9",
+    "period_id": "eb916538-d9e7-44bb-962b-a1e09bc61075",
+    "subject": "Geography",
+    "teacher_name": "Geography SST Teacher",
+    "created_at": "2026-05-12T05:36:46.858111+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "3a285634-11fd-4623-a2bd-15ded95eb669",
+    "period_id": "d60adc49-b060-48f2-aee3-8c9f2d8fb998",
+    "subject": "Maths",
+    "teacher_name": "Samprikta Chakraborty",
+    "created_at": "2026-05-12T05:39:09.515712+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "5f4586bc-2d95-414d-88c4-3b772579c151",
+    "period_id": "52304f90-5dce-4d40-9911-04bd1fdca55a",
+    "subject": "English Literature",
+    "teacher_name": "Megha Barui",
+    "created_at": "2026-05-12T05:39:25.858344+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "a2a17c13-b396-404d-a529-d84131677321",
+    "period_id": "e0652149-4aae-4881-8074-60eb02a7355f",
+    "subject": "Geography",
+    "teacher_name": "Geography SST Teacher",
+    "created_at": "2026-05-12T05:43:56.436606+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "fa890ce0-562e-402a-bb42-f171ee3ae762",
+    "period_id": "57b3c947-1338-475e-af2e-5e2acacd6e75",
+    "subject": "2 nd L - Bengali",
+    "teacher_name": "Nilakshi Khatoon",
+    "created_at": "2026-07-13T06:59:05.438029+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "7b4e33a8-c8a2-4253-a74b-b01dd4040427",
+    "period_id": "6b031425-d8b9-4856-9459-7f8bcfa4ce0a",
+    "subject": "2 nd L - Hindi",
+    "teacher_name": "Hindi Teacher",
+    "created_at": "2026-05-12T05:31:53.356136+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "551aa32c-00c4-4ac0-a349-ede22419c9ae",
+    "period_id": "98999acc-bb75-4cbd-84b7-8bb66b454a18",
+    "subject": "2 nd L - Bengali",
+    "teacher_name": "Nilakshi Khatoon",
+    "created_at": "2026-05-12T05:40:42.597478+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "7f3f8c34-7627-49a5-9586-6a43e0c81d65",
+    "period_id": "08531ba0-c618-4f0a-9ac0-e8c5afd51dba",
+    "subject": "Chemistry",
+    "teacher_name": "Sabiha Yasmin",
+    "created_at": "2026-05-12T05:40:55.151948+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "31e513eb-e84f-463e-ad03-867407abeddf",
+    "period_id": "c876ced2-aa61-4f29-a3cf-a443c3eb0835",
+    "subject": "Maths",
+    "teacher_name": "Samprikta Chakraborty",
+    "created_at": "2026-05-12T05:41:06.822978+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "75f467ef-b0bd-4f04-a962-c487fa3ff172",
+    "period_id": "7d3a0c4d-f0e3-48bb-9773-32af5fbff31e",
+    "subject": "English Language",
+    "teacher_name": "Megha Barui",
+    "created_at": "2026-05-12T05:41:29.783453+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "2105803d-7e5e-4326-8757-dd7b70542230",
+    "period_id": "b8999e0d-3f85-41bd-a235-46c68da181e6",
+    "subject": "2 nd L - Hindi",
+    "teacher_name": "Hindi Teacher",
+    "created_at": "2026-05-12T05:38:39.113343+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "a73a95bb-ff5e-4c72-8645-74c2c1159d34",
+    "period_id": "6a5f6dee-50f6-4f8c-89b3-f633fc380c87",
+    "subject": "2 nd L - Bengali",
+    "teacher_name": "Nilakshi Khatoon",
+    "created_at": "2026-05-12T05:43:03.959384+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "9b30e9bc-85cf-4467-bbbe-098a05fb3ffc",
+    "period_id": "e4318de8-ef76-4a71-940d-684dc95bb110",
+    "subject": "English Remedial",
+    "teacher_name": "Megha Barui",
+    "created_at": "2026-05-12T05:43:40.181826+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "6b8ded38-9d05-4aa2-8f87-a01a520897ca",
+    "period_id": "5bd32d30-2322-4d89-b8c5-d06b9a1c0f42",
+    "subject": "3 rd L",
+    "teacher_name": "Gulfiishan Nikhat",
+    "created_at": "2026-05-12T05:45:04.792925+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "c17f3ba0-831d-40b5-b204-26e06b302142",
+    "period_id": "5bd32d30-2322-4d89-b8c5-d06b9a1c0f42",
+    "subject": "3 rd L",
+    "teacher_name": "Afreen Sultana",
+    "created_at": "2026-05-12T05:45:04.792925+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "ef59e1a8-84da-47b3-91eb-6e361980f94c",
+    "period_id": "806facd6-5637-4ffa-95b4-42ab4bd07dce",
+    "subject": "English Literature",
+    "teacher_name": "Munazza Tabrez",
+    "created_at": "2026-05-12T05:46:37.988247+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "7b02cc50-0525-4af9-b3f5-6eb0e5548be2",
+    "period_id": "db4a4d98-871b-4b78-a979-f26dcf047143",
+    "subject": "E V S",
+    "teacher_name": "Munazza Tabrez",
+    "created_at": "2026-05-12T05:46:58.226266+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "7f288cff-8887-47d0-9727-8c47e617879e",
+    "period_id": "d1b8963d-0bf9-49c5-b667-2148c3666b52",
+    "subject": "E V S",
+    "teacher_name": "Munazza Tabrez",
+    "created_at": "2026-05-12T05:47:18.551602+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "70c953e7-3d64-46e0-a942-9d9b8256e53e",
+    "period_id": "57b3c947-1338-475e-af2e-5e2acacd6e75",
+    "subject": "2 nd L - Hindi",
+    "teacher_name": "Hindi Teacher",
+    "created_at": "2026-07-13T06:59:05.438029+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "a70a12f9-2996-4691-81f2-675471f597a2",
+    "period_id": "98999acc-bb75-4cbd-84b7-8bb66b454a18",
+    "subject": "2 nd L - Hindi",
+    "teacher_name": "Hindi Teacher",
+    "created_at": "2026-05-12T05:40:42.597478+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "ea2bfa6b-2d14-4202-b953-4c75619bf693",
+    "period_id": "8a45dd1f-58b3-47a3-8810-21ba29fadeb5",
+    "subject": "Arabic",
+    "teacher_name": "Mohd Ashique Raza",
+    "created_at": "2026-05-12T05:48:27.762914+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "e639ac69-8756-4818-9cce-df42264ef864",
+    "period_id": "7450b7c8-c3f9-44fd-8e94-c68a22c77360",
+    "subject": "Maths",
+    "teacher_name": "Munazza Tabrez",
+    "created_at": "2026-05-12T05:48:41.165968+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "d7ffc745-2576-484a-b86b-94c18a792508",
+    "period_id": "6a5f6dee-50f6-4f8c-89b3-f633fc380c87",
+    "subject": "2 nd L - Hindi",
+    "teacher_name": "Hindi Teacher",
+    "created_at": "2026-05-12T05:43:03.959384+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "37fea51d-1ac8-4fa4-ba8f-7cff8e6cd3de",
+    "period_id": "9843f269-fdcb-4867-a5bc-80ebdc0c9cd1",
+    "subject": "2 nd L-",
+    "teacher_name": "Hindi Teacher",
+    "created_at": "2026-07-11T06:50:12.132805+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "569d94f3-48a7-42a4-a426-24c8b1b3d4eb",
+    "period_id": "1a299570-2626-4a0d-a7f3-3a6d515c843d",
+    "subject": "2nd L",
+    "teacher_name": "Hindi Teacher",
+    "created_at": "2026-07-11T06:50:18.211142+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "2468d6bf-cd2a-44b3-bde0-c3f81be5227f",
+    "period_id": "16328e40-cf97-4333-ab0e-f02773120227",
+    "subject": "2 nd L -",
+    "teacher_name": "Hindi Teacher",
+    "created_at": "2026-07-11T06:50:49.511008+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "12d462f4-4edd-4cf9-a7d8-7097f4f83f69",
+    "period_id": "af25d3b1-9cba-4880-bb99-aa6cfb3fb1f1",
+    "subject": "E V S",
+    "teacher_name": "Munazza Tabrez",
+    "created_at": "2026-05-12T05:50:44.938027+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "0eb4ab25-ba5f-4e5b-87ae-a9453317ba90",
+    "period_id": "a899b717-990d-4ccc-97f8-8a5bbee44919",
+    "subject": "Maths",
+    "teacher_name": "Munazza Tabrez",
+    "created_at": "2026-05-12T05:50:58.546339+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "b9293b23-7907-4c57-a0c7-c9e10410a279",
+    "period_id": "7f90971c-128e-445c-9dae-ebfbcf4ce999",
+    "subject": "Maths",
+    "teacher_name": "Munazza Tabrez",
+    "created_at": "2026-05-12T05:51:11.810701+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "48e8647d-3c20-484c-be9e-b98f4f74dde4",
+    "period_id": "e438e8d7-2b38-453b-b437-ee6da5600f92",
+    "subject": "Arabic",
+    "teacher_name": "Mohd Ashique Raza",
+    "created_at": "2026-05-12T05:51:28.735584+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "09de7aed-a04d-4940-b8bd-1aa4c6ab94b8",
+    "period_id": "484b1cb0-c824-4f82-a47f-473b131bb7de",
+    "subject": "Computer",
+    "teacher_name": "Munazza Tabrez",
+    "created_at": "2026-05-12T05:52:43.518008+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "1e4b6112-cd22-4953-87a8-7bc73f1921fd",
+    "period_id": "d2756e2e-3acc-4562-bce0-d0ae36428e19",
+    "subject": "E V S",
+    "teacher_name": "Saima Bux Siddiqui",
+    "created_at": "2026-07-20T03:56:59.601852+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "b1c5dc11-f3a1-46a6-aafa-8ccb3f0eb716",
+    "period_id": "11825ce6-4e8c-4e7a-a239-f1a54e0449f7",
+    "subject": "History",
+    "teacher_name": "Gulfiishan Nikhat",
+    "created_at": "2026-07-20T04:27:23.733201+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "efa12a2c-28ae-44b5-b354-9a8b560c7215",
+    "period_id": "61fe4686-3b93-45e8-b131-ea8a5ffcfea8",
+    "subject": "English Language",
+    "teacher_name": "Class 2 Mother Teacher",
+    "created_at": "2026-05-12T05:52:04.177807+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "c5be5a33-011b-4004-8f81-395a1666acac",
+    "period_id": "8b40eb2f-1699-4173-887c-f60924a6cd5a",
+    "subject": "Computer",
+    "teacher_name": "Munazza Tabrez",
+    "created_at": "2026-05-12T05:55:38.628002+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "8b0078f0-3bf0-462c-8032-71e856078df8",
+    "period_id": "838159e6-9a9e-4b18-b676-ce143a5bef9d",
+    "subject": "Computer",
+    "teacher_name": "Munazza Tabrez",
+    "created_at": "2026-05-12T05:55:51.275817+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "cc151405-6142-4e00-b95a-f50da4116031",
+    "period_id": "8788236a-ee64-49ec-9374-de1d5516bbfb",
+    "subject": "English Language",
+    "teacher_name": "Class 2 Mother Teacher",
+    "created_at": "2026-05-12T05:52:18.430087+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "7d71b19b-36ed-48b2-bbe9-31601d6a844b",
+    "period_id": "cfe77a39-2c38-4205-8647-772dc1bd16e5",
+    "subject": "G K",
+    "teacher_name": "Munazza Tabrez",
+    "created_at": "2026-05-12T05:59:40.494102+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "e2c739d7-5f58-43bf-96e6-d976ca8224d8",
+    "period_id": "f8edb489-2090-4ad7-84cf-4ce6a7f57067",
+    "subject": "E V S",
+    "teacher_name": "Munazza Tabrez",
+    "created_at": "2026-05-12T05:59:58.843684+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "4bc90adc-cc74-47d2-b39d-0d9b5b40c6f5",
+    "period_id": "3ef0c617-818f-42dc-b21d-64212acd48d0",
+    "subject": "Maths",
+    "teacher_name": "Munazza Tabrez",
+    "created_at": "2026-05-12T06:00:31.931185+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "f71edb1c-6917-4011-869c-5c48c5660f45",
+    "period_id": "97a9e51f-6994-43a8-b3f0-dc87f40f6e46",
+    "subject": "Maths",
+    "teacher_name": "Munazza Tabrez",
+    "created_at": "2026-05-12T06:01:43.489776+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "5b9e04af-55d9-47f2-8dc2-17936e4bf35c",
+    "period_id": "ad0343ec-8af6-4a2c-82b9-0b388945ddec",
+    "subject": "Arabic",
+    "teacher_name": "Mohd Ashique Raza",
+    "created_at": "2026-05-12T06:02:22.480241+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "7c6129d9-9793-4413-89e3-37d69b4c3117",
+    "period_id": "2a9e0d9d-ad28-4a40-9292-ee72b8389207",
+    "subject": "Library",
+    "teacher_name": "Munazza Tabrez",
+    "created_at": "2026-05-12T06:05:34.311602+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "f7dccbb2-0088-4a66-8002-7a5b63a8af77",
+    "period_id": "f82ffed8-7a18-418f-b4f4-797d9492c755",
+    "subject": "Art & Craft",
+    "teacher_name": "Munazza Tabrez",
+    "created_at": "2026-05-12T06:05:56.956769+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "591b672f-fb29-421d-9a18-81857f36cdfe",
+    "period_id": "df8f6867-a8e2-4a36-b56e-c3b5913c5876",
+    "subject": "Art & Craft",
+    "teacher_name": "Munazza Tabrez",
+    "created_at": "2026-05-12T06:06:24.109769+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "0125a1ac-438d-4d69-ac91-02097e9f2207",
+    "period_id": "561d462b-372b-4af5-a07b-5a4065d47758",
+    "subject": "E V S",
+    "teacher_name": "Munazza Tabrez",
+    "created_at": "2026-05-12T06:07:07.024835+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "c010d308-f3af-423a-a01a-b391dd75cb4b",
+    "period_id": "805c3a3c-9591-4311-9f06-9d89d58c7635",
+    "subject": "English Literature",
+    "teacher_name": "Munazza Tabrez",
+    "created_at": "2026-05-12T06:07:28.224583+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "87acb346-1c54-4df7-a592-684d7d374fe1",
+    "period_id": "7b9ad9e3-8dd2-4ee3-9dd6-6b0eeeef7ceb",
+    "subject": "Hand Writing",
+    "teacher_name": "Munazza Tabrez",
+    "created_at": "2026-05-12T06:07:41.846915+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "c00c5b4d-02f6-4d53-b104-4a4ec5e7d14b",
+    "period_id": "739e6075-2e8b-4657-bfeb-a1519e4e8373",
+    "subject": "Computer",
+    "teacher_name": "Munazza Tabrez",
+    "created_at": "2026-05-12T06:08:13.34012+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "fad96fc6-085e-4e8e-919c-f461a36dd33b",
+    "period_id": "a4f0d7f7-1559-4376-9d6d-c55faa5e2b60",
+    "subject": "Computer",
+    "teacher_name": "Anirban Dutta",
+    "created_at": "2026-06-16T07:03:43.724105+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "84c010c3-522a-4cad-a265-3fba0e7553f3",
+    "period_id": "be289ebc-82e0-446d-bcc3-a3f90ddacb38",
+    "subject": "Islamic Studies",
+    "teacher_name": "Mohd Fasihul Qamar",
+    "created_at": "2026-06-16T08:46:28.295179+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "1e252138-89f6-454d-8a51-d7a447bcf0bd",
+    "period_id": "ed498b93-6869-4637-b85a-f3aabeb9a120",
+    "subject": "Maths",
+    "teacher_name": "Samprikta Chakraborty",
+    "created_at": "2026-06-16T08:46:54.570581+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "a5d92f16-26e9-4070-9360-0c78c2557fde",
+    "period_id": "c8976624-dc24-4a32-b117-4323b4057987",
+    "subject": "Science",
+    "teacher_name": "Sabiha Yasmin",
+    "created_at": "2026-06-16T08:47:06.321955+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "00de5577-738e-4ff6-b5eb-d62f5c141d5e",
+    "period_id": "7003b144-fc32-4004-a19f-57a905d1c09a",
+    "subject": "Computer",
+    "teacher_name": "Anirban Dutta",
+    "created_at": "2026-06-16T08:47:18.586275+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "b95a0ec0-5303-4f63-aa89-89672cac4dbe",
+    "period_id": "eb1606bb-7576-434e-b03f-ea6ace8f27e3",
+    "subject": "2 nd L - Bengali",
+    "teacher_name": "Afreen Sultana",
+    "created_at": "2026-07-11T06:48:27.421781+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "5f11d09b-5fbb-4745-b031-cff8026a34b0",
+    "period_id": "65490abd-1cd1-46e9-a5fb-6a27814959d2",
+    "subject": "Arabic",
+    "teacher_name": "Mohamed Lukhman A",
+    "created_at": "2026-05-12T06:48:18.153201+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "6cbe4607-90bd-44fa-af7d-a5ba1b51f44e",
+    "period_id": "23cf0daa-2198-448b-9825-4f1923405a89",
+    "subject": "Chemistry",
+    "teacher_name": "Sabiha Yasmin",
+    "created_at": "2026-05-12T06:48:30.8887+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "1b3a384f-62eb-4428-a9c1-a52a77ed6463",
+    "period_id": "0447fc81-a686-4abd-b0fe-b6355e8306f6",
+    "subject": "2 nd L - Bengali",
+    "teacher_name": "Nilakshi Khatoon",
+    "created_at": "2026-05-12T06:49:08.174209+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "78099db2-3760-441a-bf3b-8cf74e908d94",
+    "period_id": "05235a47-dc77-4b5e-af22-c6f17ec32bba",
+    "subject": "History",
+    "teacher_name": "Gulfiishan Nikhat",
+    "created_at": "2026-05-12T06:49:26.380937+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "86c39b8d-1e19-47cf-8186-fa678d9ee935",
+    "period_id": "4ba44d52-61bc-42c3-a7f2-ca41e080d1bf",
+    "subject": "2 nd L",
+    "teacher_name": "Afreen Sultana",
+    "created_at": "2026-07-11T06:49:10.091457+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "9da24d9d-f411-4661-ab23-83e46ae5a9ba",
+    "period_id": "35f255a9-b699-4a64-b0ac-27cda4cb3782",
+    "subject": "Biology",
+    "teacher_name": "Sabiha Yasmin",
+    "created_at": "2026-05-12T06:49:58.470367+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "22e041a3-04cc-4483-a1f1-d58360f21d61",
+    "period_id": "5c065e84-a3e2-46e4-9ce9-0fc5f30e49ba",
+    "subject": "Islamic Studies",
+    "teacher_name": "Mohd Fasihul Qamar",
+    "created_at": "2026-07-13T07:00:39.674333+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "2ea6cfb8-b0a3-4b06-a9ca-106f1d44e8f1",
+    "period_id": "a77b0f21-d9cb-4076-bc6d-b1ce54b79e9e",
+    "subject": "2 nd L - Bengali",
+    "teacher_name": "Nilakshi Khatoon",
+    "created_at": "2026-05-12T06:52:36.83289+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "8889aef4-605d-4991-b0f0-0c99f89a50e4",
+    "period_id": "0447fc81-a686-4abd-b0fe-b6355e8306f6",
+    "subject": "2 nd L - Hindi",
+    "teacher_name": "Hindi Teacher",
+    "created_at": "2026-05-12T06:49:08.174209+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "72865cae-b055-4560-95f9-7f4a9dd47984",
+    "period_id": "522a52bb-0023-4c30-9726-76d50bcfeece",
+    "subject": "English Language",
+    "teacher_name": "Megha Barui",
+    "created_at": "2026-05-12T06:53:43.26187+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "30c98d52-8f2e-43ca-88ee-2a9019dd95ec",
+    "period_id": "fb9edb52-e3dd-4da3-930a-26ec88352fcb",
+    "subject": "English remedial",
+    "teacher_name": "Megha Barui",
+    "created_at": "2026-05-12T06:53:59.308474+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "367f8ffc-897f-4583-a520-7ebfb54f6592",
+    "period_id": "efc051fb-c830-4d9a-a203-d633159be662",
+    "subject": "Chemistry",
+    "teacher_name": "Sabiha Yasmin",
+    "created_at": "2026-05-12T06:54:23.109408+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "89872cbf-0493-4000-a31d-fb654b4d0380",
+    "period_id": "a77b0f21-d9cb-4076-bc6d-b1ce54b79e9e",
+    "subject": "2 nd L - Hindi",
+    "teacher_name": "Hindi Teacher",
+    "created_at": "2026-05-12T06:52:36.83289+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "60672aeb-78e4-4494-b6e8-b2d279080487",
+    "period_id": "5c065e84-a3e2-46e4-9ce9-0fc5f30e49ba",
+    "subject": "V E D",
+    "teacher_name": "Kainat Hossain",
+    "created_at": "2026-07-13T07:00:39.674333+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "73de19ab-ac39-48ec-86a6-8bec859b250e",
+    "period_id": "2559e1b3-6474-415f-98ac-13d7f3395d36",
+    "subject": "English Literature",
+    "teacher_name": "Megha Barui",
+    "created_at": "2026-05-12T06:55:15.939621+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "2942c9c7-aedc-4ab2-9510-0829ba9e1eb7",
+    "period_id": "23d7e4da-171b-4348-bce6-8928778a4010",
+    "subject": "History",
+    "teacher_name": "Gulfiishan Nikhat",
+    "created_at": "2026-05-12T06:55:34.852742+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "b9460138-643f-4fbd-926f-61ecd1da0a13",
+    "period_id": "ecd250cc-1226-4be9-824c-a5f55ce5e1da",
+    "subject": "2 nd L - Hindi",
+    "teacher_name": "Hindi Teacher",
+    "created_at": "2026-05-12T07:01:47.883263+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "d3e7dd4c-2f34-404b-a34d-2e2482e3a3da",
+    "period_id": "bc31f3b3-c7bb-4532-b3fc-7d9e36fceadd",
+    "subject": "2 nd L - Hindi",
+    "teacher_name": "Hindi Teacher",
+    "created_at": "2026-05-12T07:07:47.399699+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "0ab097dd-34cf-481d-97a6-0c2219409d20",
+    "period_id": "75069aaa-8dbd-4a42-b4ba-323095024fe8",
+    "subject": "Islamic Studies",
+    "teacher_name": "Mohd Fasihul Qamar",
+    "created_at": "2026-07-13T07:01:08.888543+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "5a6b5193-104b-47c7-83d6-1043b4d80f0c",
+    "period_id": "75069aaa-8dbd-4a42-b4ba-323095024fe8",
+    "subject": "V E D",
+    "teacher_name": "Kainat Hossain",
+    "created_at": "2026-07-13T07:01:08.888543+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "b05f9a17-6c6a-4f71-8669-c731d9c657e5",
+    "period_id": "57824e5c-575e-442d-a309-abe846ddc822",
+    "subject": "2 nd L - Hindi",
+    "teacher_name": "Hindi Teacher",
+    "created_at": "2026-05-12T07:20:14.077468+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "62be6db5-9cb0-4de1-8efe-bdd345cd52a2",
+    "period_id": "37bed60e-50b8-448f-9b47-83d1ed685a86",
+    "subject": "Art & Craft",
+    "teacher_name": "Nayab khan",
+    "created_at": "2026-07-20T04:01:33.274991+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "5d9bcb6d-193d-4dc3-a888-16317d73dfae",
+    "period_id": "d107f51c-bc4b-4773-b180-3ae300ba296c",
+    "subject": "2 nd L",
+    "teacher_name": "Nilakshi Khatoon",
+    "created_at": "2026-07-30T03:53:20.780419+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "d74d932d-e9bb-424f-9ade-a1b763247859",
+    "period_id": "cf0ef6b6-55f5-4ff7-8042-b9e5f6abb8e9",
+    "subject": "English Language",
+    "teacher_name": "Megha Barui",
+    "created_at": "2026-05-12T06:59:39.892563+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "8cb62a92-d057-4272-b2c5-72a5d6842dc9",
+    "period_id": "fa6b646c-2794-42a6-805d-c9669ba3101b",
+    "subject": "English Language",
+    "teacher_name": "Megha Barui",
+    "created_at": "2026-05-12T07:00:26.679503+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "e9c5a550-930a-41ac-bc95-51e6d1b52754",
+    "period_id": "aefa6337-eac3-44ea-b81e-b0bb3933710a",
+    "subject": "Chemistry",
+    "teacher_name": "Sabiha Yasmin",
+    "created_at": "2026-05-12T07:00:44.627609+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "4ff219cd-f2e4-4dbf-bbe8-44568b12a45c",
+    "period_id": "96a09dec-0d18-4433-9744-ed453a49c755",
+    "subject": "2 nd L",
+    "teacher_name": "Nilakshi Khatoon",
+    "created_at": "2026-07-30T03:53:34.680598+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "559690fe-3d7d-44b1-92ed-5cd929f6c1d9",
+    "period_id": "ecd250cc-1226-4be9-824c-a5f55ce5e1da",
+    "subject": "2 nd L - Bengali",
+    "teacher_name": "Nilakshi Khatoon",
+    "created_at": "2026-05-12T07:01:47.883263+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "3d1610a3-0d5c-4bf6-89d3-17beef9b7271",
+    "period_id": "25bbcc9a-15a6-4ce5-b9bf-ea42ba2f3533",
+    "subject": "2 nd L",
+    "teacher_name": "Nilakshi Khatoon",
+    "created_at": "2026-07-30T03:53:47.646322+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "b9f87e01-8f91-4394-bfb1-6ef4db9c08e2",
+    "period_id": "e801a461-a454-4478-8bc9-dab33917f4c5",
+    "subject": "Biology",
+    "teacher_name": "Sabiha Yasmin",
+    "created_at": "2026-05-12T07:02:37.295512+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "8a814d0c-ebd2-4b29-83c0-f0edca299b18",
+    "period_id": "a5a06aa7-ac6e-4440-92f9-853dc085e778",
+    "subject": "2 nd L",
+    "teacher_name": "Nilakshi Khatoon",
+    "created_at": "2026-07-30T03:54:02.227097+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "f32e4b13-d6a2-4dfc-b27b-0942859a199f",
+    "period_id": "77e5593e-de8c-4d06-b29d-c35a0fdee3d9",
+    "subject": "Geography",
+    "teacher_name": "Geography SST Teacher",
+    "created_at": "2026-05-12T06:57:43.372007+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "04bf90f9-2f21-4a19-a01c-b340629146c5",
+    "period_id": "85a7a17c-d51e-495a-aacb-6bd9ef80c8cf",
+    "subject": "Geography",
+    "teacher_name": "Geography SST Teacher",
+    "created_at": "2026-05-12T07:01:00.942319+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "b4e6679a-1393-46c9-8be6-7e1823013936",
+    "period_id": "8b43f487-ee02-4d51-9ad3-ae397e95cbae",
+    "subject": "English Literature",
+    "teacher_name": "Megha Barui",
+    "created_at": "2026-05-12T07:03:59.824313+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "54375f6b-7352-4703-b043-ef8178e0cf75",
+    "period_id": "3d79273d-c5fa-48bf-83a0-5f4bc6f98cfd",
+    "subject": "Geography",
+    "teacher_name": "Geography SST Teacher",
+    "created_at": "2026-05-12T07:03:46.739659+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "54a4d8a7-f179-450c-b36c-cffc0103a8b4",
+    "period_id": "9a78b2bf-3994-45b5-bb94-1b0beac5017c",
+    "subject": "Arabic",
+    "teacher_name": "Mohamed Lukhman A",
+    "created_at": "2026-05-12T07:05:47.257285+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "5d50b6be-3b08-4304-b18e-12e3e5b8a384",
+    "period_id": "edb90519-1e53-4ed1-ab1d-88ba03fb34cc",
+    "subject": "History",
+    "teacher_name": "Gulfiishan Nikhat",
+    "created_at": "2026-05-12T07:06:28.519577+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "3f599b2d-9360-4eae-a8c2-6f8ddbacd497",
+    "period_id": "61d8e892-a96d-47f3-8b5b-a6f10abb9fbc",
+    "subject": "PE / Lib / GK",
+    "teacher_name": "Nayab khan",
+    "created_at": "2026-05-12T07:07:09.69842+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "ad281926-b512-4372-a3b0-247ddd5e584f",
+    "period_id": "bc31f3b3-c7bb-4532-b3fc-7d9e36fceadd",
+    "subject": "2 nd L - Bengali",
+    "teacher_name": "Nilakshi Khatoon",
+    "created_at": "2026-05-12T07:07:47.399699+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "9c6e8937-b870-4442-a177-e8d766028d01",
+    "period_id": "0ef8757e-2340-4b92-bfcf-76348baadbf1",
+    "subject": "Islamic Studies",
+    "teacher_name": "Mohd Fasihul Qamar",
+    "created_at": "2026-07-13T07:01:51.299962+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "fa3ef445-2d2c-4238-b20e-929642a71f05",
+    "period_id": "e7736662-007b-460f-a041-507e0e225f21",
+    "subject": "English Literature",
+    "teacher_name": "Megha Barui",
+    "created_at": "2026-05-12T07:11:49.048859+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "5d2d3dc8-f622-4b76-b436-eaffac664468",
+    "period_id": "d7c9d350-2237-4cd8-8eee-67b52a35454e",
+    "subject": "Islamic Science",
+    "teacher_name": "Muhammed Arif P A",
+    "created_at": "2026-05-12T07:12:08.944966+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "cae4ab5d-bccc-439a-9872-583a25fa54c6",
+    "period_id": "d7c9d350-2237-4cd8-8eee-67b52a35454e",
+    "subject": "V ED",
+    "teacher_name": "Gulfiishan Nikhat",
+    "created_at": "2026-05-12T07:12:08.944966+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "82b55e74-05c0-4646-b3ec-a1a45de1dd60",
+    "period_id": "aab31342-0ef5-4e1a-b50f-ce61bcb94376",
+    "subject": "Islamic Studies",
+    "teacher_name": "Muhammed Arif P A",
+    "created_at": "2026-05-12T07:14:34.394029+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "98f6858b-8e39-43eb-beef-710450f07c50",
+    "period_id": "aab31342-0ef5-4e1a-b50f-ce61bcb94376",
+    "subject": "V ED",
+    "teacher_name": "Gulfiishan Nikhat",
+    "created_at": "2026-05-12T07:14:34.394029+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "2cb20517-136e-4bc1-a746-a11923374653",
+    "period_id": "0ef8757e-2340-4b92-bfcf-76348baadbf1",
+    "subject": "V E D",
+    "teacher_name": "Kainat Hossain",
+    "created_at": "2026-07-13T07:01:51.299962+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "2c0fa7e1-bcbf-47b1-9be4-e3d524dc341c",
+    "period_id": "c39c84b9-c684-4405-8a9d-de8cb77be08a",
+    "subject": "E V S",
+    "teacher_name": "Kainat Hossain",
+    "created_at": "2026-07-13T07:02:07.270073+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "be6bc233-77c8-4a82-8d45-b29518190804",
+    "period_id": "494a9b1b-1348-4404-a692-adbe14205fc7",
+    "subject": "Islamic Studies",
+    "teacher_name": "Mohd Fasihul Qamar",
+    "created_at": "2026-07-13T07:02:17.813341+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "b118b6c6-ee2b-4705-9557-c2b195e8a8da",
+    "period_id": "494a9b1b-1348-4404-a692-adbe14205fc7",
+    "subject": "V E D",
+    "teacher_name": "Kainat Hossain",
+    "created_at": "2026-07-13T07:02:17.813341+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "fd435cab-ce9e-4039-aaaf-cf400c5c12ba",
+    "period_id": "57824e5c-575e-442d-a309-abe846ddc822",
+    "subject": "2 nd L - Bengali",
+    "teacher_name": "Nilakshi Khatoon",
+    "created_at": "2026-05-12T07:20:14.077468+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "ebb31d03-c31b-4bdd-a6a3-b767467bc561",
+    "period_id": "905b92bd-c437-4fe5-8c66-b58e2ed3219a",
+    "subject": "Islamic Studies",
+    "teacher_name": "Muhammed Arif P A",
+    "created_at": "2026-05-12T07:20:53.752286+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "1a53231a-db80-44c6-b285-ac6e8615b962",
+    "period_id": "905b92bd-c437-4fe5-8c66-b58e2ed3219a",
+    "subject": "V ED",
+    "teacher_name": "Gulfiishan Nikhat",
+    "created_at": "2026-05-12T07:20:53.752286+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "11cb4791-6687-47a0-847a-d7eb7380b085",
+    "period_id": "02a628ab-f80e-4ffa-8cec-245c5cf4e92b",
+    "subject": "Islamic Studies",
+    "teacher_name": "Muhammed Arif P A",
+    "created_at": "2026-05-12T07:21:16.348871+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "3a327abe-e392-4174-b0a9-2b0df426fd9e",
+    "period_id": "02a628ab-f80e-4ffa-8cec-245c5cf4e92b",
+    "subject": "V ED",
+    "teacher_name": "Gulfiishan Nikhat",
+    "created_at": "2026-05-12T07:21:16.348871+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "63533719-81a1-490e-9b51-bd0a1ad8b208",
+    "period_id": "92b65673-f740-4b9c-9a16-90307ffd317b",
+    "subject": "Islamic Studies",
+    "teacher_name": "Muhammed Arif P A",
+    "created_at": "2026-05-12T07:21:38.662056+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "039fde94-4944-4bec-a8b5-4f7ff86cb8e9",
+    "period_id": "92b65673-f740-4b9c-9a16-90307ffd317b",
+    "subject": "V ED",
+    "teacher_name": "Gulfiishan Nikhat",
+    "created_at": "2026-05-12T07:21:38.662056+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "cdfa7897-89cb-4b01-9a88-28fdaf6a9881",
+    "period_id": "be8551af-52b4-40bf-82a9-0d0ae4b8daf6",
+    "subject": "Islamic Studies",
+    "teacher_name": "Mohamed Lukhman A",
+    "created_at": "2026-05-12T07:23:57.030234+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "74388a4b-ae71-4048-a154-2e8b695d9c04",
+    "period_id": "be8551af-52b4-40bf-82a9-0d0ae4b8daf6",
+    "subject": "V ED",
+    "teacher_name": "Gulfiishan Nikhat",
+    "created_at": "2026-05-12T07:23:57.030234+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "74f1e702-844b-4a14-8e61-0dc3f57a5674",
+    "period_id": "d18e1444-a46a-40b3-932a-adf4ff928432",
+    "subject": "Islamic Studies",
+    "teacher_name": "Mohamed Lukhman A",
+    "created_at": "2026-05-12T07:24:15.808894+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "73fcd4a8-9b1e-402f-bc32-b0dcf4c9ce50",
+    "period_id": "d18e1444-a46a-40b3-932a-adf4ff928432",
+    "subject": "V ED",
+    "teacher_name": "Gulfiishan Nikhat",
+    "created_at": "2026-05-12T07:24:15.808894+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "e68bf650-4c81-4e46-821e-c26eb728a4cf",
+    "period_id": "3634e622-11da-4750-9723-50da805b4457",
+    "subject": "Islamic Studies",
+    "teacher_name": "Mohamed Lukhman A",
+    "created_at": "2026-05-12T07:24:47.66276+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "25a0284a-a276-433d-91c1-f1573920d7bf",
+    "period_id": "3634e622-11da-4750-9723-50da805b4457",
+    "subject": "V ED",
+    "teacher_name": "Gulfiishan Nikhat",
+    "created_at": "2026-05-12T07:24:47.66276+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "54ebb719-da29-4f45-92f3-8d855f2e800e",
+    "period_id": "40df25e5-9d9d-49df-a7b5-d3cc4d01b2a3",
+    "subject": "Computer",
+    "teacher_name": "Anirban Dutta",
+    "created_at": "2026-06-16T08:02:45.155202+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "bc321672-6c4c-456e-9174-c4c320a3102d",
+    "period_id": "201cf211-1082-4e01-84f3-27210e1afa52",
+    "subject": "Computer",
+    "teacher_name": "Anirban Dutta",
+    "created_at": "2026-06-16T08:03:06.520925+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "099cea1d-ab2b-4b54-9f9b-db2dfa56376f",
+    "period_id": "43bbf8a8-cd04-4876-8ab4-f2cb4467e7e4",
+    "subject": "Literacy",
+    "teacher_name": "Kainat Hossain",
+    "created_at": "2026-07-04T16:35:17.88367+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "e08096cc-d973-4226-8037-4e66d412d318",
+    "period_id": "61a7050f-3f34-4b84-97b5-6126b4b2aa6f",
+    "subject": "2 nd L - Bengali",
+    "teacher_name": "Afreen Sultana",
+    "created_at": "2026-07-11T06:49:59.907982+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "37b7f590-c878-429f-b0c1-97d4be3a1060",
+    "period_id": "03e72bb3-bca8-409b-81a0-f12977e8c562",
+    "subject": "2 nd L - Bengali",
+    "teacher_name": "Kainat Hossain",
+    "created_at": "2026-07-13T07:04:16.802688+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "53a3904d-2958-4f40-b2a7-450e72ca3015",
+    "period_id": "84ad865c-8944-491d-b0a9-bbd0446a726c",
+    "subject": "2 nd L - Bengali",
+    "teacher_name": "Kainat Hossain",
+    "created_at": "2026-07-13T07:04:34.420409+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "97c9cd64-3013-4b83-952a-bbf6ef3fb1a1",
+    "period_id": "61a7050f-3f34-4b84-97b5-6126b4b2aa6f",
+    "subject": "2 nd L - Hindi",
+    "teacher_name": "Hindi Teacher",
+    "created_at": "2026-07-11T06:49:59.907982+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "1faefb7e-c6cd-4b62-bcd9-5ae26a53359e",
+    "period_id": "811533a3-8be5-4f57-bce1-e4a07f99e619",
+    "subject": "Numeracy",
+    "teacher_name": "Nayab khan",
+    "created_at": "2026-07-20T03:22:53.676402+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "b0216e64-e5d6-4802-8bcd-2764bd017857",
+    "period_id": "902cdb1d-ffa2-4f56-8f1c-a33cc72b1e51",
+    "subject": "Literacy",
+    "teacher_name": "Nayab khan",
+    "created_at": "2026-07-20T03:23:03.228648+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "5f99968a-9015-426a-9a01-0c88a5bafca3",
+    "period_id": "2f3302f3-68ca-45e6-aa67-9f76b10b3856",
+    "subject": "Numeracy",
+    "teacher_name": "Nayab khan",
+    "created_at": "2026-07-20T03:23:08.129542+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "deac4315-cf28-46ef-ac6e-2f34f5993972",
+    "period_id": "c558da7a-43f4-4f6c-ac9d-3112ecd53db2",
+    "subject": "Hand Writing",
+    "teacher_name": "Kainat Hossain",
+    "created_at": "2026-07-20T04:03:45.961735+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "70d061b2-8536-47f1-be61-fb97b568cb25",
+    "period_id": "76627fe2-b329-461d-b680-e1de92bc23fe",
+    "subject": "Islamic Studies",
+    "teacher_name": "Mohamed Lukhman A",
+    "created_at": "2026-05-12T07:24:34.013334+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "0e022a9d-babd-4c82-8724-1af2756f11f5",
+    "period_id": "76627fe2-b329-461d-b680-e1de92bc23fe",
+    "subject": "V ED",
+    "teacher_name": "Gulfiishan Nikhat",
+    "created_at": "2026-05-12T07:24:34.013334+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "4342639f-9f0c-4f07-9450-7e4186125f2e",
+    "period_id": "aafc1cdc-9d2d-4a94-be2b-4d4b0e3f50ac",
+    "subject": "Computer",
+    "teacher_name": "Anirban Dutta",
+    "created_at": "2026-06-16T08:04:01.452064+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "8fd3b8d2-b78d-4350-bf7e-4b320210aa13",
+    "period_id": "36ca18fe-57d6-474b-bc3a-11babbd06506",
+    "subject": "Computer",
+    "teacher_name": "Anirban Dutta",
+    "created_at": "2026-06-16T08:04:14.862241+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "9536acc9-e123-4fa8-b09f-85578a4105d7",
+    "period_id": "f6b74a74-6ba7-48af-80fe-6614c9ad3f63",
+    "subject": "Maths",
+    "teacher_name": "Shavian Affrin",
+    "created_at": "2026-07-08T03:12:25.647401+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "c8fb6a19-186a-433f-b62d-5967dcd8ee8a",
+    "period_id": "0c680842-876f-47c5-a53f-e90d9d8f6beb",
+    "subject": "Maths",
+    "teacher_name": "Shavian Affrin",
+    "created_at": "2026-07-08T03:12:34.572478+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "b2637339-3fa6-4e25-95e6-f4fe16973023",
+    "period_id": "a7f696a6-81db-4c57-a797-555121500da4",
+    "subject": "Maths",
+    "teacher_name": "Shavian Affrin",
+    "created_at": "2026-07-08T03:12:52.673094+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "5442bf06-0ef0-4a9b-bb42-3dc1d3fe5def",
+    "period_id": "dd21ec2d-bb0b-487e-b466-7a095b8cc603",
+    "subject": "Maths",
+    "teacher_name": "Shavian Affrin",
+    "created_at": "2026-07-08T03:13:06.985021+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "7b5eae79-12fb-4c5a-8e1d-e07794caedc8",
+    "period_id": "ce86d494-870d-4e50-9ef5-c5c11e05bc16",
+    "subject": "Maths",
+    "teacher_name": "Shavian Affrin",
+    "created_at": "2026-07-08T03:13:20.898548+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "f0929976-ebfb-4c73-ad74-fd7441d543fa",
+    "period_id": "59a3ff0c-48d3-45bc-8571-9eea2f5a9129",
+    "subject": "Maths",
+    "teacher_name": "Shavian Affrin",
+    "created_at": "2026-07-08T03:14:03.8396+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "331cdcb3-5c46-4f6a-92b5-b1cfbd8f3122",
+    "period_id": "ef86e344-d70a-4f14-b1f2-34e4b929dfcc",
+    "subject": "Literacy",
+    "teacher_name": "Saima Bux Siddiqui",
+    "created_at": "2026-05-12T07:29:27.660214+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "10f19a50-9c5d-4e64-a496-8f2f26fcb8fd",
+    "period_id": "899a9f5d-6ef7-42f4-a1c6-65a966cb29b2",
+    "subject": "Physics",
+    "teacher_name": "Shavian Affrin",
+    "created_at": "2026-07-08T03:14:12.869039+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "ae39587c-8f31-4ca2-a048-4bc9b334ecfa",
+    "period_id": "b64d9148-91cc-4fa9-bced-be3c063ada57",
+    "subject": "Physics",
+    "teacher_name": "Shavian Affrin",
+    "created_at": "2026-07-08T03:14:21.560607+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "14068449-6bd5-409b-b4dd-1ae1b66113d2",
+    "period_id": "e2afddfa-8d39-44c6-ae1d-1f621483b3de",
+    "subject": "Numeracy",
+    "teacher_name": "Saima Bux Siddiqui",
+    "created_at": "2026-05-12T07:30:22.141722+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "cc08649d-bd1e-4252-9c0b-8e641ffedebc",
+    "period_id": "afff17c4-8fd8-47f9-956f-a3d841f504a7",
+    "subject": "General Awareness",
+    "teacher_name": "Saima Bux Siddiqui",
+    "created_at": "2026-05-12T07:35:55.000447+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "c99beb6b-2288-42f1-80a9-2b24637e2626",
+    "period_id": "1a25572f-cd7f-4d65-93bf-c10750f49129",
+    "subject": "Arabic",
+    "teacher_name": "Mohd Fasihul Qamar",
+    "created_at": "2026-05-12T07:36:15.184114+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "34528eab-30b4-4fe5-a90d-8aec5c131725",
+    "period_id": "7bcf5dc3-2bbe-4735-88dd-81f7e46d83c2",
+    "subject": "Rhymes",
+    "teacher_name": "Saima Bux Siddiqui",
+    "created_at": "2026-05-12T07:36:38.129816+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "b86e4890-704f-40de-b74f-e215ffed9d9d",
+    "period_id": "b3dbe23e-ad14-4520-abaf-8877f02eb298",
+    "subject": "Rhymes",
+    "teacher_name": "Saima Bux Siddiqui",
+    "created_at": "2026-05-12T07:36:51.888985+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "04d005b5-1900-46f6-89d4-f087c1de14be",
+    "period_id": "af357b1d-b6f2-4973-b140-5e10b1afc6c6",
+    "subject": "Numeracy",
+    "teacher_name": "Saima Bux Siddiqui",
+    "created_at": "2026-05-12T07:37:06.209241+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "1b5df4fa-2c7a-4a5b-b022-87f34a5c1526",
+    "period_id": "b19b0e7c-9d6f-4277-938f-7effaf19241c",
+    "subject": "Phonics",
+    "teacher_name": "Saima Bux Siddiqui",
+    "created_at": "2026-05-12T07:37:23.903641+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "262bd6e7-7f84-4554-a59c-b25d5767af7b",
+    "period_id": "9c2a6ee9-84a5-4c7a-832f-46a0501258dc",
+    "subject": "Maths",
+    "teacher_name": "Shavian Affrin",
+    "created_at": "2026-07-08T03:14:30.717748+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "1da1588c-1389-42d9-b117-f1a744e9355b",
+    "period_id": "f8934ffe-47eb-4b25-99cc-ab27ca728d39",
+    "subject": "Maths",
+    "teacher_name": "Shavian Affrin",
+    "created_at": "2026-07-08T03:14:39.127674+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "ae39146b-96c8-426b-bc4c-88f9c514c18e",
+    "period_id": "59a548ec-45d8-4564-8713-fb68c77a4e50",
+    "subject": "Arabic",
+    "teacher_name": "Mohd Fasihul Qamar",
+    "created_at": "2026-05-12T07:38:06.639759+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "7a624e48-80fe-41fd-82b4-9ba3f35ec82d",
+    "period_id": "6a89fcf0-0468-4553-b3eb-3289027ec63e",
+    "subject": "Literacy",
+    "teacher_name": "Saima Bux Siddiqui",
+    "created_at": "2026-05-12T07:38:23.755162+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "b14607a4-a423-4e5f-92ab-96583655d3ee",
+    "period_id": "1e7cb9dd-a178-4a35-8af2-a5882aa6b016",
+    "subject": "Numeracy",
+    "teacher_name": "Saima Bux Siddiqui",
+    "created_at": "2026-05-12T07:39:47.172396+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "bc19bb2b-94f6-4931-8158-bd0b7ef76c83",
+    "period_id": "c37b1b37-50e9-4897-abb9-9541ed53e37f",
+    "subject": "Activity Day",
+    "teacher_name": "Saima Bux Siddiqui",
+    "created_at": "2026-05-12T07:39:59.542996+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "10fd0ef7-64d0-4a35-94f9-acc7fcedf787",
+    "period_id": "f05bea1c-9a28-4b14-95f9-b1a8d0b6b783",
+    "subject": "Activity Day",
+    "teacher_name": "Saima Bux Siddiqui",
+    "created_at": "2026-05-12T07:40:14.330706+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "d67ab93a-39f4-4261-952b-ffd9e807dd4e",
+    "period_id": "a267fae0-db99-4bc6-960a-f49dd816fadd",
+    "subject": "General Awareness",
+    "teacher_name": "Saima Bux Siddiqui",
+    "created_at": "2026-05-12T07:40:37.954872+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "bc77b37d-84ef-4594-ba80-032ed6b2c541",
+    "period_id": "9cb2015d-705a-412a-9ed5-1063daad7e39",
+    "subject": "Arabic",
+    "teacher_name": "Mohd Fasihul Qamar",
+    "created_at": "2026-05-12T07:40:53.768274+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "04a3d0e6-99fa-4774-98c7-2f6e8ee2c4eb",
+    "period_id": "b5dda608-3ab8-482a-bd41-fb51e94d857d",
+    "subject": "Maths",
+    "teacher_name": "Shavian Affrin",
+    "created_at": "2026-07-08T03:14:49.41088+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "701c2298-089f-4c1d-ae40-db819178cdf8",
+    "period_id": "014bea98-1318-4cab-9650-96a28792d6b1",
+    "subject": "Maths",
+    "teacher_name": "Shavian Affrin",
+    "created_at": "2026-07-08T03:14:57.890186+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "9dfab33b-7fd8-406c-b8a7-ae789aca2220",
+    "period_id": "fea0bbc1-f63f-4d3b-99c5-7687e4d3a5f0",
+    "subject": "Numeracy",
+    "teacher_name": "Saima Bux Siddiqui",
+    "created_at": "2026-05-12T07:41:33.358834+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "fe8ae88a-165f-4bd9-8d17-c90a9da565e2",
+    "period_id": "e9801896-5ed6-4c9e-8c75-1ccea49845c3",
+    "subject": "Art & Craft",
+    "teacher_name": "Saima Bux Siddiqui",
+    "created_at": "2026-05-12T07:41:48.491055+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "bbec759e-31b2-4fce-8863-7ca1dc73b603",
+    "period_id": "52c03523-980c-48f0-b3d2-45e3bb190bf8",
+    "subject": "Art & Craft",
+    "teacher_name": "Saima Bux Siddiqui",
+    "created_at": "2026-05-12T07:42:03.890826+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "d78ab01c-bbbe-4a05-ac43-bebab40ee4a9",
+    "period_id": "3006f11b-cdbc-4455-b5af-c3224ea1e07e",
+    "subject": "Literacy",
+    "teacher_name": "Saima Bux Siddiqui",
+    "created_at": "2026-05-12T07:43:35.139158+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "977ab55b-386e-4819-9662-f880ac711a42",
+    "period_id": "9eb31f3c-321e-4e07-9bfc-b8eca9708143",
+    "subject": "Arabic",
+    "teacher_name": "Mohd Fasihul Qamar",
+    "created_at": "2026-05-12T07:43:58.625837+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "225f33b6-9a89-4ef8-a6fe-5042be2373f7",
+    "period_id": "9f5a9034-204a-4c0f-8b12-b5aa82d7e73a",
+    "subject": "Rhymes",
+    "teacher_name": "Saima Bux Siddiqui",
+    "created_at": "2026-05-12T07:44:11.916701+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "7278a482-2e37-436a-82dc-0e2075cce222",
+    "period_id": "64e68b1c-eeaa-4a72-ac97-875c0837f870",
+    "subject": "Literacy",
+    "teacher_name": "Saima Bux Siddiqui",
+    "created_at": "2026-05-12T07:45:27.492758+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "d2968b56-991e-4d2f-8c58-c23823e62ca0",
+    "period_id": "aae44f75-e2b3-4461-a7b8-6204729f3445",
+    "subject": "Maths",
+    "teacher_name": "Shavian Affrin",
+    "created_at": "2026-07-08T03:15:23.986567+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "a0f6d8f7-45a0-417a-9afb-d3878b046e4e",
+    "period_id": "67da57d7-454d-4e8e-a2c0-0871b1d9b952",
+    "subject": "Play Ground",
+    "teacher_name": "Saima Bux Siddiqui",
+    "created_at": "2026-05-12T07:48:39.815704+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "d6f44750-ae28-439b-8ecc-f2c4b8c1a466",
+    "period_id": "a8ea4d30-1097-4dcd-944c-2b067166a393",
+    "subject": "Numeracy",
+    "teacher_name": "Saima Bux Siddiqui",
+    "created_at": "2026-05-12T07:49:04.459645+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "f210d4a3-ba07-49bd-be4c-c2e942c6dc1e",
+    "period_id": "8291a31f-0454-43bc-808c-8a6cf3264931",
+    "subject": "Arabic",
+    "teacher_name": "Mohd Fasihul Qamar",
+    "created_at": "2026-05-12T07:53:22.881064+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "748c9734-a37b-44e8-b8ea-694f28081303",
+    "period_id": "c53410ee-53a1-414a-a213-fa0e9d7bc0c2",
+    "subject": "Integrated Learning Book",
+    "teacher_name": "Saima Bux Siddiqui",
+    "created_at": "2026-05-12T07:53:46.988974+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "25e245c4-19f8-4794-80de-24e16314a926",
+    "period_id": "0c3842ee-a4d2-4eb7-a6b0-b165e875d951",
+    "subject": "Maths",
+    "teacher_name": "Shavian Affrin",
+    "created_at": "2026-07-08T03:15:32.667331+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "f762e764-b7d8-473c-a53d-98db1f0cfd99",
+    "period_id": "d9ff389f-a438-41e0-a259-e48a9dc772ae",
+    "subject": "Maths",
+    "teacher_name": "Shavian Affrin",
+    "created_at": "2026-07-08T03:15:44.056174+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "a6caba07-5cde-47e1-a332-69e141699d25",
+    "period_id": "cc922e78-2de0-40b8-981a-75f7f365331c",
+    "subject": "Arabic",
+    "teacher_name": "Mohd Fasihul Qamar",
+    "created_at": "2026-05-12T08:05:41.321898+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "0abcade8-ed39-4b9a-9508-32b5987452ac",
+    "period_id": "280c4784-441a-4804-9f11-b46f0c795051",
+    "subject": "Literacy",
+    "teacher_name": "Nayab khan",
+    "created_at": "2026-05-12T08:05:58.873929+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "b9ce6f8c-937e-4288-8606-d2370d0adfa8",
+    "period_id": "2b32a209-c281-4c37-b1e7-b99e3e1fe47d",
+    "subject": "Phonics",
+    "teacher_name": "Nayab khan",
+    "created_at": "2026-05-12T08:06:11.600099+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "56152c47-1b83-4631-b2e0-739563e699a4",
+    "period_id": "77404ca8-1608-4ae2-96af-7882675a7360",
+    "subject": "Rhymes",
+    "teacher_name": "Nayab khan",
+    "created_at": "2026-05-12T08:06:21.04436+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "8f2f5657-ab60-4114-90ff-5096547feae7",
+    "period_id": "18cfb97f-5363-45eb-9710-bac22a4309d5",
+    "subject": "Arabic",
+    "teacher_name": "Mohd Fasihul Qamar",
+    "created_at": "2026-05-12T08:06:47.494809+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "19e2d22e-f9b4-497d-adfc-ce023d5ce665",
+    "period_id": "9843f269-fdcb-4867-a5bc-80ebdc0c9cd1",
+    "subject": "2 nd L - Bengali",
+    "teacher_name": "Afreen Sultana",
+    "created_at": "2026-07-11T06:50:12.132805+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "5b293548-7e2e-439c-9454-0c03cf9fe639",
+    "period_id": "8ef12b35-f435-4a1b-8d04-f0ca79c32409",
+    "subject": "G K",
+    "teacher_name": "Nayab khan",
+    "created_at": "2026-05-12T08:07:36.343567+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "50cb14b5-9d5b-4302-a52d-e982d8d6a52a",
+    "period_id": "e7875b06-c2bc-4401-a53e-f79b50cf7729",
+    "subject": "Numeracy",
+    "teacher_name": "Nayab khan",
+    "created_at": "2026-05-12T08:08:03.992158+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "6dd48e40-c79d-4eab-8235-46293a10b20a",
+    "period_id": "79c7a067-0e6b-44c4-b5f1-ca8fc15d5952",
+    "subject": "Integrated Ass",
+    "teacher_name": "Nayab khan",
+    "created_at": "2026-05-12T08:08:22.565757+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "c0d94ef3-e3db-46b6-ab45-6c2dc7aa1921",
+    "period_id": "7548644f-1ed2-4397-83e3-6d0847e0e49b",
+    "subject": "Arabic",
+    "teacher_name": "Mohd Fasihul Qamar",
+    "created_at": "2026-05-12T08:08:50.763673+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "64db0eae-c2c1-4104-8307-2c0bf0fd0c24",
+    "period_id": "b3013b9b-7d27-4509-84f1-3eb53c8a71a4",
+    "subject": "Literacy",
+    "teacher_name": "Nayab khan",
+    "created_at": "2026-05-12T08:08:59.347763+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "a75cceb8-7fff-4275-a7d9-3667146740c2",
+    "period_id": "3b369e04-d30a-41e7-9b9d-72e4a301a4d2",
+    "subject": "G K",
+    "teacher_name": "Nayab khan",
+    "created_at": "2026-05-12T08:09:13.479239+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "01da6b3c-fbf7-47c6-88ca-4665e4de8f6d",
+    "period_id": "34328716-798e-40bf-9570-e00a59c7f134",
+    "subject": "Integrated Ass",
+    "teacher_name": "Nayab khan",
+    "created_at": "2026-05-12T08:09:28.108679+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "9d9e08a5-cefd-486a-804a-4c76d277cf22",
+    "period_id": "f7db5c1a-3684-403c-95a1-38f341d95702",
+    "subject": "Playground Ac",
+    "teacher_name": "Nayab khan",
+    "created_at": "2026-05-12T08:09:47.338085+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "15372aa3-111a-4989-8156-b67a8e10ba18",
+    "period_id": "1490befb-5fc4-491f-abb4-8d3fd2877ea5",
+    "subject": "Literacy",
+    "teacher_name": "Nayab khan",
+    "created_at": "2026-05-12T08:10:03.531133+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "7f818c39-fe44-4dda-b033-4d2003a9573d",
+    "period_id": "a2b40876-55f9-48cf-bf35-1b3ac837d23e",
+    "subject": "Arabic",
+    "teacher_name": "Mohd Fasihul Qamar",
+    "created_at": "2026-05-12T08:10:14.214628+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "35b01292-80e6-4d11-85ef-717e8f04142a",
+    "period_id": "8d7f6cba-a503-45f2-aa5f-e82459ed6900",
+    "subject": "Numeracy",
+    "teacher_name": "Nayab khan",
+    "created_at": "2026-05-12T08:10:57.460028+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "19c02539-402a-42ea-b220-5074d1689431",
+    "period_id": "b9f5ae7f-1aca-4fca-ada9-c345616641b2",
+    "subject": "Activity Day",
+    "teacher_name": "Nayab khan",
+    "created_at": "2026-05-12T08:11:12.930415+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "527365d4-10ae-4c50-979f-53f32a82a5b7",
+    "period_id": "6936919f-1ff7-4cf6-81a7-9f25a3a38df6",
+    "subject": "Activity Day",
+    "teacher_name": "Nayab khan",
+    "created_at": "2026-05-12T08:11:17.816995+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "079f7eb9-22e1-45c9-a75a-499c84b9558e",
+    "period_id": "1a299570-2626-4a0d-a7f3-3a6d515c843d",
+    "subject": "2 nd L - Bengali",
+    "teacher_name": "Afreen Sultana",
+    "created_at": "2026-07-11T06:50:18.211142+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "3d770681-d4fa-4392-93c7-7634599b4291",
+    "period_id": "a53a51f6-8346-493e-9c6c-c87388b567a3",
+    "subject": "Literacy",
+    "teacher_name": "Nayab khan",
+    "created_at": "2026-05-12T08:12:02.439422+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "d3bc324d-b4fd-413d-899f-7fdfc5ef01d0",
+    "period_id": "16328e40-cf97-4333-ab0e-f02773120227",
+    "subject": "2 nd L - Bengali",
+    "teacher_name": "Afreen Sultana",
+    "created_at": "2026-07-11T06:50:49.511008+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "775f5e10-28e4-4175-8703-06b8e2fd8c1f",
+    "period_id": "cfd40f44-eb62-4dba-84b2-0fac97b17717",
+    "subject": "Arabic",
+    "teacher_name": "Mohd Fasihul Qamar",
+    "created_at": "2026-05-12T08:12:31.867281+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "5ef5ab23-24c0-4bb4-bc8b-baa2e963b5ed",
+    "period_id": "86ac7e52-6616-42b8-8d81-967c56ac7a58",
+    "subject": "Numeracy",
+    "teacher_name": "Nayab khan",
+    "created_at": "2026-05-12T08:12:44.72092+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "b7c402de-6d15-43e4-be89-c30ebad30ac7",
+    "period_id": "873ac3dd-af7a-470e-9606-2684c56bd5b9",
+    "subject": "Art & Craft",
+    "teacher_name": "Nayab khan",
+    "created_at": "2026-05-12T08:12:58.32207+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "c26ecf81-58b1-4502-8559-37226ab1fb05",
+    "period_id": "39362235-e88a-4d5d-8ea1-030fd5761251",
+    "subject": "Islamic Studies",
+    "teacher_name": "Muhammed Arif P A",
+    "created_at": "2026-07-15T06:32:40.628541+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "25c7ad21-a9dc-40c1-9b67-391c2164bbbe",
+    "period_id": "88cec1da-959c-4f70-b5ff-510cef215178",
+    "subject": "Art & Craft",
+    "teacher_name": "Nayab khan",
+    "created_at": "2026-05-12T08:13:17.3653+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "776c5ffa-0fb5-46a9-97a8-3d458321cffc",
+    "period_id": "03680ae3-17c4-4e86-be5e-51d92f0166e4",
+    "subject": "Islamic Studies",
+    "teacher_name": "Muhammed Arif P A",
+    "created_at": "2026-05-12T08:14:39.113738+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "978fa16e-dcad-4244-b47a-fa03cb548aa0",
+    "period_id": "d001c28a-5bdf-40e9-bf82-a494dd5d0cbd",
+    "subject": "Islamic Studies",
+    "teacher_name": "Muhammed Arif P A",
+    "created_at": "2026-05-12T08:14:44.931843+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "ace70b70-d41d-4421-9fcc-ff4942dcf1ec",
+    "period_id": "2089ba06-e9a9-4827-9fdf-6714b67505f4",
+    "subject": "Islamic Studies",
+    "teacher_name": "Muhammed Arif P A",
+    "created_at": "2026-05-12T08:14:52.168482+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "61de0e7c-5cf7-4131-920b-b9f5038d66ec",
+    "period_id": "a5000fca-6361-4bf5-9a2d-6296f913934c",
+    "subject": "Islamic Studies",
+    "teacher_name": "Muhammed Arif P A",
+    "created_at": "2026-05-12T08:14:58.505039+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "236ffaa1-9e5d-4336-baa5-7254d3210876",
+    "period_id": "4aee7e09-9637-4564-92cd-a1c1e46223ff",
+    "subject": "Islamic Studies",
+    "teacher_name": "Mohd Fasihul Qamar",
+    "created_at": "2026-05-12T08:15:09.818485+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "be81dc0d-750b-4c1f-ae59-70f329cba22f",
+    "period_id": "8bdb8cbe-4346-4351-8fa3-f68fdadb43df",
+    "subject": "Islamic Studies",
+    "teacher_name": "Mohd Fasihul Qamar",
+    "created_at": "2026-05-12T08:15:14.704599+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "fe688b1b-6717-453e-940c-c2dc09cadc96",
+    "period_id": "b79a856a-c871-4151-8b92-63cbee82b31f",
+    "subject": "Islamic Studies",
+    "teacher_name": "Mohd Fasihul Qamar",
+    "created_at": "2026-05-12T08:15:20.405987+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "25ade60f-24f4-4fa2-b3a1-b6a29b46a674",
+    "period_id": "13554135-b04b-48c5-ab89-75d5badd6ed7",
+    "subject": "Islamic Studies",
+    "teacher_name": "Mohd Fasihul Qamar",
+    "created_at": "2026-05-12T08:15:29.024601+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "440fd47c-51cb-46fa-a95a-00285bc72d6e",
+    "period_id": "81a46b96-3bb2-40e7-b42a-298de48189e3",
+    "subject": "Integrated Ass",
+    "teacher_name": "Kainat Hossain",
+    "created_at": "2026-05-12T08:16:13.264808+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "0469a4c6-1180-4510-8ca8-d506e1b98dd5",
+    "period_id": "c8d67992-1168-4d4d-b2f7-024f479bf621",
+    "subject": "Numeracy",
+    "teacher_name": "Kainat Hossain",
+    "created_at": "2026-05-12T08:16:22.990134+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "2e2dc089-4df0-4096-b0fb-03160c948167",
+    "period_id": "abf5b59b-2754-4665-9241-85a3a13a8034",
+    "subject": "G K",
+    "teacher_name": "Kainat Hossain",
+    "created_at": "2026-05-12T08:16:34.575013+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "9d76ce69-7b21-49eb-a2e3-5f20ed280f4f",
+    "period_id": "1198a51a-3045-4c21-a72c-f361ce21c2d7",
+    "subject": "Maths",
+    "teacher_name": "Shavian Affrin",
+    "created_at": "2026-07-08T03:13:45.536092+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "606fdb42-f919-4dfe-bf32-593c76a20af9",
+    "period_id": "2a34e9fe-029d-44fe-b7ae-756bbc1ad7ee",
+    "subject": "2 nd L - Hindi",
+    "teacher_name": "Hindi Teacher",
+    "created_at": "2026-05-12T10:32:28.116731+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "410f51a0-f482-475b-9323-44a68f7b5457",
+    "period_id": "38393ce7-d31d-42dd-9284-676d8052bffe",
+    "subject": "3 rd L -",
+    "teacher_name": "Hindi Teacher",
+    "created_at": "2026-05-12T10:33:13.905874+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "8f2de0ea-238f-4b3b-ade7-dde8c30dbdcf",
+    "period_id": "bb4ebc5c-90f4-4269-a858-a8208f22d93a",
+    "subject": "Numeracy",
+    "teacher_name": "Kainat Hossain",
+    "created_at": "2026-05-12T09:47:56.224059+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "ea931760-515f-4e5d-8aa4-27c21ea305cf",
+    "period_id": "0a122247-5fbc-4d7b-ad51-b50f76901921",
+    "subject": "Games",
+    "teacher_name": "Kainat Hossain",
+    "created_at": "2026-05-12T09:48:05.911589+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "18f50b94-2902-413b-9c33-4493c349e64a",
+    "period_id": "b1807342-2231-4395-8c70-6adad8994ba6",
+    "subject": "3 rd L",
+    "teacher_name": "Hindi Teacher",
+    "created_at": "2026-05-12T10:36:57.476916+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "e2e70947-8c9e-42ca-95e6-b7f5d7c50636",
+    "period_id": "d443d2e7-a914-4315-ab06-528a6c1f03c8",
+    "subject": "Literacy",
+    "teacher_name": "Kainat Hossain",
+    "created_at": "2026-05-12T09:48:36.584114+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "9a368db1-08c1-4c2f-9113-e2f7f742f0c8",
+    "period_id": "f5f1963d-8a7b-476c-8b1c-ee16af8dd4e8",
+    "subject": "E V S",
+    "teacher_name": "Kainat Hossain",
+    "created_at": "2026-05-12T09:48:46.234782+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "df1d0206-3f1b-4eb4-853a-fc4f4d7ce2e5",
+    "period_id": "05ed321d-6472-4209-b149-8edf61682b53",
+    "subject": "Arabic",
+    "teacher_name": "Mohd Ashique Raza",
+    "created_at": "2026-05-12T09:49:00.235923+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "f935716f-1fc1-44cb-bec9-3d0bb73b0066",
+    "period_id": "98d5149b-d259-4e91-8626-f5c077aca67e",
+    "subject": "Rhymes",
+    "teacher_name": "Kainat Hossain",
+    "created_at": "2026-05-12T09:49:12.725742+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "6b889453-ad50-4124-ac9b-cd92ca69c785",
+    "period_id": "ed7bc727-cd4f-4eaa-b1c0-ddd891d6caf4",
+    "subject": "Numeracy",
+    "teacher_name": "Kainat Hossain",
+    "created_at": "2026-05-12T09:49:24.150367+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "aa6c8d10-74f4-4f7d-bb1e-c934dc3d7562",
+    "period_id": "9673e4ba-71d2-4bc7-8753-70de28c6019c",
+    "subject": "Numeracy",
+    "teacher_name": "Kainat Hossain",
+    "created_at": "2026-05-12T09:49:39.543001+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "5205d2de-2cbb-43ca-b0c2-1998cbd9f5be",
+    "period_id": "967c6eab-f20a-4bce-b45a-8d5c38fb52c1",
+    "subject": "Arabic",
+    "teacher_name": "Mohd Ashique Raza",
+    "created_at": "2026-05-12T09:49:50.146421+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "fe691974-3ec3-4b8c-90b3-0fa9a92df339",
+    "period_id": "d68603e4-3785-4e18-9e3a-3029970889eb",
+    "subject": "Literacy",
+    "teacher_name": "Kainat Hossain",
+    "created_at": "2026-05-12T09:50:01.764242+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "527ba1ce-9ffb-4467-97c5-4ab21b2fa128",
+    "period_id": "138430fc-187a-4d0e-8671-0b8ea344276e",
+    "subject": "Story Telling",
+    "teacher_name": "Kainat Hossain",
+    "created_at": "2026-05-12T09:50:18.209857+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "ff594cbf-5f17-4ad2-9cdb-1f9254f7a6c2",
+    "period_id": "ae795175-2a43-4b69-88da-958e1b0cd03b",
+    "subject": "Story Telling",
+    "teacher_name": "Kainat Hossain",
+    "created_at": "2026-05-12T09:50:34.948612+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "9f3ed02a-69a9-4621-992b-ec04fd4130ea",
+    "period_id": "2a4b5db7-9ce4-40af-84c1-76866125aff5",
+    "subject": "Art & Craft",
+    "teacher_name": "Nayab khan",
+    "created_at": "2026-07-20T04:04:05.16119+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "b3eedba8-8232-49e7-b8f4-94f885ce6c56",
+    "period_id": "099eb49a-ba63-4316-bbfc-17f7c5a1a8e4",
+    "subject": "Integrated Ass",
+    "teacher_name": "Kainat Hossain",
+    "created_at": "2026-05-12T09:51:07.603883+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "45b0d681-debf-41c9-a4bb-34f6170c52e5",
+    "period_id": "35458143-269c-4a45-98f8-9da71a719c68",
+    "subject": "Islamic Studies",
+    "teacher_name": "Mohamed Lukhman A",
+    "created_at": "2026-07-19T23:18:14.041191+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "2344f49d-71cc-4d27-87b7-6fd8167ed89e",
+    "period_id": "b2910ed2-fc75-4e9a-83cd-fda9df9ab001",
+    "subject": "SST",
+    "teacher_name": "Geography SST Teacher",
+    "created_at": "2026-05-12T10:31:08.441815+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "c2ef152d-064c-44cd-a7b6-393e8e72d530",
+    "period_id": "dd95778d-13f8-4523-b11b-a5dbe8c59743",
+    "subject": "SST",
+    "teacher_name": "Geography SST Teacher",
+    "created_at": "2026-05-12T10:35:44.999932+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "d5535140-3d02-47a6-a87a-96982418c71f",
+    "period_id": "2a7ad3f8-37a9-4189-8a3f-2c4e46d2be86",
+    "subject": "Islamic Studies",
+    "teacher_name": "Muhammed Arif P A",
+    "created_at": "2026-08-06T03:51:00.94841+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "ae48ec0d-0789-4b78-abbe-d4c6f8b29ed4",
+    "period_id": "f409acf5-1637-44e7-a5b0-bb87e7de7d9c",
+    "subject": "Art & Craft",
+    "teacher_name": "Kainat Hossain",
+    "created_at": "2026-05-12T09:54:10.517204+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "4b2895fe-f460-419a-8ee9-ecef3b727e63",
+    "period_id": "4d9d3566-ec30-4dfa-8509-2b4e2dcdc5a6",
+    "subject": "Art & Craft",
+    "teacher_name": "Kainat Hossain",
+    "created_at": "2026-05-12T09:54:15.69539+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "c946e697-7efa-474b-8506-52ef5fe74bcc",
+    "period_id": "9ceeed3e-61e5-4a3f-aa71-0f4ea05b144b",
+    "subject": "Literacy",
+    "teacher_name": "Kainat Hossain",
+    "created_at": "2026-05-12T09:54:33.980108+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "dfddafb4-6811-4a5b-9c08-6cfea6fdbcc8",
+    "period_id": "d0a1a2cf-36bb-46f5-ad99-bb0b33850b24",
+    "subject": "Literacy",
+    "teacher_name": "Kainat Hossain",
+    "created_at": "2026-05-12T09:54:46.010308+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "79b2dc65-0fc3-4bc4-bd26-b243ffcc94d7",
+    "period_id": "efbc00db-1ea6-4a81-9f42-2444967126cd",
+    "subject": "Physics",
+    "teacher_name": "Shavian Affrin",
+    "created_at": "2026-08-06T03:51:29.32762+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "4867d916-ecaa-4c5c-a875-0b16a3522d2d",
+    "period_id": "4d81e655-e7ef-4f45-a2d3-6e9124df7234",
+    "subject": "Numeracy",
+    "teacher_name": "Kainat Hossain",
+    "created_at": "2026-05-12T09:55:05.122201+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "bb1d6ceb-005a-43c7-a76e-803ce92c13cf",
+    "period_id": "3711c535-2641-4262-9f16-e32758795e3e",
+    "subject": "Maths",
+    "teacher_name": "Munazza Tabrez",
+    "created_at": "2026-05-12T10:00:52.714467+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "bfc8c376-41c4-460f-b9f7-f1940231ab31",
+    "period_id": "ca96ee13-c3ed-486a-bba5-308e465fc2f5",
+    "subject": "Arabic",
+    "teacher_name": "Mohd Ashique Raza",
+    "created_at": "2026-05-12T10:01:03.758257+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "00848785-05cf-4dc8-80e6-4ad10c07a077",
+    "period_id": "787975f8-cde8-49f1-b651-9b1d4ef293cb",
+    "subject": "Arabic",
+    "teacher_name": "Mohd Ashique Raza",
+    "created_at": "2026-05-12T10:01:22.365305+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "41a9df23-fb88-4e97-be92-ab2e247c93ba",
+    "period_id": "3d02da4c-5d1c-4414-88eb-92e110c56932",
+    "subject": "Maths",
+    "teacher_name": "Shavian Affrin",
+    "created_at": "2026-08-06T03:51:44.624906+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "a8c84bf8-33d7-4aeb-bafc-9f820762d370",
+    "period_id": "f8185f9c-e3ee-4ef0-aa60-64c7ac2fa466",
+    "subject": "G K",
+    "teacher_name": "Kainat Hossain",
+    "created_at": "2026-05-12T10:01:56.374642+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "24d2c4c1-0a08-4784-a84a-e1ce4e1aa25e",
+    "period_id": "92c7fa8f-6908-4636-8fba-97f3269f1ffd",
+    "subject": "Arabic",
+    "teacher_name": "Mohd Ashique Raza",
+    "created_at": "2026-05-12T10:27:33.342758+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "9d38a55b-8c17-4188-b8b3-dce8835f5b0f",
+    "period_id": "4e32deb5-f9ee-4148-ba9a-ed864a5826f0",
+    "subject": "Maths",
+    "teacher_name": "Samprikta Chakraborty",
+    "created_at": "2026-05-12T10:30:39.414162+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "b6567fe1-52ad-44a8-b5c5-dd0c0bafbf6f",
+    "period_id": "57e1a3f0-8a47-47cc-844b-f0d1f1e93437",
+    "subject": "Maths",
+    "teacher_name": "Samprikta Chakraborty",
+    "created_at": "2026-05-12T10:30:58.154858+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "56bc5419-a67b-40b8-8b64-af102167238c",
+    "period_id": "2a34e9fe-029d-44fe-b7ae-756bbc1ad7ee",
+    "subject": "2 nd L - Bengali",
+    "teacher_name": "Afreen Sultana",
+    "created_at": "2026-05-12T10:32:28.116731+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "4fce6871-7007-4e2d-8647-5702976146fd",
+    "period_id": "38393ce7-d31d-42dd-9284-676d8052bffe",
+    "subject": "3 rd L",
+    "teacher_name": "Afreen Sultana",
+    "created_at": "2026-05-12T10:33:13.905874+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "81eb5449-5b85-48d7-b93a-bc0098e44486",
+    "period_id": "bcb94b2e-f28c-4c56-8008-dadcbe22f187",
+    "subject": "English Language",
+    "teacher_name": "Megha Barui",
+    "created_at": "2026-05-12T10:34:07.670748+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "617d59cc-912a-4176-b4c9-d6e9e201f7e8",
+    "period_id": "6712a285-1e85-4162-8738-a270b6464e0a",
+    "subject": "English Language",
+    "teacher_name": "Megha Barui",
+    "created_at": "2026-05-12T10:34:19.817889+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "7d2d429e-c23c-411d-956b-c34e49e51903",
+    "period_id": "34ab70c6-7423-477e-8a1c-ba452ac78689",
+    "subject": "PET",
+    "teacher_name": "Mohamed Lukhman A",
+    "created_at": "2026-05-12T10:35:59.906759+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "6f6de599-f7c1-40c9-b0d7-e365cc245e01",
+    "period_id": "b1807342-2231-4395-8c70-6adad8994ba6",
+    "subject": "3 rd L",
+    "teacher_name": "Afreen Sultana",
+    "created_at": "2026-05-12T10:36:57.476916+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "45e7d152-842e-47a1-af0a-f7423ab87dc9",
+    "period_id": "35458143-269c-4a45-98f8-9da71a719c68",
+    "subject": "V ED",
+    "teacher_name": "Gulfiishan Nikhat",
+    "created_at": "2026-07-19T23:18:14.041191+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "b6945852-3e22-441e-90b8-a2e2dd8f30ad",
+    "period_id": "90addd4d-c5b7-4b74-b359-67ef83a82e4c",
+    "subject": "3 rd L - Hindi",
+    "teacher_name": "Hindi Teacher",
+    "created_at": "2026-07-11T06:53:30.997719+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "bc13972f-5e85-42a8-9b36-fe13f6ee9e80",
+    "period_id": "045e1a91-7c99-4232-a235-95c687464f3f",
+    "subject": "E V S",
+    "teacher_name": "Saima Bux Siddiqui",
+    "created_at": "2026-07-20T03:42:32.405307+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "fae636f2-4682-4da4-bb22-fd300bc94a3d",
+    "period_id": "273c19dd-5315-468f-8eb4-fbbbbab23f4b",
+    "subject": "Maths",
+    "teacher_name": "Shavian Affrin",
+    "created_at": "2026-07-08T03:16:07.29841+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "35c0903a-84e6-4644-8146-8d7a17bdb261",
+    "period_id": "a6bb1364-9bc9-4d3d-96c2-9160f5befa29",
+    "subject": "Maths",
+    "teacher_name": "Shavian Affrin",
+    "created_at": "2026-07-08T03:16:14.817463+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "215a65dd-83c5-4acc-bdea-9d26afdfbb77",
+    "period_id": "6f55dd72-b2b5-4b74-aa96-37aab2923593",
+    "subject": "E V S",
+    "teacher_name": "Saima Bux Siddiqui",
+    "created_at": "2026-07-20T04:09:46.30686+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "0672c9f1-c65a-41f1-91fd-5c7f2007348e",
+    "period_id": "a0a21d0d-14ab-446e-8dba-fbd1fb11e004",
+    "subject": "Science",
+    "teacher_name": "Shavian Affrin",
+    "created_at": "2026-08-06T03:54:00.982608+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "d3b89869-4bc3-49ba-809e-124f6113c1b5",
+    "period_id": "90addd4d-c5b7-4b74-b359-67ef83a82e4c",
+    "subject": "3 rd L - Bengali",
+    "teacher_name": "Afreen Sultana",
+    "created_at": "2026-07-11T06:53:30.997719+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "af329d55-e30d-443d-a4c7-eaed2dbf6e66",
+    "period_id": "e2b7baf2-a41f-4061-b018-d8da5e50afda",
+    "subject": "Science",
+    "teacher_name": "Shavian Affrin",
+    "created_at": "2026-08-06T03:54:12.97075+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "f9528874-0edd-40cd-b278-caee463e5c0e",
+    "period_id": "0d01a887-3c2a-4985-a684-aa0aa4d23576",
+    "subject": "Science",
+    "teacher_name": "Shavian Affrin",
+    "created_at": "2026-08-06T03:54:20.123906+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "c35e0d49-a5a8-40f7-9b5f-d1918fbe1246",
+    "period_id": "cf2d4857-2f44-4625-9bef-3ad6535e0d1f",
+    "subject": "SST",
+    "teacher_name": "Gulfiishan Nikhat",
+    "created_at": "2026-05-12T10:37:23.476037+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "ae2bae8c-81f8-42ef-8890-c945d337945b",
+    "period_id": "9a7aefbc-ee11-4503-9713-7747b77493cf",
+    "subject": "Art & Craft",
+    "teacher_name": "Geography SST Teacher",
+    "created_at": "2026-05-12T10:45:38.686694+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "aa5af465-2d99-4910-ba59-ba54a5037630",
+    "period_id": "f19faf2c-185b-401a-8739-3c61e717fd3e",
+    "subject": "English Rem",
+    "teacher_name": "Megha Barui",
+    "created_at": "2026-05-12T10:41:27.192065+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "f9ace0cb-d87b-4155-874a-c0bed2fa6f4f",
+    "period_id": "dce0a618-a10a-4a9f-a389-7f6c7a19d3f2",
+    "subject": "English Language",
+    "teacher_name": "Megha Barui",
+    "created_at": "2026-05-12T10:41:43.448488+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "41747367-be14-4bef-a279-39e93b6198ec",
+    "period_id": "7e8fe41a-d0e8-4d3c-82c6-904d885eac50",
+    "subject": "Islamic Studies",
+    "teacher_name": "Mohd Fasihul Qamar",
+    "created_at": "2026-05-12T10:42:06.574415+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "773456d3-9e83-4dcc-8380-d7f3cf018d2e",
+    "period_id": "8d6a50ef-f9c9-4e68-b935-d493f5c130c8",
+    "subject": "Islamic Studies",
+    "teacher_name": "Mohd Fasihul Qamar",
+    "created_at": "2026-05-12T10:43:07.497502+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "6f841407-7da8-4ad2-a52d-ac58e9f7748e",
+    "period_id": "cedbe1b0-9919-4989-a4c1-e7c826f7e306",
+    "subject": "Arabic",
+    "teacher_name": "Mohamed Lukhman A",
+    "created_at": "2026-05-12T10:43:20.54493+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "cf154a9d-2092-42fc-bfdc-ee67d5b13846",
+    "period_id": "63821d9d-3763-43f1-b119-189a85c73698",
+    "subject": "3 rd L - Hindi",
+    "teacher_name": "Hindi Teacher",
+    "created_at": "2026-07-11T06:55:30.170521+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "55fba854-dae9-45cf-b3e4-aa00c113d950",
+    "period_id": "894bfda9-08df-4928-9e49-e143c0b857e3",
+    "subject": "Computer",
+    "teacher_name": "Anirban Dutta",
+    "created_at": "2026-07-20T03:44:43.498598+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "92ef6e8d-a81d-44ff-b375-f248ec870702",
+    "period_id": "9cae169a-3266-46e9-b0be-14865f49a3ae",
+    "subject": "Maths",
+    "teacher_name": "Samprikta Chakraborty",
+    "created_at": "2026-05-12T10:44:21.57551+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "7550a7e8-df42-4880-976b-d1047d3f252e",
+    "period_id": "6920cd1f-42f1-4e2b-a9b0-afcfa4227fc0",
+    "subject": "English Literature",
+    "teacher_name": "Megha Barui",
+    "created_at": "2026-05-12T10:44:38.928592+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "d83e1c83-c8ea-4a8e-b57c-3001ca4f8cf5",
+    "period_id": "5f08144f-be4c-4d3c-a447-c588d7417e19",
+    "subject": "SST",
+    "teacher_name": "Gulfiishan Nikhat",
+    "created_at": "2026-05-12T10:44:50.311599+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "072c8e9b-adda-47c5-a9f4-deaca3851ce0",
+    "period_id": "1e8a3efc-175a-455b-aae3-28f0d43ae9bb",
+    "subject": "E V S",
+    "teacher_name": "Saima Bux Siddiqui",
+    "created_at": "2026-07-20T03:44:59.82516+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "a5abee50-4f1e-42c9-af4e-e03b428f6319",
+    "period_id": "32f17cc0-8e87-4a7e-ae46-224dd46fa96f",
+    "subject": "Arabic",
+    "teacher_name": "Mohd Ashique Raza",
+    "created_at": "2026-07-20T04:17:32.327205+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "a5150b23-cbc9-4f25-9219-dad23b731ea9",
+    "period_id": "916afdb9-f8dc-4f71-ab94-227af6f0cfb1",
+    "subject": "English Literature",
+    "teacher_name": "Megha Barui",
+    "created_at": "2026-05-12T10:46:36.240698+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "07112e31-52e9-4408-81b1-c3cbada66951",
+    "period_id": "6aa3116e-666a-4f13-b499-0f03d1939de3",
+    "subject": "SST",
+    "teacher_name": "Gulfiishan Nikhat",
+    "created_at": "2026-05-12T10:46:45.280671+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "616f6ccc-244a-4f28-89fb-2c9f53e19df6",
+    "period_id": "a2c812d7-8e1f-481f-a4d4-82d74c999154",
+    "subject": "Islamic Studies",
+    "teacher_name": "Mohd Fasihul Qamar",
+    "created_at": "2026-05-12T10:47:06.893845+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "bc352637-20b9-4845-b492-ce7bf36be1bf",
+    "period_id": "3a2fac57-a65d-45c1-8215-56268d8af4f1",
+    "subject": "Art & Craft",
+    "teacher_name": "Geography SST Teacher",
+    "created_at": "2026-05-12T10:45:53.946493+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "c59c29a6-0c23-482b-a906-9ec34309dd24",
+    "period_id": "1674814b-14c3-4df9-9afb-a9a7c4399d40",
+    "subject": "Maths",
+    "teacher_name": "Samprikta Chakraborty",
+    "created_at": "2026-05-12T10:47:40.105499+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "fe80f946-be41-4c7b-a9c0-b58fa5b27b50",
+    "period_id": "b3577cd6-793f-4d0f-bd4d-ea8ffd30f366",
+    "subject": "SST",
+    "teacher_name": "Geography SST Teacher",
+    "created_at": "2026-05-13T05:24:18.488279+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "ae5f6b93-1dd5-41eb-964a-326c4185144c",
+    "period_id": "81e29f8c-6ffc-468a-9121-8e0078273c50",
+    "subject": "SST",
+    "teacher_name": "Geography SST Teacher",
+    "created_at": "2026-05-13T05:27:58.985454+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "28188916-7d8a-46ae-b355-8e26680d0bf1",
+    "period_id": "9393e90d-c035-4509-939f-60e1143e09a0",
+    "subject": "GK / LIB",
+    "teacher_name": "Mohamed Lukhman A",
+    "created_at": "2026-05-12T10:48:26.596374+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "a51cc0f5-1d8d-46b4-b602-b231f19ce0e6",
+    "period_id": "1faef946-adcf-4808-94e9-e7d06b4acc1e",
+    "subject": "Maths",
+    "teacher_name": "Samprikta Chakraborty",
+    "created_at": "2026-05-13T03:31:53.96061+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "d3d017be-e829-4c30-8540-ea465adcc607",
+    "period_id": "fa6ec1e6-52d9-4708-b1d0-f2a61fcccb7d",
+    "subject": "Science",
+    "teacher_name": "Shavian Affrin",
+    "created_at": "2026-07-08T03:18:06.062075+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "0a36ea9b-18ef-4531-97c3-6bf6beaa3265",
+    "period_id": "a9f0b385-5dc3-4a27-82d8-050be074476f",
+    "subject": "SST",
+    "teacher_name": "Geography SST Teacher",
+    "created_at": "2026-05-13T05:28:11.844847+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "6775adf4-617e-4a5f-b8d6-4f17883b5531",
+    "period_id": "a55430ec-7ea3-4bee-b5df-c67df342c8e9",
+    "subject": "SST",
+    "teacher_name": "Geography SST Teacher",
+    "created_at": "2026-05-13T05:43:04.928473+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "e69ecc32-5849-4c55-aaff-5e3a7b61ea03",
+    "period_id": "945be3e2-a99a-46f3-bdeb-6f42555076a6",
+    "subject": "Islamic Studies",
+    "teacher_name": "Mohd Fasihul Qamar",
+    "created_at": "2026-05-13T03:46:40.375339+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "86763bc3-1bf9-4260-b67f-c1c2fe799c7a",
+    "period_id": "3913089c-be2e-4879-a25b-ea7db8482faa",
+    "subject": "Islamic Studies",
+    "teacher_name": "Mohd Fasihul Qamar",
+    "created_at": "2026-05-13T03:46:55.191901+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "7587685e-cae3-44f2-b4ad-4673520058cf",
+    "period_id": "204f544a-799c-4249-ad54-98ab22adae61",
+    "subject": "Islamic Studies",
+    "teacher_name": "Mohd Fasihul Qamar",
+    "created_at": "2026-05-13T03:47:00.89308+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "17a71720-58e1-4db3-87fa-c1cf6d7079b4",
+    "period_id": "75c8c944-33e4-4535-aa2b-2b7c3730a7f9",
+    "subject": "Islamic Studies",
+    "teacher_name": "Mohd Fasihul Qamar",
+    "created_at": "2026-05-13T03:47:08.021169+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "fa68798d-d535-40e0-8d31-9ee41c979eec",
+    "period_id": "f7a70847-a6e9-4b6e-a3e1-046fe337b837",
+    "subject": "Islamic Studies",
+    "teacher_name": "Mohd Fasihul Qamar",
+    "created_at": "2026-05-13T03:47:15.439476+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "8dc73e93-d1db-4d9b-b5a9-63a61cbda8c0",
+    "period_id": "36f533e4-ce39-491f-a2b5-36fe1f69e9cb",
+    "subject": "SST",
+    "teacher_name": "Geography SST Teacher",
+    "created_at": "2026-05-13T05:43:36.237928+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "5d566ec1-76f8-4115-a530-bf39877969ed",
+    "period_id": "2b493c5a-517f-4440-aa82-8a7851798e2b",
+    "subject": "English Language",
+    "teacher_name": "Class 2 Mother Teacher",
+    "created_at": "2026-05-13T05:31:30.085501+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "8aae824b-3ab0-4265-952f-7b05583a0079",
+    "period_id": "4c623901-0b0f-44ca-90b5-2d1ff26d3a45",
+    "subject": "2 nd L - Bengali",
+    "teacher_name": "Afreen Sultana",
+    "created_at": "2026-05-13T03:52:32.470592+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "6b09f7e7-d494-4c85-82ae-93e740d95741",
+    "period_id": "a3852fb7-4b9b-4352-8bb8-d628531101cf",
+    "subject": "2 nd L - Bengali",
+    "teacher_name": "Afreen Sultana",
+    "created_at": "2026-05-13T03:52:42.278339+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "2a820cc1-9218-4f89-b846-e508754950bf",
+    "period_id": "815c6c31-b424-4fc1-951b-550e6f1f8193",
+    "subject": "2 nd L - Bengali",
+    "teacher_name": "Afreen Sultana",
+    "created_at": "2026-05-13T03:52:54.754843+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "d5eb11e8-7f8d-46a9-9a17-8901a859b73a",
+    "period_id": "99bc3302-5e28-4bfb-9f9b-2484ce815f3c",
+    "subject": "English Language",
+    "teacher_name": "Class 2 Mother Teacher",
+    "created_at": "2026-05-13T05:31:46.214851+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "98d6acc9-e8fb-40d9-8d4c-67d024a6aa8e",
+    "period_id": "1ffc1bc5-d49f-41fa-863e-30272c0c10ef",
+    "subject": "2 nd L - Bengali",
+    "teacher_name": "Afreen Sultana",
+    "created_at": "2026-05-13T03:53:21.280254+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "7c430ce1-7061-4409-bc7b-87622daa8509",
+    "period_id": "da00ee6f-1564-4933-b73e-ee26cbf561f5",
+    "subject": "English Literature",
+    "teacher_name": "Megha Barui",
+    "created_at": "2026-05-13T05:24:37.669473+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "bc3c04d1-2cd1-4bfb-8e55-29585a90d5b9",
+    "period_id": "d377980e-c443-49e3-8ed8-c85ffdcbbd08",
+    "subject": "Computer",
+    "teacher_name": "Anirban Dutta",
+    "created_at": "2026-08-06T03:58:36.231357+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "607af23a-7322-4076-8302-cbf90bdfecbf",
+    "period_id": "11161eb6-322e-4316-8a97-c257478f6e06",
+    "subject": "Islamic Studies",
+    "teacher_name": "Muhammed Arif P A",
+    "created_at": "2026-05-13T05:25:28.439619+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "a16a3e81-e1f1-4f10-ba23-d954342b058b",
+    "period_id": "20d286ff-5231-4bc3-a1e3-956c63f41ce1",
+    "subject": "Science",
+    "teacher_name": "Shavian Affrin",
+    "created_at": "2026-08-06T03:58:49.751666+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "d04958ef-0e02-448d-beee-3adbee526a87",
+    "period_id": "069ceff2-ea13-46f7-924c-4cb1d339fb3b",
+    "subject": "2 nd L",
+    "teacher_name": "Afreen Sultana",
+    "created_at": "2026-05-13T05:27:22.219869+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "d8028a8f-f29e-4262-87db-e348770456a0",
+    "period_id": "55e0df08-6725-4854-a991-e9ac7474be12",
+    "subject": "Islamic Studies",
+    "teacher_name": "Muhammed Arif P A",
+    "created_at": "2026-05-13T05:27:43.509405+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "b60bc0d6-8222-477b-b418-f518e7b35a71",
+    "period_id": "3d866431-3115-43b6-bb84-4870ef71e449",
+    "subject": "Hand Writing",
+    "teacher_name": "Sabiha Yasmin",
+    "created_at": "2026-08-06T03:59:33.461644+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "09be177f-999f-444e-84ae-63a4ea5abbe4",
+    "period_id": "96850c22-88a8-49f4-aad0-f642ad17c83f",
+    "subject": "English Literature",
+    "teacher_name": "Megha Barui",
+    "created_at": "2026-05-13T05:29:13.875541+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "79a3525d-208d-450f-8875-90ce0fae0788",
+    "period_id": "f3c33435-8edf-408f-87f8-3b977595b09e",
+    "subject": "Arabic",
+    "teacher_name": "Mohd Ashique Raza",
+    "created_at": "2026-05-13T05:29:26.900109+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "eadd72b7-63f9-4145-ba16-05c9c72f31f4",
+    "period_id": "6ad53336-3f93-4c6c-8aa8-5cf73b8fb5c0",
+    "subject": "Arabic",
+    "teacher_name": "Mohd Ashique Raza",
+    "created_at": "2026-05-13T05:30:40.126514+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "b10da403-f3a7-47c4-9ce4-eda5ab258bca",
+    "period_id": "4e2414cd-96fd-411f-9710-203d27ac325a",
+    "subject": "2 nd L",
+    "teacher_name": "Afreen Sultana",
+    "created_at": "2026-05-13T05:40:16.522325+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "5421c8ba-ee61-4399-8cbb-0002b357a3c3",
+    "period_id": "d37f0779-3f08-4b6d-9ae3-551f68f8a981",
+    "subject": "Islamic Studies",
+    "teacher_name": "Muhammed Arif P A",
+    "created_at": "2026-05-13T05:42:45.038783+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "022db36d-be0d-4392-8fff-12d2fd597b63",
+    "period_id": "6e58874e-ccef-4f56-8414-403a4856ecb4",
+    "subject": "Arabic",
+    "teacher_name": "Mohd Ashique Raza",
+    "created_at": "2026-05-13T05:43:59.868933+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "446730b5-54f1-4e86-b646-4fdd51f9bc76",
+    "period_id": "5e5455ac-0015-4508-809b-6668e38703d3",
+    "subject": "2 nd L",
+    "teacher_name": "Afreen Sultana",
+    "created_at": "2026-05-13T05:50:56.611322+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "edd65138-3db4-40e7-87ef-0f4660fdf5d6",
+    "period_id": "2c4c59d9-cb73-429c-97a3-57d4cda9cf1b",
+    "subject": "PE",
+    "teacher_name": "Mohamed Lukhman A",
+    "created_at": "2026-05-13T05:51:19.35905+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "ff7c7c39-663f-4cbf-a37e-26c53f994266",
+    "period_id": "d339be88-f994-43b1-9f23-989beb564971",
+    "subject": "English Literature",
+    "teacher_name": "Megha Barui",
+    "created_at": "2026-05-13T05:51:41.695644+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "11ff963d-0a7c-4cfd-8bd7-acaa8fe79740",
+    "period_id": "45d70491-7229-4d3d-9e02-ffbf174b5ef8",
+    "subject": "Islamic Studies",
+    "teacher_name": "Muhammed Arif P A",
+    "created_at": "2026-05-13T05:51:57.336744+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "51ebd0d2-fd0d-4170-ba2f-51f2b76aeaaf",
+    "period_id": "63821d9d-3763-43f1-b119-189a85c73698",
+    "subject": "3 rd L - Bengali",
+    "teacher_name": "Afreen Sultana",
+    "created_at": "2026-07-11T06:55:30.170521+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "4909f1d3-d35d-4f8d-82f2-c99e1023efea",
+    "period_id": "a77c95a1-97ae-4a8b-9db3-0e6f5d1c4885",
+    "subject": "Library / GK",
+    "teacher_name": "Mohamed Lukhman A",
+    "created_at": "2026-05-13T05:52:22.516046+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "1df97e3c-ce61-4568-998a-8de206960363",
+    "period_id": "0e45e363-45ab-4cd2-b660-ac047c901142",
+    "subject": "Islamic Studies",
+    "teacher_name": "Mohd Fasihul Qamar",
+    "created_at": "2026-07-20T00:23:11.217179+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "e37fb5f3-f996-499a-b80a-28c34982434c",
+    "period_id": "0e45e363-45ab-4cd2-b660-ac047c901142",
+    "subject": "V E D",
+    "teacher_name": "Kainat Hossain",
+    "created_at": "2026-07-20T00:23:11.217179+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "eb8fe4cd-6e04-48be-bd4d-57464baa7dd1",
+    "period_id": "83398d5e-c42a-4ada-b2e9-0221de80e9f0",
+    "subject": "Islamic Studies",
+    "teacher_name": "Muhammed Arif P A",
+    "created_at": "2026-05-13T05:52:57.082897+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "b560abcb-c4a5-4add-afbe-86132a63a222",
+    "period_id": "c3a5af9f-92ef-4f3f-a2f3-4d3369ccbb41",
+    "subject": "History",
+    "teacher_name": "Gulfiishan Nikhat",
+    "created_at": "2026-07-08T03:19:38.194352+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "cdd8500a-0d46-4fdc-86b4-13331ab8098b",
+    "period_id": "12f4a90b-4b41-4366-8f98-47f74b52c750",
+    "subject": "History",
+    "teacher_name": "Gulfiishan Nikhat",
+    "created_at": "2026-07-08T03:19:57.418021+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "fb7be0e8-25ba-4b52-a6b3-3e7a2d54f0e8",
+    "period_id": "9d316737-473c-49d0-b0cf-5f4e47155082",
+    "subject": "History",
+    "teacher_name": "Gulfiishan Nikhat",
+    "created_at": "2026-07-08T03:20:24.823204+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "d3f5c01a-dbc8-4896-af20-335a00544e4c",
+    "period_id": "9e313e9a-3c80-4d8a-a50f-e9ac3ad760ec",
+    "subject": "2 nd L - Hindi",
+    "teacher_name": "Hindi Teacher",
+    "created_at": "2026-07-11T07:01:17.79668+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "9c1e42e0-b2df-46e8-95db-a3b532e58853",
+    "period_id": "ee1ebec7-ab70-4784-9f4e-072eecbe0318",
+    "subject": "2 nd L - Hindi",
+    "teacher_name": "Hindi Teacher",
+    "created_at": "2026-07-11T07:01:28.848806+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "1a74d95a-8b08-4cf8-bad3-74f485666c93",
+    "period_id": "7bdb9f2e-1bff-4ebb-b4a1-90eb5a55e340",
+    "subject": "2 nd L - Hindi",
+    "teacher_name": "Hindi Teacher",
+    "created_at": "2026-07-11T07:01:37.737987+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "bfee7efc-6664-413f-bf6a-d711bac77fd1",
+    "period_id": "0b6fafb7-90e8-47fb-b9d9-43d53edbc04e",
+    "subject": "2 nd L - Hindi",
+    "teacher_name": "Hindi Teacher",
+    "created_at": "2026-07-11T07:01:51.005096+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "8b886298-ec44-4d8e-b597-a5466ccce50b",
+    "period_id": "b414e54e-9495-4777-89a8-1a355b4df57d",
+    "subject": "2 nd L - Hindi",
+    "teacher_name": "Hindi Teacher",
+    "created_at": "2026-07-11T07:02:00.780286+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "52121fe7-206b-4095-ae4e-c612942dd992",
+    "period_id": "0bde18aa-4353-4c31-ab3a-74dfa448165f",
+    "subject": "Computer",
+    "teacher_name": "Anirban Dutta",
+    "created_at": "2026-07-20T03:48:57.526488+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "f153d4d6-fdc4-49c4-b3de-ac9237e8c7aa",
+    "period_id": "b33ad729-c5ee-4c2e-b4ab-dccf628244b4",
+    "subject": "Islamic Studies",
+    "teacher_name": "Muhammed Arif P A",
+    "created_at": "2026-07-20T03:49:18.136182+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "f4e5290f-58ed-4f1a-9ac3-9840fb9ee13a",
+    "period_id": "32ec89db-87f2-4f71-a802-28d98f97f1ab",
+    "subject": "Computer",
+    "teacher_name": "Anirban Dutta",
+    "created_at": "2026-07-20T04:19:02.032857+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "cd2cae46-f568-4ea8-b085-c78cc7f428ee",
+    "period_id": "a072061d-858f-4cc7-8326-7f9d179a9a36",
+    "subject": "S S T",
+    "teacher_name": "Geography SST Teacher",
+    "created_at": "2026-05-13T05:52:32.458102+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "8e092c12-dd42-44b5-b4c6-9954837e2084",
+    "period_id": "1ee6a5e2-39c7-4ffa-ac91-3cfdfbbd27db",
+    "subject": "English Remedial",
+    "teacher_name": "Class 2 Mother Teacher",
+    "created_at": "2026-05-13T05:54:04.15186+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "af90991f-68a5-4b75-8f2c-843d1f2a5844",
+    "period_id": "9e313e9a-3c80-4d8a-a50f-e9ac3ad760ec",
+    "subject": "2 nd L - Bengali",
+    "teacher_name": "Afreen Sultana",
+    "created_at": "2026-07-11T07:01:17.79668+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "c8a09958-b9d1-404b-8b25-b4ef2f9e39e9",
+    "period_id": "ee1ebec7-ab70-4784-9f4e-072eecbe0318",
+    "subject": "2 nd L - Bengali",
+    "teacher_name": "Afreen Sultana",
+    "created_at": "2026-07-11T07:01:28.848806+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "1605e731-a25f-4e59-82ac-62f85d5e7afc",
+    "period_id": "7bdb9f2e-1bff-4ebb-b4a1-90eb5a55e340",
+    "subject": "2 nd L - Bengali",
+    "teacher_name": "Afreen Sultana",
+    "created_at": "2026-07-11T07:01:37.737987+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "9a45848a-e723-4024-a688-4638a77f057f",
+    "period_id": "0b6fafb7-90e8-47fb-b9d9-43d53edbc04e",
+    "subject": "2 nd L - Bengali",
+    "teacher_name": "Afreen Sultana",
+    "created_at": "2026-07-11T07:01:51.005096+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "0e0c043a-96a9-47ee-a315-f235ad98fad5",
+    "period_id": "b414e54e-9495-4777-89a8-1a355b4df57d",
+    "subject": "2 nd L - Bengali",
+    "teacher_name": "Afreen Sultana",
+    "created_at": "2026-07-11T07:02:00.780286+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "62caee81-0c21-4c56-ac67-621cb17471ab",
+    "period_id": "2f2863d4-d856-4782-95b5-6df0f9b67924",
+    "subject": "Arabic",
+    "teacher_name": "Mohd Ashique Raza",
+    "created_at": "2026-07-20T00:51:45.984349+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "2050a1b6-8f00-429f-a47e-6ce675ac9d74",
+    "period_id": "b60156c8-2cd0-41aa-b326-87ade16bc2e5",
+    "subject": "E V S",
+    "teacher_name": "Kainat Hossain",
+    "created_at": "2026-07-20T00:51:59.467811+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "db5c9a74-0f7f-491f-8ad4-d3089cafd83c",
+    "period_id": "f6374b69-e6aa-4e2a-adc7-a04832320fa8",
+    "subject": "Arabic",
+    "teacher_name": "Mohd Ashique Raza",
+    "created_at": "2026-07-20T04:20:09.830013+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "794e6d45-54d8-41bd-a0d8-633fa7f84316",
+    "period_id": "d319c673-bb4e-4b2e-8f0b-dc8a1cb9ff51",
+    "subject": "English Language",
+    "teacher_name": "Class 2 Mother Teacher",
+    "created_at": "2026-05-13T05:53:43.916324+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "4075d071-4731-4d88-8eb1-ff9b9ddb4948",
+    "period_id": "90d6690e-b3a3-41c4-b50b-8131711de503",
+    "subject": "Computer",
+    "teacher_name": "Nilakshi Khatoon",
+    "created_at": "2026-05-13T07:43:02.067772+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "f4b549a4-b70f-4e56-8eb8-29614dd47106",
+    "period_id": "0491245c-4c0f-41ed-8be0-275628950e7a",
+    "subject": "Islamic Studies",
+    "teacher_name": "Muhammed Arif P A",
+    "created_at": "2026-05-13T07:43:59.162093+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "edbb4ded-4afc-453c-b6b2-b31f12163594",
+    "period_id": "d77edc24-2902-4102-b1fe-b42e2ddf1dd7",
+    "subject": "English Literature",
+    "teacher_name": "Class 2 Mother Teacher",
+    "created_at": "2026-05-13T07:43:16.372801+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "6238a813-0896-4853-abe0-7eab96c448ed",
+    "period_id": "25a9f3dc-95f6-4f1d-a4ec-7b84340e6550",
+    "subject": "Art & Craft",
+    "teacher_name": "Saima Bux Siddiqui",
+    "created_at": "2026-05-13T07:44:52.29598+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "0e875965-6f02-45fb-ad25-f9cabcb7a498",
+    "period_id": "f67fb7f9-3734-4301-9648-5c7c5576de76",
+    "subject": "Art & Craft",
+    "teacher_name": "Saima Bux Siddiqui",
+    "created_at": "2026-05-13T07:45:07.92958+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "24bfa3ec-085a-4a0d-88d5-c5bd59cfe12a",
+    "period_id": "2012c914-42a0-4cb2-99a9-b584d9e2f622",
+    "subject": "Maths",
+    "teacher_name": "Samprikta Chakraborty",
+    "created_at": "2026-07-08T04:46:37.792227+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "97bd225a-108e-4af0-a70d-2818846e04fc",
+    "period_id": "2fb8ceda-6eb1-4455-b88e-fd21108c0e05",
+    "subject": "English Language",
+    "teacher_name": "Class 2 Mother Teacher",
+    "created_at": "2026-05-13T07:47:03.125839+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "e50a563f-edfb-4c08-afc4-2735e191c9ec",
+    "period_id": "41be14df-87b4-45ad-b2a6-172fa0fad6d2",
+    "subject": "English Language",
+    "teacher_name": "Megha Barui",
+    "created_at": "2026-07-11T07:38:43.591509+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "2f881154-4b87-49cc-8b37-c66afbaedc16",
+    "period_id": "61672143-3405-46f9-8c13-e8721d9502e9",
+    "subject": "English Remedial",
+    "teacher_name": "Megha Barui",
+    "created_at": "2026-07-11T07:38:56.570869+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "43fac425-91c3-4158-b7d2-a671b2edd9f9",
+    "period_id": "07c177ee-7bdd-4126-8834-37115539dc58",
+    "subject": "Computer",
+    "teacher_name": "Nilakshi Khatoon",
+    "created_at": "2026-05-13T07:46:25.040943+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "1b7db0a0-0747-4132-9505-b2851132f261",
+    "period_id": "7d9ab599-c881-4fe3-98a9-204424cb84ca",
+    "subject": "Computer",
+    "teacher_name": "Anirban Dutta",
+    "created_at": "2026-07-20T03:05:06.813761+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "8d87c2a1-4272-4641-85e5-020a6a0887dd",
+    "period_id": "b819fb56-9d92-4cb2-8486-689e11445d92",
+    "subject": "E V S",
+    "teacher_name": "Gulfiishan Nikhat",
+    "created_at": "2026-05-13T07:48:37.921864+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "b87faf7e-e83e-4913-a01e-e59a37388573",
+    "period_id": "0e686d56-e8cb-4aa7-991a-f2d1b50360e5",
+    "subject": "Arabic",
+    "teacher_name": "Mohd Ashique Raza",
+    "created_at": "2026-05-13T07:48:51.411029+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "a854ae6a-0afd-489c-865c-297d729f239d",
+    "period_id": "66281875-8c44-456f-b628-a4d21f734819",
+    "subject": "Islamic Studies",
+    "teacher_name": "Muhammed Arif P A",
+    "created_at": "2026-05-13T07:49:12.16426+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "09e20a6a-1654-4966-8a73-859bb8b674d2",
+    "period_id": "ca45e14a-1244-4c5b-a1da-5fd80aa5098f",
+    "subject": "Computer",
+    "teacher_name": "Nilakshi Khatoon",
+    "created_at": "2026-05-13T07:50:24.282583+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "f499bb8c-3f50-4428-bde3-52e65a5143b9",
+    "period_id": "92daa287-437b-4915-8122-39fceac95b14",
+    "subject": "Islamic Studies",
+    "teacher_name": "Muhammed Arif P A",
+    "created_at": "2026-05-13T07:50:52.251255+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "e4efdc70-7b62-4b65-919f-3ac5defccf9f",
+    "period_id": "ae2ac06b-8d7d-4805-8f95-5540801d61ba",
+    "subject": "E V S",
+    "teacher_name": "Gulfiishan Nikhat",
+    "created_at": "2026-05-13T07:52:01.286682+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "ac1de98b-18f0-45cb-9fef-de798ceb5f7a",
+    "period_id": "187a79bf-b286-4ac2-8b42-ee0eea4ace22",
+    "subject": "P E",
+    "teacher_name": "Nayab khan",
+    "created_at": "2026-05-13T07:52:31.696959+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "662025c0-4f5e-4344-89e1-474ff01c4b92",
+    "period_id": "9aadb83c-6e4f-4e2b-a011-307ebcf34281",
+    "subject": "Arabic",
+    "teacher_name": "Mohd Ashique Raza",
+    "created_at": "2026-05-13T07:53:45.455443+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "47d76208-99b3-4feb-9959-e420cdd83abf",
+    "period_id": "d42ddd58-3580-4100-8b9a-3b882b57ecdc",
+    "subject": "Arabic",
+    "teacher_name": "Mohd Ashique Raza",
+    "created_at": "2026-05-13T07:55:25.699624+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "08164e5d-2135-4fef-a616-91637388b668",
+    "period_id": "002b83b2-8dec-47d2-ae81-6612069907e6",
+    "subject": "E V S",
+    "teacher_name": "Gulfiishan Nikhat",
+    "created_at": "2026-05-13T07:55:42.305704+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "ddb3876c-fc68-421e-9d59-9d942d1e0146",
+    "period_id": "2179ab91-7f79-4487-8418-0cd62f467a1d",
+    "subject": "Islamic Studies",
+    "teacher_name": "Muhammed Arif P A",
+    "created_at": "2026-05-13T07:59:02.146566+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "30ce3714-d5ac-41b7-a16f-6f0168e096fd",
+    "period_id": "f7bacb0f-d4d7-47aa-8e75-f2c05a50ff78",
+    "subject": "S S T",
+    "teacher_name": "Geography SST Teacher",
+    "created_at": "2026-05-13T07:44:09.906672+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "ffc1f7e2-4faa-4194-be7f-d6db715aef69",
+    "period_id": "ba5694e5-ce55-4b2a-a6bb-5798938c590d",
+    "subject": "S S T",
+    "teacher_name": "Geography SST Teacher",
+    "created_at": "2026-05-13T07:49:37.208718+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "ffd19e67-c23a-475f-bfd7-64f587012bfc",
+    "period_id": "7ed143d7-2686-488d-b611-47ddbc91086b",
+    "subject": "Computer",
+    "teacher_name": "Nilakshi Khatoon",
+    "created_at": "2026-05-13T08:05:18.538537+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "e6e550a5-1eb4-4f26-aa3b-34ff4e556e44",
+    "period_id": "6d53d76e-337f-410a-9d14-bfe34d1245f5",
+    "subject": "2 nd L",
+    "teacher_name": "Afreen Sultana",
+    "created_at": "2026-05-13T08:11:33.279438+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "a497a3f8-a888-4679-a438-92901b741b02",
+    "period_id": "f41384b3-4b89-4a85-833e-6fddefe26568",
+    "subject": "S S T",
+    "teacher_name": "Geography SST Teacher",
+    "created_at": "2026-05-13T07:50:35.210003+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "19e9a0c8-6250-443b-8a8f-b6a6d2ea3bb4",
+    "period_id": "a53bd6f9-ce52-4698-a091-7f293cc9fb00",
+    "subject": "2 nd L",
+    "teacher_name": "Nilakshi Khatoon",
+    "created_at": "2026-05-13T08:13:46.674202+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "dfd6078a-be82-46b1-87de-601811a78430",
+    "period_id": "64ed2713-4c95-4622-ae2f-f13df97caaf4",
+    "subject": "S S T",
+    "teacher_name": "Geography SST Teacher",
+    "created_at": "2026-05-13T07:55:59.092394+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "e5b1e396-f95a-4c45-bc55-55ea8e9edb8c",
+    "period_id": "76665cf1-cd37-445d-b2f4-18d38132ab6d",
+    "subject": "Library / PT",
+    "teacher_name": "Anirban Dutta",
+    "created_at": "2026-07-20T03:49:55.121093+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "aed6188d-99ea-4f05-bcb2-a2e36a0f5e1b",
+    "period_id": "1cee413a-b4cf-4940-a58e-f00edcf43f53",
+    "subject": "Islamic Studies",
+    "teacher_name": "Muhammed Arif P A",
+    "created_at": "2026-05-13T08:17:35.54399+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "2b97d4a2-acaf-4b5a-abd4-56e70cc69521",
+    "period_id": "3309cc6c-3a79-4b48-b476-d33963044859",
+    "subject": "English Language",
+    "teacher_name": "Class 2 Mother Teacher",
+    "created_at": "2026-05-13T07:49:52.204045+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "43a4f5cc-4169-4589-838a-058fc7f42c8b",
+    "period_id": "83b7c93e-e43e-46c9-afbb-0f8a0ec10482",
+    "subject": "English remedial",
+    "teacher_name": "Class 2 Mother Teacher",
+    "created_at": "2026-05-13T07:50:13.342406+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "c1d0cd0a-3520-4ecb-9897-e4b7e61d0906",
+    "period_id": "02dd9f36-1591-431f-9f92-4e42d9f80d92",
+    "subject": "English Language",
+    "teacher_name": "Class 2 Mother Teacher",
+    "created_at": "2026-05-13T08:05:03.030097+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "c97a45a1-1014-4810-bb9c-f5ebfa2323be",
+    "period_id": "3f0240ae-dde8-49e1-a250-097c88909f8e",
+    "subject": "English Literature",
+    "teacher_name": "Class 2 Mother Teacher",
+    "created_at": "2026-05-13T08:15:04.987757+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "0fce15ab-5c1b-4fc3-9822-809e3ddd6d51",
+    "period_id": "9e47a641-f2af-4012-9b8f-207a048444ba",
+    "subject": "Islamic Studies",
+    "teacher_name": "Muhammed Arif P A",
+    "created_at": "2026-05-13T08:19:37.535261+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "ac082b76-47ca-4ad1-a3fc-b57ab88dcda4",
+    "period_id": "267d0896-3413-4495-a229-f03c0504da72",
+    "subject": "Maths",
+    "teacher_name": "Class 2 Mother Teacher",
+    "created_at": "2026-05-13T08:16:24.866141+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "2a144e5a-37a4-4908-bc80-748fea31e5ed",
+    "period_id": "d27bc241-b8b1-4da3-84d8-c92fd4b73196",
+    "subject": "English Language",
+    "teacher_name": "Class 2 Mother Teacher",
+    "created_at": "2026-05-13T08:18:18.149+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "cd87e457-c7f5-4a69-bfbd-552a53c09674",
+    "period_id": "03f34b4c-a657-4a4e-8b75-c80395d8e1dc",
+    "subject": "English Language",
+    "teacher_name": "Class 2 Mother Teacher",
+    "created_at": "2026-05-13T08:18:46.961272+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "c6e06d84-840d-4b6d-a081-cf6e278e52e9",
+    "period_id": "58125b56-e585-4885-b895-5c9f66ca07f2",
+    "subject": "English Literature",
+    "teacher_name": "Class 2 Mother Teacher",
+    "created_at": "2026-05-13T08:20:30.465394+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "93ef6c59-eeee-494c-a2b9-f515cd814d75",
+    "period_id": "224d01f2-854e-4f68-8ebb-dc7f88e4ee66",
+    "subject": "Maths",
+    "teacher_name": "Class 2 Mother Teacher",
+    "created_at": "2026-05-13T08:20:45.354934+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "7634856a-4c84-4514-9e05-db12b73f3ed8",
+    "period_id": "89d46871-c01c-4c7e-9161-246cf3cb272d",
+    "subject": "Islamic Studies",
+    "teacher_name": "Muhammed Arif P A",
+    "created_at": "2026-05-13T08:22:01.660745+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "8f1e0442-6f91-421e-b5e2-d5f13245446e",
+    "period_id": "0f989816-e872-46e8-a839-8136059fdcf6",
+    "subject": "Maths",
+    "teacher_name": "Class 2 Mother Teacher",
+    "created_at": "2026-05-13T08:20:52.906754+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "a34fb045-21e4-4b5d-8529-9045ea83da12",
+    "period_id": "d7ede8dd-7985-4b39-9886-8ccc8bf34273",
+    "subject": "Maths",
+    "teacher_name": "Class 2 Mother Teacher",
+    "created_at": "2026-05-13T08:21:46.944939+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "fa076445-d330-460c-b142-96787af4113b",
+    "period_id": "b92b94b1-8247-473a-8758-08c3abf1c821",
+    "subject": "English Literature",
+    "teacher_name": "Class 2 Mother Teacher",
+    "created_at": "2026-05-13T08:23:32.853749+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "98c21558-95e6-462e-a3e9-76855f64fdad",
+    "period_id": "786c5a7e-37ba-4bc9-af85-08c7c3fd8a70",
+    "subject": "P E",
+    "teacher_name": "Nayab khan",
+    "created_at": "2026-05-13T08:23:16.508627+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "a458ed4a-03cb-43d2-9d30-d51ab4693c96",
+    "period_id": "b89dc73b-bf74-4561-938e-8b76df960902",
+    "subject": "Maths",
+    "teacher_name": "Class 2 Mother Teacher",
+    "created_at": "2026-05-13T08:23:56.353905+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "5a0002b7-7d49-4f39-8021-e6d94f7028df",
+    "period_id": "82582a35-ece0-439f-8cf5-513a95e5faee",
+    "subject": "Arabic",
+    "teacher_name": "Mohd Ashique Raza",
+    "created_at": "2026-05-13T08:24:06.486516+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "74f19757-0f5d-43bd-ae15-9946c759a414",
+    "period_id": "9338cc44-f5c1-4807-9a94-bcdd2b915f05",
+    "subject": "Islamic Studies",
+    "teacher_name": "Muhammed Arif P A",
+    "created_at": "2026-05-13T08:24:56.748011+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "c64373e0-8a78-4783-8804-79bbc7d323e8",
+    "period_id": "6593f042-4f04-4587-90a0-f0fa3ef5a113",
+    "subject": "English Remedial",
+    "teacher_name": "Megha Barui",
+    "created_at": "2026-07-11T07:39:59.105099+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "23d5efdc-8c2a-4529-96f7-083ef50fd4f7",
+    "period_id": "7e8b9f7f-f98c-4137-b8fb-c4bdb1e6e4ff",
+    "subject": "Art & Craft",
+    "teacher_name": "Nayab khan",
+    "created_at": "2026-05-13T08:36:12.36992+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "19f5ac7f-a78e-4b6f-b9c8-caca4436d6dd",
+    "period_id": "78b9b641-7145-4502-b2b8-518f93d2dc95",
+    "subject": "Art & Craft",
+    "teacher_name": "Nayab khan",
+    "created_at": "2026-05-13T08:36:21.076088+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "8c1a2787-dd05-4f09-ab19-828c4c471b51",
+    "period_id": "2d4a54ae-aca9-44d7-b928-977695b1c5f7",
+    "subject": "Islamic Studies",
+    "teacher_name": "Muhammed Arif P A",
+    "created_at": "2026-05-13T08:37:09.489447+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "b05f5169-5599-46af-a9bf-fabaf803ff6a",
+    "period_id": "487d0681-cc80-423f-8131-b2c1fa2344e3",
+    "subject": "Arabic",
+    "teacher_name": "Mohd Ashique Raza",
+    "created_at": "2026-05-13T08:37:24.848728+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "e7a404a8-8cd5-4926-8eca-fa4ee69e4ab0",
+    "period_id": "2116800d-2fde-4bba-8687-242f66645b3e",
+    "subject": "Arabic",
+    "teacher_name": "Mohd Ashique Raza",
+    "created_at": "2026-05-13T08:57:15.946041+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "658aab3d-f784-4aa6-a430-1631121c4a7f",
+    "period_id": "bbe8129c-1f0b-479c-b57a-7c98eb8438f4",
+    "subject": "English Literature",
+    "teacher_name": "Munazza Tabrez",
+    "created_at": "2026-05-13T08:57:46.30325+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "e0ce2b21-7501-4084-ad0d-f4580b04a0e5",
+    "period_id": "4e185845-08bc-482f-b9e4-d82c79cdbd64",
+    "subject": "E V S",
+    "teacher_name": "Gulfiishan Nikhat",
+    "created_at": "2026-05-13T09:00:22.17742+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "33741cea-7e4b-4e37-b4ba-5a9c6c54df03",
+    "period_id": "b62c1d24-c64b-40f7-899e-4ca69b60b60e",
+    "subject": "E V S",
+    "teacher_name": "Gulfiishan Nikhat",
+    "created_at": "2026-05-13T09:01:36.278864+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "1b025846-08aa-421f-8d09-e597e82ffa40",
+    "period_id": "49cfed21-d791-42b8-8b74-034592e5d2d9",
+    "subject": "E V S",
+    "teacher_name": "Munazza Tabrez",
+    "created_at": "2026-05-13T09:03:19.933711+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "9ccebdb6-72d1-48dc-97ea-a7d1bcfc5aa7",
+    "period_id": "f595adeb-3a1d-4cf8-8548-46d6523bc97d",
+    "subject": "Creative Writing",
+    "teacher_name": "Mohamed Lukhman A",
+    "created_at": "2026-05-13T09:04:52.920737+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "9061d456-2194-423b-972e-4cd792ed0f38",
+    "period_id": "a84eb381-8bb8-4c54-9adb-48d425810e0d",
+    "subject": "S S T",
+    "teacher_name": "Geography SST Teacher",
+    "created_at": "2026-05-13T09:01:06.394583+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "acf262be-aeb1-4cde-b31d-2f88b63de80b",
+    "period_id": "1802e856-2852-4059-b3f0-40f4cfa547d2",
+    "subject": "G K",
+    "teacher_name": "Kainat Hossain",
+    "created_at": "2026-05-13T09:11:49.087401+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "f89b091b-687f-4e5f-88fc-68bc33028241",
+    "period_id": "a19c923e-e494-43ac-9863-ffbf2d2ebcee",
+    "subject": "Library",
+    "teacher_name": "Mohamed Lukhman A",
+    "created_at": "2026-05-13T09:13:38.565315+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "52dc9356-2bbc-485f-a6c4-07007815f6a0",
+    "period_id": "3e915203-31e8-49cf-996f-7e95fbb4d9e6",
+    "subject": "Geography",
+    "teacher_name": "Geography SST Teacher",
+    "created_at": "2026-05-16T05:04:12.990426+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "423717c5-d662-4c32-96b1-fe18c6de783f",
+    "period_id": "b9f31507-6417-4e10-a509-a4ef783f75ae",
+    "subject": "Arabic",
+    "teacher_name": "Mohd Ashique Raza",
+    "created_at": "2026-05-13T09:14:48.3633+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "e75fc099-b9b3-4671-9a49-1d6e5c1ec4bc",
+    "period_id": "845e397c-da49-4415-b07b-d6b82109defb",
+    "subject": "G K",
+    "teacher_name": "Saima Bux Siddiqui",
+    "created_at": "2026-05-13T09:16:15.947152+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "7017e227-15f8-4b47-9323-eecbc9b884db",
+    "period_id": "9737e2d3-7d65-4774-be89-e9744e794f57",
+    "subject": "Geography",
+    "teacher_name": "Geography SST Teacher",
+    "created_at": "2026-05-16T05:04:31.151669+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "32db1b60-327a-493d-b41e-c47bc1cdf5b2",
+    "period_id": "9c1ae946-9195-483f-ab39-a85e23047d97",
+    "subject": "History",
+    "teacher_name": "Gulfiishan Nikhat",
+    "created_at": "2026-05-13T15:50:26.025221+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "fc4c8480-846e-4415-b50d-f7392375a115",
+    "period_id": "5c9ac91a-bdbf-4d16-9916-ac8b28508580",
+    "subject": "3rd L",
+    "teacher_name": "Gulfiishan Nikhat",
+    "created_at": "2026-05-13T15:50:30.788977+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "ec69f6c8-a470-492a-8092-eef2d0a6ace0",
+    "period_id": "5c9ac91a-bdbf-4d16-9916-ac8b28508580",
+    "subject": "3rd L",
+    "teacher_name": "Afreen Sultana",
+    "created_at": "2026-05-13T15:50:30.788977+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "7a117381-afc0-472c-8149-e81ed88417eb",
+    "period_id": "d5d3d07a-7baa-4e49-95ee-f662b4977af9",
+    "subject": "History",
+    "teacher_name": "Gulfiishan Nikhat",
+    "created_at": "2026-05-13T15:50:37.708927+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "ae535661-a39f-41d0-84e9-c11d0b3bcae2",
+    "period_id": "f78ae8f4-5ce1-4551-ad86-210d7a985449",
+    "subject": "Creative Writing",
+    "teacher_name": "Mohamed Lukhman A",
+    "created_at": "2026-05-13T15:56:47.575812+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "3d10fc61-7c4a-4d23-8f5a-e8f68ddac760",
+    "period_id": "acafb075-a8e5-49ef-97d0-c6fdba52a231",
+    "subject": "3rd L",
+    "teacher_name": "Gulfiishan Nikhat",
+    "created_at": "2026-05-13T16:16:46.677752+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "12797717-344a-4c07-a7da-6341c1e7cd10",
+    "period_id": "acafb075-a8e5-49ef-97d0-c6fdba52a231",
+    "subject": "3rd L",
+    "teacher_name": "Afreen Sultana",
+    "created_at": "2026-05-13T16:16:46.677752+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "68bf96e5-47b7-418c-8153-f747b69f0ab7",
+    "period_id": "ab4403dd-43a8-4b1f-9be4-bdd2cfcc6a07",
+    "subject": "Islamic studies",
+    "teacher_name": "Muhammed Arif P A",
+    "created_at": "2026-05-15T07:37:45.942409+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "2b491a5a-09c5-46c8-a572-ed1dfecae7fa",
+    "period_id": "fc35d149-53ba-4b7a-b12a-19fe44fab482",
+    "subject": "Maths",
+    "teacher_name": "Class 2 Mother Teacher",
+    "created_at": "2026-07-20T04:19:24.088865+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "2618274d-ca89-40c2-a1a0-f0a75743a23e",
+    "period_id": "081196c3-26ed-4a30-905c-5ad19c8f764c",
+    "subject": "English Language",
+    "teacher_name": "Class 2 Mother Teacher",
+    "created_at": "2026-05-13T09:03:08.599577+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "07d55763-61bb-4afa-9d20-f92fbab6a576",
+    "period_id": "60ea1a25-ed65-49e2-bcfb-48bf4573937a",
+    "subject": "Islamic Study",
+    "teacher_name": "Muhammed Arif P A",
+    "created_at": "2026-05-15T07:42:48.647591+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "c45db879-a36a-43d9-bb15-6b57684a5db5",
+    "period_id": "e3c2da98-c3a2-4afb-aeba-b13f43d8f848",
+    "subject": "Islamic Study",
+    "teacher_name": "Muhammed Arif P A",
+    "created_at": "2026-05-15T07:42:54.195736+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "a5efcbfd-8250-47b1-9700-b6272fd22638",
+    "period_id": "968ed327-bacf-4267-8ce5-3dfe71cdcae2",
+    "subject": "English Language",
+    "teacher_name": "Class 2 Mother Teacher",
+    "created_at": "2026-05-13T09:18:28.322275+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "2d76e8ce-8841-458b-ba49-bde465a33b1b",
+    "period_id": "68bb04f1-45ed-475a-aad5-c8e53a5dde57",
+    "subject": "Creative Writing",
+    "teacher_name": "Class 2 Mother Teacher",
+    "created_at": "2026-05-13T16:00:37.670677+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "d8eb7ccc-77a3-4369-a081-217277a6dbf5",
+    "period_id": "bc7ee4be-824e-469f-a250-80a05e72404f",
+    "subject": "Creative Writing",
+    "teacher_name": "Class 2 Mother Teacher",
+    "created_at": "2026-05-13T16:00:49.278056+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "75bd6b73-33c8-4db7-9fb7-a17ff19ab2d4",
+    "period_id": "39b8ecf0-b2bb-4132-bfad-1b330b7c9a94",
+    "subject": "Creative Writing",
+    "teacher_name": "Class 2 Mother Teacher",
+    "created_at": "2026-05-13T16:02:01.292711+00:00",
+    "is_class_teacher": false
+  },
+  {
+    "id": "f4b3d971-59f9-4cb8-9faf-e9ee5cbfbd3b",
+    "period_id": "f832d3a8-8903-4e5e-bbfb-3a86e269586c",
+    "subject": "Creative Writing",
+    "teacher_name": "Class 2 Mother Teacher",
+    "created_at": "2026-05-13T16:02:09.082501+00:00",
+    "is_class_teacher": false
+  }
+]
