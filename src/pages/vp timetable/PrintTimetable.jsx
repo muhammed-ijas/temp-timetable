@@ -53,9 +53,12 @@ const PRINT_CSS = `
   .split { border-top: 1px dashed #C4C4C4; margin-top: 4px; padding-top: 4px; }
   .empty { color: #D1D5DB; text-align: center; vertical-align: middle; }
   .sec { font-size: 14px; font-weight: 800; color: ${PURPLE_DARK}; margin: 10px 0 6px; padding-bottom: 3px; border-bottom: 2px solid ${PURPLE_BORDER}; text-transform: uppercase; letter-spacing: .6px; }
-  .block { page-break-inside: avoid; break-inside: avoid; }
-  .master td { height: 44px; font-size: 10px; padding: 5px 6px; }
-  .master .s { font-size: 10px; } .master .t { font-size: 9px; }
+  .block { page-break-before: always; break-before: page; }
+  .block.first { page-break-before: auto; break-before: auto; }
+  .master { page-break-inside: avoid; break-inside: avoid; margin-bottom: 8px; }
+  .master td { height: 40px; font-size: 10px; padding: 4px 6px; }
+  .master .s { font-size: 10px; } .master .t { font-size: 9px; margin-top: 1px; }
+  .master th { padding: 5px 3px; font-size: 10px; } .master th small { font-size: 8px; }
   .foot { font-size: 9px; color: #9CA3AF; text-align: right; margin-top: 4px; }
 `
 function openPrint(html, title) {
@@ -217,7 +220,7 @@ function PrintMaster({ periods, classes, allTimetableData, currentSchoolYear, sc
       { name: 'Classes 1–8', cls: classes.filter(c => !isPre(c.name)) },
     ].filter(g => g.cls.length)
     const rowsByClass = Object.fromEntries(classes.map(c => [c.name, classRows(allTimetableData, c.name, currentSchoolYear)]))
-    const body = DAYS.map(d => `<div class="block"><div class="sec">${d}</div>${groups.map(g => {
+    const body = DAYS.map((d, i) => `<div class="block${i === 0 ? ' first' : ''}"><div class="sec">${d}</div>${groups.map(g => {
       const slots = classSlots(periods, g.cls[0].name)
       return `<table class="master"><thead><tr><th class="day">${esc(g.name)}</th>${slots.map(thHtml).join('')}</tr></thead><tbody>${
         g.cls.map(c => `<tr><td class="day">${esc(c.name)}</td>${slots.map(s => isDispersal(s) ? `<td class="dis">${esc(s.label)}</td>` : s.is_break ? `<td class="brk">${esc(s.label)}</td>` : cellHtml(rowsByClass[c.name][d]?.[s.period_number], 'teacher')).join('')}</tr>`).join('')
