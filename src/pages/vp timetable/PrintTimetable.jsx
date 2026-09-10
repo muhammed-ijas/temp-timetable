@@ -29,28 +29,28 @@ function classSlots(periods, className) {
 
 // ── Print shell ──
 const PRINT_CSS = `
-  @page { size: A4 landscape; margin: 14mm 14mm; }
+  @page { size: A4 landscape; margin: 12mm 12mm; }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11px; color: #111; padding: 6mm 8mm; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  .head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 2.5px solid ${PURPLE_DARK}; }
-  .head img { height: 42px; object-fit: contain; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11px; color: #111; padding: 2mm 4mm; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; padding-bottom: 7px; border-bottom: 2.5px solid ${PURPLE_DARK}; }
+  .head img { height: 36px; object-fit: contain; }
   .school { font-size: 10px; font-weight: 700; color: ${PURPLE_MID}; letter-spacing: 1.4px; text-transform: uppercase; }
-  .title { font-size: 22px; font-weight: 800; color: #111; text-transform: uppercase; line-height: 1.1; }
+  .title { font-size: 19px; font-weight: 800; color: #111; text-transform: uppercase; line-height: 1.1; }
   .sub { font-size: 11px; color: #6B7280; margin-top: 2px; }
   .meta { text-align: right; font-size: 11px; color: #6B7280; }
   table { width: 100%; border-collapse: collapse; table-layout: fixed; margin-bottom: 12px; }
-  th { background: ${PURPLE_DARK} !important; color: #fff !important; padding: 7px 4px; font-size: 11px; font-weight: 700; text-align: center; border: 1px solid #2C1A5E; line-height: 1.25; }
+  th { background: ${PURPLE_DARK} !important; color: #fff !important; padding: 5px 4px; font-size: 10.5px; font-weight: 700; text-align: center; border: 1px solid #2C1A5E; line-height: 1.25; }
   th small { display: block; font-weight: 500; font-size: 9px; color: #C4B5FD; margin-top: 1px; }
   th.brk { background: #065F46 !important; } th.brk small { color: #A7F3D0; }
   th.dis { background: #4B5563 !important; } th.dis small { color: #D1D5DB; }
-  th.day { text-align: left; width: 74px; }
-  th.b { width: 58px; }
-  td { border: 1px solid #B8B8B8; padding: 9px 9px; vertical-align: top; font-size: 11.5px; line-height: 1.35; height: 88px; }
+  th.day { text-align: left; width: 60px; }
+  th.b { width: 52px; }
+  td { border: 1px solid #B8B8B8; padding: 6px 7px; vertical-align: top; font-size: 10.5px; line-height: 1.28; height: 70px; }
   td.day { font-weight: 800; color: ${PURPLE_MID}; text-transform: uppercase; font-size: 11px; background: #FAFAFA; vertical-align: middle; }
   td.brk { background: #F0FDF4; color: #059669; font-style: italic; text-align: center; font-size: 8.5px; vertical-align: middle; }
   td.dis { background: #F3F4F6; color: #9CA3AF; font-style: italic; text-align: center; font-size: 8.5px; vertical-align: middle; }
-  .s { font-weight: 700; color: #111; font-size: 12px; } .t { color: #4B5563; font-size: 10.5px; margin-top: 3px; } .c { color: #047857; font-weight: 600; font-size: 10px; margin-top: 2px; }
-  .split { border-top: 1px dashed #C4C4C4; margin-top: 4px; padding-top: 4px; }
+  .s { font-weight: 700; color: #111; font-size: 11px; } .t { color: #4B5563; font-size: 9.8px; margin-top: 1px; } .c { color: #047857; font-weight: 600; font-size: 10px; margin-top: 2px; }
+  .split { border-top: 1px dashed #C4C4C4; margin-top: 3px; padding-top: 3px; }
   .empty { color: #D1D5DB; text-align: center; vertical-align: middle; }
   .sec { font-size: 14px; font-weight: 800; color: ${PURPLE_DARK}; margin: 10px 0 6px; padding-bottom: 3px; border-bottom: 2px solid ${PURPLE_BORDER}; text-transform: uppercase; letter-spacing: .6px; }
   .block { page-break-before: always; break-before: page; }
