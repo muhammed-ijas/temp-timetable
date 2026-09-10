@@ -4,16 +4,8 @@ import { supabase, VP_PASSWORD, getSchoolYear, getSchoolYearLabel } from '../../
 import VPHeader from '../../components/VPHeader'
 
 const NAV_ITEMS = [
-  { path: '/vp/leaves', label: 'Leave Requests', desc: 'Review and action leave requests', color: '#EFF6FF', iconColor: '#1D4ED8' },
-  { path: '/vp/lates', label: 'Late Marks', desc: 'Mark and manage late arrivals', color: '#FFF7ED', iconColor: '#C2410C' },
-  { path: '/vp/holidays', label: 'Holidays', desc: 'Add and manage school holidays', color: '#FEF3C7', iconColor: '#92400E' },
-  { path: '/vp/special', label: 'Special Leave', desc: 'Grant special leave to teachers', color: '#F5F3FF', iconColor: '#5B21B6' },
-  { path: '/vp/teachers', label: 'Teacher History', desc: 'View full leave history per teacher', color: '#F0FDF4', iconColor: '#047857' },
-  { path: '/vp/timetable', label: 'Timetable', desc: 'Manage class timetables and schedules', color: '#FFF1F2', iconColor: '#BE123C' },
-  { path: '/vp/diary', label: 'Teacher Diaries', desc: 'View daily teaching diaries by teacher', color: '#F0F9FF', iconColor: '#0369A1' },
-  { path: '/vp/marks', label: 'Marks', desc: 'View and edit student marks', color: '#ECFEFF', iconColor: '#0E7490' },
-  { path: '/vp/report-cards', label: 'Report Cards', desc: 'Generate and print student report cards', color: '#FDF4FF', iconColor: '#A21CAF' },
-  { path: '/vp/subjects', label: 'Subjects', desc: 'Manage subjects and assign teachers', color: '#F0FDFA', iconColor: '#0F766E' },
+  { path: '/vp/timetable', label: 'Timetable', desc: 'Build and manage class timetables', color: '#FFF1F2', iconColor: '#BE123C' },
+  { path: '/vp/subjects',  label: 'Subjects',  desc: 'Subjects per class and teacher assignments', color: '#F0FDFA', iconColor: '#0F766E' },
 ]
 
 export default function VPHome() {
