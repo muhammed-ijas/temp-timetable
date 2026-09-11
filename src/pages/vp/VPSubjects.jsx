@@ -294,10 +294,11 @@ export default function VPSubjects() {
       const rows = byTeacher[name].sort((a, b) => classOrder(a.cls) - classOrder(b.cls) || a.subject.localeCompare(b.subject))
         .map(r => ({ ...r, n: weekly[`${r.cls}|${r.subject}|${name}`] || 0 }))
       const classCount = new Set(rows.map(r => r.cls)).size
+      const subjectCount = new Set(rows.map(r => r.subject)).size   // same subject in several classes counts once
       const total = rows.reduce((a, r) => a + r.n, 0)
       return `
       <section class="cls">
-        <h2>${esc(name)} <span>${rows.length ? `${classCount} class${classCount === 1 ? '' : 'es'} · ${rows.length} subject${rows.length === 1 ? '' : 's'} · <b>${total} periods/week</b>` : 'no subjects'}</span></h2>
+        <h2>${esc(name)} <span>${rows.length ? `${classCount} class${classCount === 1 ? '' : 'es'} · ${subjectCount} subject${subjectCount === 1 ? '' : 's'} · <b>${total} periods/week</b>` : 'no subjects'}</span></h2>
         <table>
           <thead><tr><th>Class</th><th>Subject</th><th class="n">/ week</th></tr></thead>
           <tbody>${rows.length ? rows.map(r => `
