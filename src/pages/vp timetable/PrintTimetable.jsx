@@ -2,6 +2,7 @@ import { useState, useMemo, useEffect } from 'react'
 import { DAYS, PURPLE_DARK, PURPLE_MID, PURPLE_BORDER } from './TimetableUtils'
 import { supabase } from '../../lib/supabase'
 
+
 // ═══════════════════════════════════════════════════════════════
 //  Print Timetable (draft site)
 //  Same layout as the grid: days down the side, periods across.

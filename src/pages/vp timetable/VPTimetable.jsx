@@ -3,7 +3,10 @@ import { useNavigate } from 'react-router-dom'
 import { supabase, TEACHERS, VP_PASSWORD, getSchoolYear, getSchoolYearLabel } from '../../lib/supabase'
 import PrintTimetable from './PrintTimetable'
 
+import { listVersions, getActiveVersionId, setActiveVersion, createVersion, renameVersion, deleteVersion } from '../../lib/versions'
+
 import { DAYS, DEFAULT_PERIODS, getDefaultPeriods, ordinalPeriod, Icons, PURPLE_DARK, PURPLE_BORDER } from './TimetableUtils'
+
 import TimetableGrid   from './TimetableGrid'
 import PeriodManager   from './PeriodManager'
 import TeacherLoad     from './TeacherLoad'
@@ -50,7 +53,53 @@ export default function VPTimetable() {
 const [timetableLoading, setTimetableLoading] = useState(false)
   const [todaySubstitutions, setTodaySubstitutions] = useState([])
 
-  const [newClassName, setNewClassName] = useState('')
+    const [newClassName, setNewClassName] = useState('')
+  const [versions, setVersions]   = useState([])
+  const [versionId, setVersionId] = useState(null)
+
+  // load versions once; pick the active one
+  useEffect(() => {
+    (async () => {
+      const vs = await listVersions()
+      setVersions(vs)
+      const active = await getActiveVersionId()
+      setVersionId(active || vs[0]?.id || null)
+    })()
+  }, [])
+  // reload everything when the version changes
+  useEffect(() => {
+    if (!versionId) return
+    fetchAll()
+    if (selectedClass) fetchTimetable(selectedClass.id)
+  }, [versionId])
+
+  async function switchVersion(id) {
+    await setActiveVersion(id)
+    setVersions(await listVersions())
+    setVersionId(id)
+  }
+  async function newVersion(copy) {
+    const name = window.prompt(copy ? 'Name for the copy:' : 'Name for the new timetable:', copy ? `${versions.find(v => v.id === versionId)?.name || 'Draft'} (copy)` : `Draft ${versions.length + 1}`)
+    if (!name?.trim()) return
+    const v = await createVersion(name.trim(), copy ? versionId : null)
+    await switchVersion(v.id)
+  }
+  async function renameCurrent() {
+    const cur = versions.find(v => v.id === versionId)
+    const name = window.prompt('Rename timetable:', cur?.name || '')
+    if (!name?.trim() || name.trim() === cur?.name) return
+    await renameVersion(versionId, name.trim())
+    setVersions(await listVersions())
+  }
+  async function deleteCurrent() {
+    const cur = versions.find(v => v.id === versionId)
+    if (versions.length <= 1) { alert('Keep at least one timetable.'); return }
+    if (!window.confirm(`Delete "${cur?.name}" and all its periods? This cannot be undone.`)) return
+    await deleteVersion(versionId)
+    const vs = await listVersions()
+    setVersions(vs)
+    await switchVersion(vs[0].id)
+  }
   const [addingClass, setAddingClass]   = useState(false)
 
   useEffect(() => {
@@ -91,6 +140,7 @@ const [timetableLoading, setTimetableLoading] = useState(false)
     const { data: allEntries } = await supabase
       .from('timetable_entries')
       .select('*, timetable_periods(*, timetable_classes(*))')
+      .eq('version_id', versionId)
     setAllTimetableData(allEntries || [])
 
     await fetchTodaySubs()
@@ -114,7 +164,7 @@ setLoading(false)
     
 
     const periodIds = periods.map(p => p.id)
-    const { data: entries } = await supabase.from('timetable_entries').select('*').in('period_id', periodIds)
+       const { data: entries } = await supabase.from('timetable_entries').select('*').in('period_id', periodIds).eq('version_id', versionId)
 
     const data = {}
     const uniquePeriods = []
@@ -144,6 +194,7 @@ setLoading(false)
     const { data: allEntries } = await supabase
       .from('timetable_entries')
       .select('*, timetable_periods(*, timetable_classes(*))')
+      .eq('version_id', versionId)
     setAllTimetableData(allEntries || [])
 
       await fetchTodaySubs()
@@ -223,19 +274,29 @@ setLoading(false)
       <style>{GLOBAL_CSS}</style>
 
       <header style={{ background: PURPLE_DARK, boxShadow: '0 1px 3px rgba(0,0,0,0.3)', position: 'sticky', top: 0, zIndex: 50 }}>
-        <div style={{ maxWidth: 'none', margin: '0 auto', padding: '9px 20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <div style={{ maxWidth: 1300, margin: '0 auto', padding: '9px 20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
             <img src="/logo.png" alt="PGS" style={{ height: 32, objectFit: 'contain' }} onError={e => e.target.style.display = 'none'} />
             <div>
               <div style={{ color: '#C4B5FD', fontSize: 10, fontWeight: 500, letterSpacing: 1.5, textTransform: 'uppercase' }}>Premier Global School</div>
-              <div style={{ color: '#F9FAFB', fontSize: 14, fontWeight: 700 }}>VP — Timetable Manager</div>
+              <div style={{ color: '#F9FAFB', fontSize: 14, fontWeight: 700 }}>Principal — Timetable Manager</div>
             </div>
           </div>
           <div style={{ display: 'flex', gap: 8 }}>
+            <select value={versionId || ''} onChange={e => switchVersion(e.target.value)} title="Switch timetable"
+              style={{ background: '#fff', border: 0, color: PURPLE_DARK, padding: '6px 10px', borderRadius: 6, fontSize: 12, fontWeight: 700, cursor: 'pointer', maxWidth: 200 }}>
+              {versions.map(v => <option key={v.id} value={v.id}>{v.name}</option>)}
+            </select>
+            {[['New', () => newVersion(false)], ['Duplicate', () => newVersion(true)], ['Rename', renameCurrent], ['Delete', deleteCurrent]].map(([label, fn]) => (
+              <button key={label} onClick={fn}
+                style={{ background: 'transparent', border: '1px solid #6D28D9', color: label === 'Delete' ? '#FCA5A5' : '#C4B5FD', padding: '6px 10px', borderRadius: 5, cursor: 'pointer', fontSize: 12 }}>
+                {label}
+              </button>
+            ))}
             <span style={{ color: '#C4B5FD', fontSize: 11, alignSelf: 'center' }}>AY {schoolYearLabel}</span>
             <button onClick={() => navigate('/vp')}
               style={{ background: 'transparent', border: `1px solid #6D28D9`, color: '#C4B5FD', padding: '6px 12px', borderRadius: 5, cursor: 'pointer', fontSize: 12 }}>
-              ← VP Dashboard
+              ← Principal Dashboard
             </button>
             <button onClick={() => { sessionStorage.removeItem('pgs_vp'); navigate('/') }}
               style={{ background: 'transparent', border: `1px solid #6D28D9`, color: '#C4B5FD', padding: '6px 12px', borderRadius: 5, cursor: 'pointer', fontSize: 12 }}>
@@ -271,6 +332,7 @@ setLoading(false)
         {tab === 'timetable' && (
           <TimetableGrid
             classes={classes}
+            versionId={versionId}
             selectedClass={selectedClass}
             setSelectedClass={setSelectedClass}
             classPeriods={classPeriods}

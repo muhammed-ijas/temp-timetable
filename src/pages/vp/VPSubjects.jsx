@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { supabase, VP_PASSWORD, TEACHERS, getSchoolYear, getSchoolYearLabel } from '../../lib/supabase'
+import { getActiveVersionId, listVersions, setActiveVersion } from '../../lib/versions'
 
 // ═══════════════════════════════════════════════════════════════
 //  VP — Subjects & Teacher Assignments
@@ -52,6 +53,45 @@ export default function VPSubjects() {
   const [busyId, setBusyId]     = useState(null)
   const [toast, setToast]       = useState(null)
   const [printing, setPrinting] = useState(false)
+  const [syncing, setSyncing]   = useState(false)
+  const [activeName, setActiveName] = useState('')
+  const [versions, setVersions] = useState([])
+  const [versionId, setVersionId] = useState('')
+
+  async function loadVersions() {
+    const vs = await listVersions()
+    setVersions(vs)
+    const a = vs.find(v => v.is_active)
+    setActiveName(a?.name || ''); setVersionId(a?.id || '')
+  }
+  useEffect(() => { loadVersions() }, [])
+
+  // Switch the active timetable from here, then offer to sync to it
+  async function switchVersion(id) {
+    if (!id || id === versionId) return
+    await setActiveVersion(id)
+    await loadVersions()
+    const name = versions.find(v => v.id === id)?.name || 'that timetable'
+    if (window.confirm(`Now on "${name}". Sync subjects and teachers to it?`)) {
+      setSyncing(true)
+      const { data, error } = await supabase.rpc('sync_subjects_from_timetable')
+      setSyncing(false)
+      if (error) { showToast(error.message, false); return }
+      showToast(`Synced to ${data.version}: ${data.subjects} subjects, ${data.assignments} assignments`)
+      load(selectedClass)
+    }
+  }
+
+  // Make subjects + assignments match the active timetable
+  async function syncFromTimetable() {
+    if (!window.confirm(`Rebuild subjects and teacher assignments from the "${activeName || 'active'}" timetable?\n\nThis replaces the current assignment list with whoever teaches each subject on that timetable.`)) return
+    setSyncing(true)
+    const { data, error } = await supabase.rpc('sync_subjects_from_timetable')
+    setSyncing(false)
+    if (error) { showToast(error.message, false); return }
+    showToast(`Synced to ${data.version}: ${data.subjects} subjects, ${data.assignments} assignments`)
+    load(selectedClass)
+  }
 
   useEffect(() => {
     if (sessionStorage.getItem('pgs_vp') !== VP_PASSWORD) { navigate('/'); return }
@@ -156,7 +196,8 @@ export default function VPSubjects() {
         .eq('school_year', currentSchoolYear),
       supabase.from('timetable_entries')
         .select('subject, teacher_name, timetable_periods!inner(is_break, timetable_classes!inner(name, school_year))')
-        .eq('timetable_periods.timetable_classes.school_year', currentSchoolYear),
+        .eq('timetable_periods.timetable_classes.school_year', currentSchoolYear)
+        .eq('version_id', await getActiveVersionId()),
     ])
     setPrinting(false)
     // periods per week keyed "class|subject|teacher" and "class|subject"
@@ -320,7 +361,15 @@ export default function VPSubjects() {
               <div style={{ color: '#F9FAFB', fontSize: 14, fontWeight: 700 }}>VP — Subjects</div>
             </div>
           </div>
-          <div style={{ display: 'flex', gap: 8 }}>
+          <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', justifyContent: 'flex-end', alignItems: 'center' }}>
+            <select value={versionId} onChange={e => switchVersion(e.target.value)} title="Which timetable the counts and sync use"
+              style={{ background: '#fff', border: 0, color: PURPLE_DARK, padding: '6px 10px', borderRadius: 6, fontSize: 12, fontWeight: 700, cursor: 'pointer', maxWidth: 200 }}>
+              {versions.map(v => <option key={v.id} value={v.id}>{v.name}</option>)}
+            </select>
+            <button onClick={syncFromTimetable} disabled={syncing} title={`Rebuild from the active timetable${activeName ? ` (${activeName})` : ''}`}
+              style={{ background: '#10B981', border: '1px solid #10B981', color: '#fff', padding: '6px 10px', borderRadius: 6, cursor: 'pointer', fontSize: 12, fontWeight: 700, opacity: syncing ? .6 : 1 }}>
+              {syncing ? 'Syncing…' : `Sync from ${activeName || 'timetable'}`}
+            </button>
             <button onClick={printByClass} disabled={printing} title="One section per class: subject and teacher"
               style={{ background: '#fff', border: '1px solid #fff', color: PURPLE_DARK, padding: '6px 10px', borderRadius: 6, cursor: 'pointer', fontSize: 12, fontWeight: 600, display: 'flex', alignItems: 'center', gap: 6, opacity: printing ? .6 : 1 }}>
               <PrintIcon /> By class

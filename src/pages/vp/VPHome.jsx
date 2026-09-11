@@ -28,7 +28,7 @@ export default function VPHome() {
       <style>{`@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap'); * { box-sizing: border-box; margin: 0; padding: 0; } .vp-card { transition: transform 0.14s ease, box-shadow 0.14s ease; cursor: pointer; } .vp-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.1) !important; } .vp-card:active { transform: scale(0.97); }`}</style>
 
       <VPHeader
-        title="VP Dashboard"
+        title="Principal Dashboard"
         rightExtra={<span style={{ color: 'rgba(255,255,255,0.5)', fontSize: 11 }}>{schoolYearLabel}</span>}
       />
 
@@ -37,7 +37,7 @@ export default function VPHome() {
         {/* Welcome card */}
         <div style={{ background: 'linear-gradient(135deg, #1e003e 0%, #3B0764 100%)', borderRadius: 16, padding: '20px 20px', marginBottom: 20 }}>
           <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: 10, fontWeight: 600, letterSpacing: 1.6, textTransform: 'uppercase', marginBottom: 6 }}>Welcome</div>
-          <div style={{ color: '#fff', fontSize: 20, fontWeight: 700, letterSpacing: -0.3, marginBottom: 4 }}>VP Dashboard</div>
+          <div style={{ color: '#fff', fontSize: 20, fontWeight: 700, letterSpacing: -0.3, marginBottom: 4 }}>Principal Dashboard</div>
           <div style={{ color: 'rgba(255,255,255,0.4)', fontSize: 13 }}>AY {schoolYearLabel}</div>
           {pendingCount > 0 && (
             <div style={{ marginTop: 12, display: 'inline-flex', alignItems: 'center', gap: 6, background: 'rgba(239,68,68,0.2)', border: '1px solid rgba(239,68,68,0.3)', borderRadius: 8, padding: '6px 12px' }}>

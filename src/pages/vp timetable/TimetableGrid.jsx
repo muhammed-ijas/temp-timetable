@@ -277,10 +277,10 @@ export default function TimetableGrid({
   async function doSaveCell() {
     setSavingCell(true)
     const periodId = editingCell.period.id
-    await supabase.from('timetable_entries').delete().eq('period_id', periodId)
+    await supabase.from('timetable_entries').delete().eq('period_id', periodId).eq('version_id', versionId)
     const valid = cellEntries.filter(e => e.subject.trim())   // subject is enough; teacher can be added later
     if (valid.length > 0) {
-      await supabase.from('timetable_entries').insert(valid.map(e => ({ period_id: periodId, subject: e.subject.trim(), teacher_name: e.teacher_name || '', is_class_teacher: e.is_class_teacher || false })))
+      await supabase.from('timetable_entries').insert(valid.map(e => ({ period_id: periodId, version_id: versionId, subject: e.subject.trim(), teacher_name: e.teacher_name || '', is_class_teacher: e.is_class_teacher || false })))
     }
     setSavingCell(false); setEditingCell(null); setConflictWarnings([])
     await onRefresh(selectedClass.id)
