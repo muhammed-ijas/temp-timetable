@@ -113,3 +113,15 @@ export const PURPLE_DARK  = '#3B0764'
 export const PURPLE_MID   = '#5B21B6'
 export const PURPLE_LIGHT = '#EDE9FE'
 export const PURPLE_BORDER = '#DDD6FE'
+
+
+// "1" -> "I", "8 A" -> "VIII A"; Balvatika names unchanged
+const ROMAN = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII']
+export function romanClass(name) {
+  const m = String(name || '').match(/^(\d+)(.*)$/)
+  return m && ROMAN[+m[1]] ? ROMAN[+m[1]] + m[2] : name
+}
+// "Class VIII" for numbered classes, "Balvatika 1" as-is
+export function classLabel(name) {
+  return /^\d/.test(String(name || '')) ? `Class ${romanClass(name)}` : String(name || '')
+}

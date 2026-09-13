@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react'
-import { DAYS, PURPLE_MID, PURPLE_LIGHT, PURPLE_BORDER } from './TimetableUtils'
+import { DAYS, PURPLE_MID, PURPLE_LIGHT, PURPLE_BORDER, romanClass } from './TimetableUtils'
 
 // ═══════════════════════════════════════════════════════════════
 //  Free Teachers — by TIME, not slot number.
@@ -113,7 +113,7 @@ export default function FreeTeachers({ sortedTeachers, allTimetableData, current
                       <div style={{ fontSize: 13, color: '#374151', fontWeight: 500 }}>{t.name}</div>
                       {busyMap[t.name].map((e, i) => (
                         <div key={i} style={{ fontSize: 11, color: '#9CA3AF', marginTop: 1, textTransform: 'uppercase' }}>
-                          {e.subject} · {e.timetable_periods?.timetable_classes?.name} · {fmt(e.timetable_periods.start_time)}–{fmt(e.timetable_periods.end_time)}
+                          {e.subject} · {romanClass(e.timetable_periods?.timetable_classes?.name)} · {fmt(e.timetable_periods.start_time)}–{fmt(e.timetable_periods.end_time)}
                         </div>
                       ))}
                     </div>

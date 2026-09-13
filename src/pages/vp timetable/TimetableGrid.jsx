@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { DAYS, DEFAULT_CLASSES, PURPLE_DARK, PURPLE_MID, PURPLE_LIGHT } from './TimetableUtils'
+import { DAYS, DEFAULT_CLASSES, PURPLE_DARK, PURPLE_MID, PURPLE_LIGHT, romanClass } from './TimetableUtils'
 import { supabase } from '../../lib/supabase'
 import { classKey } from '../../lib/examConfig'
 
@@ -44,7 +44,7 @@ function ClassBar({ classes, selectedClass, onSelect, onDelete, newClassName, se
             return (
               <button key={cls.id} onClick={() => onSelect(cls)}
                 style={{ padding: '7px 14px', borderRadius: 999, border: `1.5px solid ${on ? PURPLE_DARK : '#DDD6FE'}`, background: on ? PURPLE_DARK : '#fff', color: on ? '#fff' : '#4C1D95', fontSize: 13, fontWeight: 600, cursor: 'pointer', whiteSpace: 'nowrap', textTransform: 'uppercase' }}>
-                {cls.name}
+                {romanClass(cls.name)}
               </button>
             )
           })}
@@ -65,7 +65,7 @@ function ClassBar({ classes, selectedClass, onSelect, onDelete, newClassName, se
             {addingClass ? 'Adding…' : 'Add'}
           </button>
           {selectedClass && (
-            <button onClick={() => onDelete(selectedClass)} title={`Delete ${selectedClass.name}`}
+            <button onClick={() => onDelete(selectedClass)} title={`Delete ${romanClass(selectedClass.name)}`}
               style={{ background: '#fff', color: '#B91C1C', border: '1px solid #FECACA', padding: '8px 12px', borderRadius: 8, fontSize: 12, fontWeight: 600, cursor: 'pointer' }}>
               Delete
             </button>
@@ -98,7 +98,7 @@ function CellModal({ editingCell, cellEntries, setCellEntries, conflictWarnings,
     <div style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 100, padding: 20 }}>
       <div style={{ background: '#fff', borderRadius: 10, padding: 22, maxWidth: 460, width: '100%', boxShadow: '0 25px 60px rgba(0,0,0,.2)', maxHeight: '90vh', overflowY: 'auto' }}>
         <div style={{ fontSize: 14, fontWeight: 700, color: '#111827', marginBottom: 2 }}>{editingCell.day} — Period {editingCell.label}</div>
-        <div style={{ fontSize: 11, color: '#6B7280', marginBottom: 16 }}>{fmt(editingCell.period.start_time)} – {fmt(editingCell.period.end_time)} &nbsp;·&nbsp; <span style={{ textTransform: 'uppercase' }}>{selectedClass?.name}</span></div>
+        <div style={{ fontSize: 11, color: '#6B7280', marginBottom: 16 }}>{fmt(editingCell.period.start_time)} – {fmt(editingCell.period.end_time)} &nbsp;·&nbsp; <span style={{ textTransform: 'uppercase' }}>{romanClass(selectedClass?.name)}</span></div>
 
         {conflictWarnings.length > 0 && (
           <div style={{ background: '#FEF3C7', border: '1px solid #FCD34D', borderRadius: 6, padding: '10px 12px', marginBottom: 14 }}>
@@ -252,7 +252,7 @@ export default function TimetableGrid({
           && p.timetable_classes?.school_year === currentSchoolYear
       })
       if (conflicts.length > 0) {
-        warnings.push(`${entry.teacher_name} is already in ${conflicts[0].timetable_periods?.timetable_classes?.name} on ${day}, this period`)
+        warnings.push(`${entry.teacher_name} is already in ${romanClass(conflicts[0].timetable_periods?.timetable_classes?.name)} on ${day}, this period`)
       }
     }
     return warnings
@@ -277,10 +277,10 @@ export default function TimetableGrid({
   async function doSaveCell() {
     setSavingCell(true)
     const periodId = editingCell.period.id
-    await supabase.from('timetable_entries').delete().eq('period_id', periodId).eq('version_id', versionId)
+    await supabase.from('timetable_entries').delete().eq('period_id', periodId)
     const valid = cellEntries.filter(e => e.subject.trim())   // subject is enough; teacher can be added later
     if (valid.length > 0) {
-      await supabase.from('timetable_entries').insert(valid.map(e => ({ period_id: periodId, version_id: versionId, subject: e.subject.trim(), teacher_name: e.teacher_name || '', is_class_teacher: e.is_class_teacher || false })))
+      await supabase.from('timetable_entries').insert(valid.map(e => ({ period_id: periodId, subject: e.subject.trim(), teacher_name: e.teacher_name || '', is_class_teacher: e.is_class_teacher || false })))
     }
     setSavingCell(false); setEditingCell(null); setConflictWarnings([])
     await onRefresh(selectedClass.id)
@@ -305,7 +305,7 @@ export default function TimetableGrid({
             <>
               <div style={{ background: '#fff', border: '1px solid #E5E7EB', borderRadius: 8, padding: '12px 16px', marginBottom: 10, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 8 }}>
                 <div>
-                  <div style={{ fontSize: 16, fontWeight: 700, color: '#111827', textTransform: 'uppercase' }}>{selectedClass.name}</div>
+                  <div style={{ fontSize: 16, fontWeight: 700, color: '#111827', textTransform: 'uppercase' }}>{romanClass(selectedClass.name)}</div>
                   <div style={{ fontSize: 11, color: '#6B7280', marginTop: 2 }}>{teachingCount} periods a day · click a cell to set subject and teacher</div>
                 </div>
                 <button onClick={() => onSetTab('periods_' + selectedClass.id)}

@@ -19,7 +19,8 @@ const PURPLE_DARK = '#3B0764'
 const PURPLE      = '#5B21B6'
 const CLASSES = ['Nursery', 'LKG', 'UKG', '1', '2', '3', '4', '5', '6', '7', '8']
 const PRE_PRIMARY_LABELS = { Nursery: 'Balvatika 1', LKG: 'Balvatika 2', UKG: 'Balvatika 3' }
-const classLabel = c => /^[0-9]+$/.test(c) ? `Class ${c}` : (PRE_PRIMARY_LABELS[c] || c)
+const ROMAN = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X']
+const classLabel = c => /^[0-9]+$/.test(c) ? `Class ${ROMAN[+c] || c}` : (PRE_PRIMARY_LABELS[c] || c)
 
 const initials = name => name.split(/\s+/).filter(Boolean).slice(0, 2).map(w => w[0].toUpperCase()).join('')
 

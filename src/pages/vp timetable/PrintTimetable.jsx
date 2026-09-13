@@ -1,7 +1,6 @@
 import { useState, useMemo, useEffect } from 'react'
-import { DAYS, PURPLE_DARK, PURPLE_MID, PURPLE_BORDER } from './TimetableUtils'
+import { DAYS, PURPLE_DARK, PURPLE_MID, PURPLE_BORDER, romanClass } from './TimetableUtils'
 import { supabase } from '../../lib/supabase'
-
 
 // ═══════════════════════════════════════════════════════════════
 //  Print Timetable (draft site)
@@ -84,7 +83,7 @@ function thHtml(s) {
 }
 function cellHtml(entries, mode) {   // mode: 'teacher' shows teacher, 'class' shows class
   if (!entries || entries.length === 0) return `<td class="empty">—</td>`
-  return `<td>${entries.map((e, i) => `<div class="${i ? 'split' : ''}"><div class="s">${esc(e.subject)}</div>${mode === 'class' ? `<div class="c">${esc(e.className)}</div>` : `<div class="t">${esc(e.teacher || '')}</div>`}</div>`).join('')}</td>`
+  return `<td>${entries.map((e, i) => `<div class="${i ? 'split' : ''}"><div class="s">${esc(e.subject)}</div>${mode === 'class' ? `<div class="c">${esc(romanClass(e.className))}</div>` : `<div class="t">${esc(e.teacher || '')}</div>`}</div>`).join('')}</td>`
 }
 function classTableHtml(slots, rows, mode) {   // rows: {day -> {period_number -> [entries]}}
   return `<table><thead><tr><th class="day">Day</th>${slots.map(thHtml).join('')}</tr></thead><tbody>${
@@ -142,14 +141,14 @@ function PrintClass({ periods, classes, allTimetableData, currentSchoolYear, sch
     const slots = classSlots(periods, selected)
     const rows = classRows(allTimetableData, selected, currentSchoolYear)
     const n = slots.filter(s => !s.is_break).length
-    return headHtml(selected, 'Weekly Class Timetable', `${n} periods a day`, schoolYearLabel) + classTableHtml(slots, rows, 'teacher') + `<div class="foot">Premier Global School · AY ${esc(schoolYearLabel)}</div>`
+    return headHtml(romanClass(selected), 'Weekly Class Timetable', `${n} periods a day`, schoolYearLabel) + classTableHtml(slots, rows, 'teacher') + `<div class="foot">Premier Global School · AY ${esc(schoolYearLabel)}</div>`
   }, [selected, allTimetableData, periods, currentSchoolYear])
   return (
     <div>
       <Toolbar onPrint={() => openPrint(html, `Timetable — ${selected}`)} disabled={!selected}>
         <select value={selected} onChange={e => setSelected(e.target.value)} style={SEL}>
           <option value="">— Select a class —</option>
-          {classes.map(c => <option key={c.id} value={c.name}>{c.name}</option>)}
+          {classes.map(c => <option key={c.id} value={c.name}>{romanClass(c.name)}</option>)}
         </select>
       </Toolbar>
       {selected ? <Preview html={html} /> : <Empty text="Select a class to preview its timetable" />}
@@ -218,13 +217,13 @@ function PrintMaster({ periods, classes, allTimetableData, currentSchoolYear, sc
   const html = useMemo(() => {
     const groups = [
       { name: 'Balvatika', cls: classes.filter(c => isPre(c.name)) },
-      { name: 'Classes 1–8', cls: classes.filter(c => !isPre(c.name)) },
+      { name: 'Classes I–VIII', cls: classes.filter(c => !isPre(c.name)) },
     ].filter(g => g.cls.length)
     const rowsByClass = Object.fromEntries(classes.map(c => [c.name, classRows(allTimetableData, c.name, currentSchoolYear)]))
     const body = DAYS.map((d, i) => `<div class="block${i === 0 ? ' first' : ''}"><div class="sec">${d}</div>${groups.map(g => {
       const slots = classSlots(periods, g.cls[0].name)
       return `<table class="master"><thead><tr><th class="day">${esc(g.name)}</th>${slots.map(thHtml).join('')}</tr></thead><tbody>${
-        g.cls.map(c => `<tr><td class="day">${esc(c.name)}</td>${slots.map(s => isDispersal(s) ? `<td class="dis">${esc(s.label)}</td>` : s.is_break ? `<td class="brk">${esc(s.label)}</td>` : cellHtml(rowsByClass[c.name][d]?.[s.period_number], 'teacher')).join('')}</tr>`).join('')
+        g.cls.map(c => `<tr><td class="day">${esc(romanClass(c.name))}</td>${slots.map(s => isDispersal(s) ? `<td class="dis">${esc(s.label)}</td>` : s.is_break ? `<td class="brk">${esc(s.label)}</td>` : cellHtml(rowsByClass[c.name][d]?.[s.period_number], 'teacher')).join('')}</tr>`).join('')
       }</tbody></table>`
     }).join('')}</div>`).join('')
     return headHtml('Master Timetable', 'All classes — weekly overview', `${classes.length} classes`, schoolYearLabel) + body + `<div class="foot">Premier Global School · AY ${esc(schoolYearLabel)}</div>`
