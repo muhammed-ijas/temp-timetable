@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect } from 'react'
-import { DAYS, ordinalPeriod, today, PURPLE_DARK, PURPLE_MID, PURPLE_LIGHT, PURPLE_BORDER } from './TimetableUtils'
+import { DAYS, ordinalPeriod, today, PURPLE_DARK, PURPLE_MID, PURPLE_LIGHT, PURPLE_BORDER, classLabel } from './TimetableUtils'
 import { supabase } from '../../lib/supabase'
 
 function fmtDate(d) {
@@ -18,7 +18,7 @@ function SubstitutePickerModal({ slot, freeTeachers, busyTeachers, onSelect, onC
         <div style={{ padding: '16px 18px', borderBottom: '1px solid #E5E7EB' }}>
           <div style={{ fontSize: 14, fontWeight: 700, color: '#111827', marginBottom: 2 }}>Choose Substitute Teacher</div>
           <div style={{ fontSize: 12, color: '#6B7280' }}>
-            For: <strong>{slot.teacherName}</strong>'s {ordinalPeriod(slot.periodNumber)} ({slot.subject}, Class {slot.className})
+            For: <strong>{slot.teacherName}</strong>'s {ordinalPeriod(slot.periodNumber)} ({slot.subject}, {classLabel(slot.className)})
           </div>
           <div style={{ fontSize: 11, color: '#9CA3AF', marginTop: 2 }}>{slot.startTime} – {slot.endTime}</div>
           <input value={search} onChange={e => setSearch(e.target.value)} placeholder="Search teacher..."
@@ -65,7 +65,7 @@ function SubstitutePickerModal({ slot, freeTeachers, busyTeachers, onSelect, onC
               <div>
                 <div style={{ fontSize: 13, fontWeight: 600, color: '#374151' }}>{t.name}</div>
                 {(t._busyWith || []).map((b, i) => (
-                  <div key={i} style={{ fontSize: 11, color: '#9CA3AF', marginTop: 1 }}>{b.subject} — Class {b.className}</div>
+                  <div key={i} style={{ fontSize: 11, color: '#9CA3AF', marginTop: 1 }}>{b.subject} — {classLabel(b.className)}</div>
                 ))}
               </div>
               <span style={{ fontSize: 11, background: '#FEE2E2', color: '#991B1B', padding: '2px 8px', borderRadius: 10, fontWeight: 600 }}>Busy</span>
@@ -164,7 +164,7 @@ function SubstitutionHistory({ currentSchoolYear }) {
                   </div>
                   <div style={{ flex: 1, minWidth: 140 }}>
                     <div style={{ fontSize: 12, fontWeight: 600, color: '#111827' }}>{r.subject}</div>
-                    <div style={{ fontSize: 11, color: '#047857' }}>Class {r.class_name}</div>
+                    <div style={{ fontSize: 11, color: '#047857' }}>{classLabel(r.class_name)}</div>
                   </div>
                   <div style={{ flex: 1, minWidth: 140 }}>
                     <div style={{ fontSize: 11, color: '#9CA3AF' }}>Absent</div>
@@ -387,7 +387,7 @@ export default function SubstitutionTab({ allTimetableData, sortedTeachers, curr
         school_year: currentSchoolYear,
         is_busy_override: sub.isBusyWarning,
       })
-      if (error) errors.push(`${ordinalPeriod(sub.periodNumber)} Class ${sub.className}: ${error.message}`)
+      if (error) errors.push(`${ordinalPeriod(sub.periodNumber)} ${classLabel(sub.className)}: ${error.message}`)
       else savedCount++
     }
 
@@ -405,7 +405,7 @@ export default function SubstitutionTab({ allTimetableData, sortedTeachers, curr
   }
 
   async function deleteFromDB(record) {
-    if (!window.confirm(`Remove substitution for ${ordinalPeriod(record.period_number)}, Class ${record.class_name}?`)) return
+    if (!window.confirm(`Remove substitution for ${ordinalPeriod(record.period_number)}, ${classLabel(record.class_name)}?`)) return
     await supabase.from('substitutions').delete().eq('id', record.id)
     await fetchSavedForDate(selectedDate)
   }
@@ -540,7 +540,7 @@ export default function SubstitutionTab({ allTimetableData, sortedTeachers, curr
                           )}
                         </div>
                         <div style={{ fontSize: 13, fontWeight: 600, color: '#111827' }}>{slot.subject}</div>
-                        <div style={{ fontSize: 11, color: '#047857', marginTop: 1 }}>Class {slot.className}</div>
+                        <div style={{ fontSize: 11, color: '#047857', marginTop: 1 }}>{classLabel(slot.className)}</div>
                         <div style={{ fontSize: 11, color: '#9CA3AF', marginTop: 1 }}>Original: {slot.teacherName}</div>
                       </div>
 

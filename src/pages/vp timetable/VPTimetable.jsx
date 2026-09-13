@@ -5,7 +5,7 @@ import PrintTimetable from './PrintTimetable'
 
 import { listVersions, getActiveVersionId, setActiveVersion, createVersion, renameVersion, deleteVersion } from '../../lib/versions'
 
-import { DAYS, DEFAULT_PERIODS, getDefaultPeriods, ordinalPeriod, Icons, PURPLE_DARK, PURPLE_BORDER } from './TimetableUtils'
+import { DAYS, DEFAULT_PERIODS, getDefaultPeriods, ordinalPeriod, Icons, PURPLE_DARK, PURPLE_BORDER, classLabel } from './TimetableUtils'
 
 import TimetableGrid   from './TimetableGrid'
 import PeriodManager   from './PeriodManager'
@@ -237,7 +237,7 @@ setLoading(false)
   }
 
   async function deleteClass(cls) {
-    if (!window.confirm(`Delete timetable for ${cls.name}? This cannot be undone.`)) return
+    if (!window.confirm(`Delete timetable for ${classLabel(cls.name)}? This cannot be undone.`)) return
     await supabase.from('timetable_classes').delete().eq('id', cls.id)
     setSelectedClass(null)
     await fetchAll()

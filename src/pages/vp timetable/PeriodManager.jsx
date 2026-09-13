@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { DAYS, ordinalPeriod, PURPLE_DARK, PURPLE_MID, PURPLE_LIGHT, PURPLE_BORDER } from './TimetableUtils'
+import { DAYS, ordinalPeriod, PURPLE_DARK, PURPLE_MID, PURPLE_LIGHT, PURPLE_BORDER, classLabel } from './TimetableUtils'
 import { supabase } from '../../lib/supabase'
 
 export default function PeriodManager({ selectedClass, classPeriods, timetableData, onBack, onRefresh }) {
@@ -44,7 +44,7 @@ export default function PeriodManager({ selectedClass, classPeriods, timetableDa
 
   async function deletePeriod(periodNumber) {
     if (!selectedClass) return
-    if (!window.confirm(`Delete ${ordinalPeriod(periodNumber)} from Class ${selectedClass.name}?\nThis removes all subjects assigned to this period too.`)) return
+    if (!window.confirm(`Delete ${ordinalPeriod(periodNumber)} from ${classLabel(selectedClass.name)}?\nThis removes all subjects assigned to this period too.`)) return
     const { data: toDelete } = await supabase.from('timetable_periods')
       .select('id').eq('class_id', selectedClass.id).eq('period_number', periodNumber)
     if (toDelete && toDelete.length > 0) {
@@ -63,7 +63,7 @@ export default function PeriodManager({ selectedClass, classPeriods, timetableDa
             Back to Grid
           </button>
           <div>
-            <div style={{ fontSize: 15, fontWeight: 700, color: '#111827' }}>Manage Periods — Class {selectedClass.name}</div>
+            <div style={{ fontSize: 15, fontWeight: 700, color: '#111827' }}>Manage Periods — {classLabel(selectedClass.name)}</div>
             <div style={{ fontSize: 11, color: '#6B7280', marginTop: 2 }}>Edit times, delete periods, or add new periods and breaks</div>
           </div>
         </div>
@@ -110,7 +110,7 @@ export default function PeriodManager({ selectedClass, classPeriods, timetableDa
             </div>
           </div>
           <div style={{ marginTop: 10, fontSize: 11, color: PURPLE_MID, background: '#F5F3FF', borderRadius: 5, padding: '6px 10px' }}>
-            This period will be added to all 5 days (Mon–Fri) for Class {selectedClass.name}.
+            This period will be added to all 5 days (Mon–Fri) for {classLabel(selectedClass.name)}.
           </div>
         </div>
       )}

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { DAYS, ordinalPeriod, PURPLE_DARK, PURPLE_MID, PURPLE_LIGHT, PURPLE_BORDER } from './TimetableUtils'
+import { DAYS, ordinalPeriod, PURPLE_DARK, PURPLE_MID, PURPLE_LIGHT, PURPLE_BORDER, classLabel } from './TimetableUtils'
 
 export default function TeacherLoad({ sortedTeachers, teacherLoad }) {
   const [selectedTeacher, setSelectedTeacher] = useState(null)
@@ -95,7 +95,7 @@ export default function TeacherLoad({ sortedTeachers, teacherLoad }) {
                       <div key={i} style={{ marginBottom: i < slots.length - 1 ? 8 : 0, paddingBottom: i < slots.length - 1 ? 8 : 0, borderBottom: i < slots.length - 1 ? '1px dashed #F3F4F6' : 'none' }}>
                         <div style={{ fontSize: 10, color: '#9CA3AF', fontWeight: 600, marginBottom: 2 }}>{ordinalPeriod(slot.periodNumber)}</div>
                         <div style={{ fontSize: 12, fontWeight: 700, color: '#111827' }}>{slot.subject}</div>
-                        <div style={{ fontSize: 10, color: '#047857', fontWeight: 600, marginTop: 1 }}>Class {slot.className}</div>
+                        <div style={{ fontSize: 10, color: '#047857', fontWeight: 600, marginTop: 1 }}>{classLabel(slot.className)}</div>
                         <div style={{ marginTop: 3 }}>
                           {slot.isClassTeacher
                             ? <span style={{ fontSize: 9, background: '#FEF3C7', color: '#92400E', padding: '1px 5px', borderRadius: 2, fontWeight: 700 }}>CLASS TCH</span>
