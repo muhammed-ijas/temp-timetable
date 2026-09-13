@@ -4,7 +4,7 @@ import { supabase, VP_PASSWORD, TEACHERS, getSchoolYear, getSchoolYearLabel } fr
 import { getActiveVersionId, listVersions, setActiveVersion } from '../../lib/versions'
 
 // ═══════════════════════════════════════════════════════════════
-//  VP — Subjects & Teacher Assignments
+//  Principal — Subjects & Teacher Assignments
 //
 //  `subjects` is the master list of exam subjects per class.
 //  `teacher_subjects` says which teacher enters marks for each.
@@ -18,7 +18,8 @@ import { getActiveVersionId, listVersions, setActiveVersion } from '../../lib/ve
 const PURPLE_DARK = '#3B0764'
 const PURPLE      = '#5B21B6'
 const CLASSES = ['Nursery', 'LKG', 'UKG', '1', '2', '3', '4', '5', '6', '7', '8']
-const classLabel = c => /^[0-9]+$/.test(c) ? `Class ${c}` : c
+const PRE_PRIMARY_LABELS = { Nursery: 'Balvatika 1', LKG: 'Balvatika 2', UKG: 'Balvatika 3' }
+const classLabel = c => /^[0-9]+$/.test(c) ? `Class ${c}` : (PRE_PRIMARY_LABELS[c] || c)
 
 const initials = name => name.split(/\s+/).filter(Boolean).slice(0, 2).map(w => w[0].toUpperCase()).join('')
 
@@ -359,7 +360,7 @@ export default function VPSubjects() {
             <img src="/logo.png" alt="PGS" style={{ height: 32, objectFit: 'contain' }} onError={e => e.target.style.display = 'none'} />
             <div>
               <div style={{ color: '#C4B5FD', fontSize: 10, fontWeight: 500, letterSpacing: 1.5, textTransform: 'uppercase' }}>Premier Global School</div>
-              <div style={{ color: '#F9FAFB', fontSize: 14, fontWeight: 700 }}>VP — Subjects</div>
+              <div style={{ color: '#F9FAFB', fontSize: 14, fontWeight: 700 }}>Principal — Subjects</div>
             </div>
           </div>
           <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', justifyContent: 'flex-end', alignItems: 'center' }}>
