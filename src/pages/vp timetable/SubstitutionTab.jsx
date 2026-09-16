@@ -6,6 +6,32 @@ function fmtDate(d) {
   return new Date(d + 'T00:00:00').toLocaleDateString('en-IN', { weekday: 'long', day: 'numeric', month: 'short', year: 'numeric' })
 }
 
+// ── Period numbering ──────────────────────────────────────────────────────────
+// A slot number counts breaks; a teacher counts teaching periods. Build a
+// map  class -> slot -> "Period N"  that skips breaks, exactly like the grid.
+// Classes with different layouts (Balvatika vs primary) each get their own.
+function buildPeriodLabels(allTimetableData, year) {
+  const byClass = {}
+  for (const e of allTimetableData) {
+    const p = e.timetable_periods
+    const cls = p?.timetable_classes
+    if (!p || cls?.school_year !== year) continue
+    if (!byClass[cls.name]) byClass[cls.name] = {}
+    if (!byClass[cls.name][p.period_number]) {
+      byClass[cls.name][p.period_number] = { n: p.period_number, is_break: !!p.is_break }
+    }
+  }
+  const labels = {}
+  for (const cls in byClass) {
+    let n = 0
+    labels[cls] = {}
+    for (const s of Object.values(byClass[cls]).sort((a, b) => a.n - b.n)) {
+      labels[cls][s.n] = s.is_break ? null : `Period ${++n}`
+    }
+  }
+  return labels
+}
+
 // ─── Substitute picker modal ───────────────────────────────────────────────────
 function SubstitutePickerModal({ slot, freeTeachers, busyTeachers, onSelect, onCancel }) {
   const [search, setSearch] = useState('')
@@ -18,7 +44,7 @@ function SubstitutePickerModal({ slot, freeTeachers, busyTeachers, onSelect, onC
         <div style={{ padding: '16px 18px', borderBottom: '1px solid #E5E7EB' }}>
           <div style={{ fontSize: 14, fontWeight: 700, color: '#111827', marginBottom: 2 }}>Choose Substitute Teacher</div>
           <div style={{ fontSize: 12, color: '#6B7280' }}>
-            For: <strong>{slot.teacherName}</strong>'s {ordinalPeriod(slot.periodNumber)} ({slot.subject}, {classLabel(slot.className)})
+            For: <strong>{slot.teacherName}</strong>'s {slot.periodLabel || ordinalPeriod(slot.periodNumber)} ({slot.subject}, {classLabel(slot.className)})
           </div>
           <div style={{ fontSize: 11, color: '#9CA3AF', marginTop: 2 }}>{slot.startTime} – {slot.endTime}</div>
           <input value={search} onChange={e => setSearch(e.target.value)} placeholder="Search teacher..."
@@ -85,7 +111,7 @@ function SubstitutePickerModal({ slot, freeTeachers, busyTeachers, onSelect, onC
 }
 
 // ─── History tab ───────────────────────────────────────────────────────────────
-function SubstitutionHistory({ currentSchoolYear }) {
+function SubstitutionHistory({ currentSchoolYear, periodLabel }) {
   const [history, setHistory] = useState([])
   const [loading, setLoading] = useState(true)
   const [filterDate, setFilterDate] = useState('')
@@ -159,7 +185,7 @@ function SubstitutionHistory({ currentSchoolYear }) {
               {byDate[date].map((r, idx) => (
                 <div key={r.id} style={{ padding: '10px 14px', borderBottom: idx < byDate[date].length - 1 ? '1px solid #F3F4F6' : 'none', display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap', background: idx % 2 === 0 ? '#fff' : '#FAFAFA' }}>
                   <div style={{ minWidth: 90 }}>
-                    <span style={{ fontSize: 11, fontWeight: 700, color: PURPLE_MID }}>{ordinalPeriod(r.period_number)}</span>
+                    <span style={{ fontSize: 11, fontWeight: 700, color: PURPLE_MID }}>{periodLabel(r.class_name, r.period_number)}</span>
                     <div style={{ fontSize: 10, color: '#9CA3AF', marginTop: 1 }}>{r.start_time}–{r.end_time}</div>
                   </div>
                   <div style={{ flex: 1, minWidth: 140 }}>
@@ -203,6 +229,15 @@ export default function SubstitutionTab({ allTimetableData, sortedTeachers, curr
   const [errorMsg, setErrorMsg] = useState('')
   // Already-saved subs from DB for the selected date (to block duplicates)
   const [savedForDate, setSavedForDate] = useState([])
+
+  // slot number -> "Period N", per class, skipping breaks
+  const periodLabels = useMemo(
+    () => buildPeriodLabels(allTimetableData, currentSchoolYear),
+    [allTimetableData, currentSchoolYear]
+  )
+  function periodLabel(className, slotNumber) {
+    return periodLabels[className]?.[slotNumber] || ordinalPeriod(slotNumber)
+  }
 
   // Fetch already-saved subs whenever date or teacher changes
   useEffect(() => {
@@ -317,7 +352,7 @@ export default function SubstitutionTab({ allTimetableData, sortedTeachers, curr
           })),
       }))
 
-    setPickerSlot({ ...slot, _free: free, _busy: busy })
+    setPickerSlot({ ...slot, periodLabel: periodLabel(slot.className, slot.periodNumber), _free: free, _busy: busy })
   }
 
   function handleSelectSub(slot, teacher, isBusy) {
@@ -387,7 +422,7 @@ export default function SubstitutionTab({ allTimetableData, sortedTeachers, curr
         school_year: currentSchoolYear,
         is_busy_override: sub.isBusyWarning,
       })
-      if (error) errors.push(`${ordinalPeriod(sub.periodNumber)} ${classLabel(sub.className)}: ${error.message}`)
+      if (error) errors.push(`${periodLabel(sub.className, sub.periodNumber)} ${classLabel(sub.className)}: ${error.message}`)
       else savedCount++
     }
 
@@ -405,7 +440,7 @@ export default function SubstitutionTab({ allTimetableData, sortedTeachers, curr
   }
 
   async function deleteFromDB(record) {
-    if (!window.confirm(`Remove substitution for ${ordinalPeriod(record.period_number)}, ${classLabel(record.class_name)}?`)) return
+    if (!window.confirm(`Remove substitution for ${periodLabel(record.class_name, record.period_number)}, ${classLabel(record.class_name)}?`)) return
     await supabase.from('substitutions').delete().eq('id', record.id)
     await fetchSavedForDate(selectedDate)
   }
@@ -430,7 +465,7 @@ export default function SubstitutionTab({ allTimetableData, sortedTeachers, curr
 
       {/* ── HISTORY sub-tab ── */}
       {subTab === 'history' && (
-        <SubstitutionHistory currentSchoolYear={currentSchoolYear} />
+        <SubstitutionHistory currentSchoolYear={currentSchoolYear} periodLabel={periodLabel} />
       )}
 
       {/* ── ASSIGN sub-tab ── */}
@@ -533,7 +568,7 @@ export default function SubstitutionTab({ allTimetableData, sortedTeachers, curr
                       {/* Period info */}
                       <div style={{ flex: 1, minWidth: 200 }}>
                         <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 3 }}>
-                          <span style={{ fontSize: 12, fontWeight: 700, color: PURPLE_MID }}>{ordinalPeriod(slot.periodNumber)}</span>
+                          <span style={{ fontSize: 12, fontWeight: 700, color: PURPLE_MID }}>{periodLabel(slot.className, slot.periodNumber)}</span>
                           <span style={{ fontSize: 10, color: '#9CA3AF' }}>{slot.startTime}–{slot.endTime}</span>
                           {isAlreadySaved && (
                             <span style={{ fontSize: 9, background: '#D1FAE5', color: '#065F46', padding: '1px 6px', borderRadius: 10, fontWeight: 700 }}>SAVED</span>
