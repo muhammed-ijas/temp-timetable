@@ -66,6 +66,11 @@ const PRINT_CSS = `
   table.day .tag { display: inline-block; font-size: 8px; font-weight: 700; padding: 1px 5px; border-radius: 3px; margin-top: 2px; }
   table.day .tag.a { background: #FEE2E2; color: #991B1B; }
   table.day .tag.s { background: #D1FAE5; color: #065F46; }
+  table.day td.cov { width: 150px; background: #F0FDF4; }
+  table.day td.cov .who { font-weight: 800; color: #065F46; font-size: 11.5px; }
+  table.day td.cov .none { color: #C4C4C4; font-style: italic; font-size: 10px; }
+  .note { border: 1px solid #CFC6E6; background: #FAF8FE; border-radius: 4px; padding: 6px 10px;
+    font-size: 10px; color: #4B5563; margin-bottom: 8px; }
   table.day td.brk { background: #F0FDF4; color: #059669; font-style: italic; text-align: center; height: 26px; font-size: 10px; }
   .block { page-break-before: always; break-before: page; }
   .block.first { page-break-before: auto; break-before: auto; }
@@ -319,33 +324,36 @@ function PrintDay({ periods, classes, sortedTeachers, allTimetableData, currentS
         + table + SIGNATURE_HTML + `<div class="foot">Premier Global School · AY ${esc(schoolYearLabel)}</div>`
     }
 
-    // ── one teacher, one day: own periods, minus any they're absent for, plus cover duties ──
+    // ── one teacher, one day: their periods, with who covers each ──
     const own = allTimetableData.filter(e =>
       e.teacher_name === selected && e.timetable_periods?.day === dayName &&
       e.timetable_periods?.timetable_classes?.school_year === currentSchoolYear
     ).map(e => {
       const p = e.timetable_periods
-      const absent = subs.find(x => x.period_number === p.period_number && x.class_name === p.timetable_classes.name && x.absent_teacher === selected)
+      const cover = subs.find(x => x.period_number === p.period_number && x.class_name === p.timetable_classes.name && x.absent_teacher === selected)
       return { start: p.start_time, end: p.end_time, cls: p.timetable_classes.name, subject: e.subject,
-               absent: !!absent, cover: absent?.substitute_teacher || null }
+               cover: cover?.substitute_teacher || null }
     })
     const covering = subs.filter(x => x.substitute_teacher === selected).map(x => ({
       start: x.start_time, end: x.end_time, cls: x.class_name, subject: x.subject,
-      isSub: true, forWhom: x.absent_teacher,
+      isSub: true, forWhom: x.absent_teacher, cover: null,
     }))
     const sorted = [...own, ...covering].sort((a, b) => toMin(a.start) - toMin(b.start))
+    const nCovered = own.filter(r => r.cover).length
 
     const rows = sorted.length ? sorted.map((r, i) => `
       <tr><td class="pd"><b>${i + 1}</b><div class="tm">${fmt(r.start)}–${fmt(r.end)}</div></td>
-          <td><div class="s ${r.absent ? 'absent' : ''}">${esc(r.subject)}</div>${
-            r.isSub ? `<span class="tag s">COVERING ${esc(r.forWhom)}</span>`
-            : r.absent ? `<span class="tag a">ABSENT · ${esc(r.cover)} covering</span>` : ''}</td>
-          <td><div class="c ${r.absent ? 'absent' : ''}">${esc(romanClass(r.cls))}</div></td></tr>`).join('')
-      : `<tr><td colspan="3" class="empty" style="height:60px">No periods on ${esc(dayName)}</td></tr>`
-    const table = `<table class="day"><thead><tr><th class="pd">#</th><th>Subject</th><th>Class</th></tr></thead><tbody>${rows}</tbody></table>`
-    const nCover = covering.length
-    return headHtml(selected, `${fmtDate(date)}`, `${sorted.length} period${sorted.length === 1 ? '' : 's'}${nCover ? ` · ${nCover} cover` : ''}`, schoolYearLabel)
-      + table + SIGNATURE_HTML + `<div class="foot">Premier Global School · AY ${esc(schoolYearLabel)}</div>`
+          <td><div class="s">${esc(r.subject)}</div>${r.isSub ? `<span class="tag s">COVERING FOR ${esc(r.forWhom)}</span>` : ''}</td>
+          <td><div class="c">${esc(romanClass(r.cls))}</div></td>
+          <td class="cov">${r.cover ? `<div class="who">${esc(r.cover)}</div><span class="tag s">SUBSTITUTE</span>`
+            : r.isSub ? `<div class="who">${esc(selected)}</div>` : '<span class="none">—</span>'}</td></tr>`).join('')
+      : `<tr><td colspan="4" class="empty" style="height:60px">No periods on ${esc(dayName)}</td></tr>`
+    const table = `<table class="day"><thead><tr><th class="pd">#</th><th>Subject</th><th>Class</th><th>Covered by</th></tr></thead><tbody>${rows}</tbody></table>`
+    const note = nCovered
+      ? `<div class="note"><b>${esc(selected)}</b> is absent on this date. The periods below are covered by the teachers named in the last column — please take the class at the time shown.</div>`
+      : ''
+    return headHtml(selected, `${fmtDate(date)}`, `${sorted.length} period${sorted.length === 1 ? '' : 's'}${nCovered ? ` · ${nCovered} covered` : ''}`, schoolYearLabel)
+      + note + table + SIGNATURE_HTML + `<div class="foot">Premier Global School · AY ${esc(schoolYearLabel)}</div>`
   }, [view, selected, date, dayName, isWeekend, subs, allTimetableData, periods, currentSchoolYear])
 
   return (
