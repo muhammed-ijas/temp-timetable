@@ -103,10 +103,32 @@ const PRINT_CSS = `
   .block.first { page-break-before: auto; break-before: auto; }
   .master { page-break-inside: avoid; break-inside: avoid; margin-bottom: 8px; }
   .master td { height: 40px; font-size: 10px; padding: 4px 6px; }
+  /* Single-day master: must fit 11 class rows + 2 headers on ONE A4 landscape */
+  .master.solo { margin-bottom: 5px; }
+  .master.solo th { padding: 3px 3px; font-size: 9px; line-height: 1.15; }
+  .master.solo th small { font-size: 7px; }
+  .master.solo td { height: auto; min-height: 0; font-size: 9px; padding: 3px 5px; line-height: 1.2; }
+  .master.solo td.day { font-size: 9.5px; }
+  .master.solo .s { font-size: 9px; font-weight: 700; }
+  .master.solo .t { font-size: 8px; margin-top: 0; }
+  .master.solo .c { font-size: 8px; margin-top: 0; }
+  .master.solo .split { margin-top: 2px; padding-top: 2px; }
+  .master.solo td.brk, .master.solo td.dis { font-size: 7px; }
   .master .s { font-size: 10px; } .master .t { font-size: 9px; margin-top: 1px; }
   .master th { padding: 5px 3px; font-size: 10px; } .master th small { font-size: 8px; }
   .foot { font-size: 9px; color: #9CA3AF; text-align: right; margin-top: 4px; }
   .sign { display: flex; justify-content: flex-end; margin-top: 14mm; }
+  .solo-page .head { margin-bottom: 6px; padding-bottom: 5px; }
+  .solo-page .head img { height: 30px; }
+  .solo-page .title { font-size: 15px; }
+  .solo-page .school { font-size: 8.5px; }
+  .solo-page .sub, .solo-page .meta { font-size: 9px; }
+  .solo-page .sec { font-size: 11px; margin: 4px 0 3px; padding-bottom: 2px; }
+  .solo-page .sign { margin-top: 5mm; }
+  .solo-page .sign-in { width: 120px; }
+  .solo-page .sign-in img { width: 85px; }
+  .solo-page .sign-line { font-size: 8.5px; padding-top: 3px; }
+  .solo-page .foot { margin-top: 2px; }
   .sign-in { text-align: center; width: 150px; }
   .sign-in img { width: 110px; height: auto; object-fit: contain; display: block; margin: 0 auto 4px; }
   .sign-line { border-top: 1.5px solid ${PURPLE_DARK}; padding-top: 5px; font-size: 9.5px; font-weight: 700;
@@ -272,36 +294,12 @@ function PrintTeacher({ periods, sortedTeachers, allTimetableData, currentSchool
   )
 }
 
-// ── Master: per day, one table per layout group, classes as rows ──
-function PrintMaster({ periods, classes, allTimetableData, currentSchoolYear, schoolYearLabel }) {
-  const html = useMemo(() => {
-    const groups = [
-      { name: 'Balvatika', cls: classes.filter(c => isPre(c.name)) },
-      { name: 'Classes I–VIII', cls: classes.filter(c => !isPre(c.name)) },
-    ].filter(g => g.cls.length)
-    const rowsByClass = Object.fromEntries(classes.map(c => [c.name, classRows(allTimetableData, c.name, currentSchoolYear)]))
-    const body = DAYS.map((d, i) => `<div class="block${i === 0 ? ' first' : ''}"><div class="sec">${d}</div>${groups.map(g => {
-      const slots = classSlots(periods, g.cls[0].name)
-      return `<table class="master"><thead><tr><th class="day">${esc(g.name)}</th>${slots.map(thHtml).join('')}</tr></thead><tbody>${
-        g.cls.map(c => `<tr><td class="day">${esc(romanClass(c.name))}</td>${slots.map(s => isDispersal(s) ? `<td class="dis">${esc(s.label)}</td>` : s.is_break ? `<td class="brk">${esc(s.label)}</td>` : cellHtml(rowsByClass[c.name][d]?.[s.period_number], 'teacher')).join('')}</tr>`).join('')
-      }</tbody></table>`
-    }).join('')}</div>`).join('')
-    return headHtml('Master Timetable', 'All classes — weekly overview', `${classes.length} classes`, schoolYearLabel) + body + SIGNATURE_HTML + `<div class="foot">Premier Global School · AY ${esc(schoolYearLabel)}</div>`
-  }, [classes, allTimetableData, periods, currentSchoolYear])
-  return (
-    <div>
-      <Toolbar onPrint={() => openPrint(html, `Master Timetable — AY ${schoolYearLabel}`)} disabled={false}>
-        <div style={{ fontSize: 13, color: '#6B7280' }}>All <strong style={{ color: '#111' }}>{classes.length} classes</strong> · one section per day, classes as rows</div>
-      </Toolbar>
-      <Preview html={html} />
-    </div>
-  )
-}
-
-// ── By day ── two views: one class's day, or one teacher's day.
-// Takes a DATE (not just a weekday) so substitutions saved for that date show.
+// ── By day ── three views, all driven by a DATE so substitutions show:
+//   'all'     every substitution that day, grouped by covering teacher
+//   'class'   one class's day
+//   'teacher' one teacher's day, with who covers each period
 function PrintDay({ periods, classes, sortedTeachers, allTimetableData, currentSchoolYear, schoolYearLabel }) {
-  const [view, setView] = useState('class')
+  const [view, setView] = useState('all')
   const [selected, setSelected] = useState('')
   const [date, setDate] = useState(() => new Date().toISOString().split('T')[0])
   const [subs, setSubs] = useState([])
@@ -329,7 +327,6 @@ function PrintDay({ periods, classes, sortedTeachers, allTimetableData, currentS
 
       const absentNames = [...new Set(rows.map(r => r.absent_teacher))].sort()
 
-      // what is the covering teacher normally doing at that time? (should be free)
       const ownAt = (teacher, start, end) => allTimetableData.filter(e => {
         const p = e.timetable_periods
         return p && e.teacher_name === teacher && p.day === dayName
@@ -337,10 +334,8 @@ function PrintDay({ periods, classes, sortedTeachers, allTimetableData, currentS
           && toMin(p.start_time) < toMin(end) && toMin(p.end_time) > toMin(start)
       }).map(e => `${romanClass(e.timetable_periods.timetable_classes.name)} · ${e.subject}`)
 
-      // period number for a class, skipping breaks
       const periodNo = (className, slot) => {
-        const list = classSlots(periods, className)
-        const hit = list.find(x => x.period_number === slot)
+        const hit = classSlots(periods, className).find(x => x.period_number === slot)
         return hit && !hit.is_break ? hit.label : ''
       }
 
@@ -443,7 +438,7 @@ function PrintDay({ periods, classes, sortedTeachers, allTimetableData, currentS
 
   return (
     <div>
-      <div style={{ display: 'flex', gap: 6, marginBottom: 12 }}>
+      <div style={{ display: 'flex', gap: 6, marginBottom: 12, flexWrap: 'wrap' }}>
         {[['all', 'Whole day (all substitutions)'], ['class', 'For a class'], ['teacher', 'For a teacher']].map(([k, label]) => (
           <button key={k} onClick={() => switchView(k)}
             style={{ padding: '6px 14px', borderRadius: 999, fontSize: 12, fontWeight: 600, cursor: 'pointer',
@@ -475,6 +470,52 @@ function PrintDay({ periods, classes, sortedTeachers, allTimetableData, currentS
       {isWeekend ? <Empty text={`${dayName} is not a school day`} />
         : (view === 'all' || selected) ? <Preview html={html} />
         : <Empty text={view === 'class' ? 'Select a date and class' : 'Select a date and teacher'} />}
+    </div>
+  )
+}
+
+// ── Master: per day, one table per layout group, classes as rows ──
+function PrintMaster({ periods, classes, allTimetableData, currentSchoolYear, schoolYearLabel }) {
+  const [pick, setPick] = useState('all')   // 'all' | a weekday
+
+  const html = useMemo(() => {
+    const groups = [
+      { name: 'Balvatika', cls: classes.filter(c => isPre(c.name)) },
+      { name: 'Classes I–VIII', cls: classes.filter(c => !isPre(c.name)) },
+    ].filter(g => g.cls.length)
+    const rowsByClass = Object.fromEntries(classes.map(c => [c.name, classRows(allTimetableData, c.name, currentSchoolYear)]))
+    const days = pick === 'all' ? DAYS : [pick]
+    const one = days.length === 1
+
+    const dayBlock = (d, i) => `<div class="block${i === 0 || one ? ' first' : ''}">${one ? '' : `<div class="sec">${d}</div>`}${groups.map(g => {
+      const slots = classSlots(periods, g.cls[0].name)
+      return `<table class="master${one ? ' solo' : ''}"><thead><tr><th class="day">${esc(g.name)}</th>${slots.map(thHtml).join('')}</tr></thead><tbody>${
+        g.cls.map(c => `<tr><td class="day">${esc(romanClass(c.name))}</td>${slots.map(s => isDispersal(s) ? `<td class="dis">${esc(s.label)}</td>` : s.is_break ? `<td class="brk">${esc(s.label)}</td>` : cellHtml(rowsByClass[c.name][d]?.[s.period_number], 'teacher')).join('')}</tr>`).join('')
+      }</tbody></table>`
+    }).join('')}</div>`
+
+    const title = one ? `Master Timetable — ${pick}` : 'Master Timetable'
+    const sub = one ? 'All classes' : 'All classes — weekly overview'
+    const body = headHtml(title, sub, `${classes.length} classes`, schoolYearLabel)
+      + days.map(dayBlock).join('')
+      + SIGNATURE_HTML + `<div class="foot">Premier Global School · AY ${esc(schoolYearLabel)}</div>`
+    return one ? `<div class="solo-page">${body}</div>` : body
+  }, [classes, allTimetableData, periods, currentSchoolYear, pick])
+
+  return (
+    <div>
+      <Toolbar onPrint={() => openPrint(html, pick === 'all' ? `Master Timetable — AY ${schoolYearLabel}` : `Master Timetable — ${pick}`)} disabled={false}>
+        <select value={pick} onChange={e => setPick(e.target.value)} style={SEL}>
+          <option value="all">All days (one day per page)</option>
+          {DAYS.map(d => <option key={d} value={d}>{d} only — single page</option>)}
+        </select>
+        <div style={{ fontSize: 13, color: '#6B7280' }}>
+          {pick === 'all'
+            ? <>All <strong style={{ color: '#111' }}>{classes.length} classes</strong> · 5 pages, one per day</>
+            : <>All <strong style={{ color: '#111' }}>{classes.length} classes</strong> · {pick} on a single A4</>}
+        </div>
+      </Toolbar>
+      <Preview html={html} />
     </div>
   )
 }
