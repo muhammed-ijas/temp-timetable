@@ -69,6 +69,33 @@ const PRINT_CSS = `
   table.day td.cov { width: 150px; background: #F0FDF4; }
   table.day td.cov .who { font-weight: 800; color: #065F46; font-size: 11.5px; }
   table.day td.cov .none { color: #C4C4C4; font-style: italic; font-size: 10px; }
+  .duty { break-inside: avoid; page-break-inside: avoid; border: 1.5px solid ${PURPLE_BORDER};
+    border-radius: 6px; margin-bottom: 8px; overflow: hidden; background: #fff; }
+  .duty-hd { background: ${PURPLE_DARK}; color: #fff; padding: 7px 11px; display: flex;
+    justify-content: space-between; align-items: baseline; }
+  .duty-hd .nm { font-size: 13px; font-weight: 800; letter-spacing: .2px; }
+  .duty-hd .ct { font-size: 9.5px; font-weight: 600; color: #C4B5FD; text-transform: uppercase; letter-spacing: .8px; }
+  .duty-row { padding: 8px 11px; border-bottom: 1px solid #F0EDF8; display: flex; gap: 12px; align-items: flex-start; }
+  .duty-row:last-child { border-bottom: 0; }
+  .duty-row:nth-child(even) { background: #FCFBFE; }
+  .d-time { width: 88px; flex-shrink: 0; text-align: center; }
+  .d-time .p { font-size: 12px; font-weight: 800; color: ${PURPLE_DARK}; }
+  .d-time .t { font-size: 9px; color: #6B7280; margin-top: 1px; }
+  .d-main { flex: 1; min-width: 0; }
+  .d-cls { font-size: 12.5px; font-weight: 800; color: #047857; }
+  .d-sub { font-size: 11px; color: #1F2937; margin-top: 1px; }
+  .d-for { font-size: 9.5px; color: #6B7280; margin-top: 3px; }
+  .d-for b { color: #B91C1C; font-weight: 700; }
+  .d-own { width: 150px; flex-shrink: 0; text-align: right; font-size: 9.5px; }
+  .d-own .lbl { color: #9CA3AF; text-transform: uppercase; letter-spacing: .6px; font-size: 8px; }
+  .d-own .free { color: #059669; font-weight: 700; }
+  .d-own .clash { color: #B91C1C; font-weight: 700; }
+  .gapbox { border: 1.5px solid #FECACA; background: #FEF2F2; border-radius: 6px; padding: 8px 11px; margin-bottom: 8px; }
+  .gapbox .hd { font-size: 11px; font-weight: 800; color: #991B1B; margin-bottom: 3px; }
+  .gapbox .ln { font-size: 10.5px; color: #991B1B; padding: 1px 0; }
+  .absent-line { background: #FEF2F2; border: 1px solid #FECACA; border-radius: 4px; padding: 7px 10px;
+    font-size: 11px; color: #991B1B; margin-bottom: 8px; }
+  .absent-line b { font-weight: 800; }
   .note { border: 1px solid #CFC6E6; background: #FAF8FE; border-radius: 4px; padding: 6px 10px;
     font-size: 10px; color: #4B5563; margin-bottom: 8px; }
   table.day td.brk { background: #F0FDF4; color: #059669; font-style: italic; text-align: center; height: 26px; font-size: 10px; }
@@ -291,7 +318,65 @@ function PrintDay({ periods, classes, sortedTeachers, allTimetableData, currentS
   const fmtDate = d => new Date(d + 'T00:00:00').toLocaleDateString('en-IN', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })
 
   const html = useMemo(() => {
-    if (!selected || isWeekend) return ''
+    if (isWeekend) return ''
+    if (view !== 'all' && !selected) return ''
+
+    // ── whole day: every substitution on this date, grouped by covering teacher ──
+    if (view === 'all') {
+      const rows = [...subs].sort((a, b) => toMin(a.start_time) - toMin(b.start_time))
+      if (rows.length === 0) return headHtml('Substitution Duties', fmtDate(date), 'none recorded', schoolYearLabel)
+        + `<div class="note">No substitutions recorded for this date.</div>` + SIGNATURE_HTML
+
+      const absentNames = [...new Set(rows.map(r => r.absent_teacher))].sort()
+
+      // what is the covering teacher normally doing at that time? (should be free)
+      const ownAt = (teacher, start, end) => allTimetableData.filter(e => {
+        const p = e.timetable_periods
+        return p && e.teacher_name === teacher && p.day === dayName
+          && p.timetable_classes?.school_year === currentSchoolYear
+          && toMin(p.start_time) < toMin(end) && toMin(p.end_time) > toMin(start)
+      }).map(e => `${romanClass(e.timetable_periods.timetable_classes.name)} · ${e.subject}`)
+
+      // period number for a class, skipping breaks
+      const periodNo = (className, slot) => {
+        const list = classSlots(periods, className)
+        const hit = list.find(x => x.period_number === slot)
+        return hit && !hit.is_break ? hit.label : ''
+      }
+
+      const byTeacher = {}
+      for (const r of rows) { if (r.substitute_teacher) (byTeacher[r.substitute_teacher] ||= []).push(r) }
+
+      const duties = Object.keys(byTeacher).sort().map(name => {
+        const list = byTeacher[name].sort((a, b) => toMin(a.start_time) - toMin(b.start_time))
+        return `<div class="duty">
+          <div class="duty-hd"><span class="nm">${esc(name)}</span><span class="ct">${list.length} substitution${list.length === 1 ? '' : 's'}</span></div>
+          ${list.map(r => {
+            const own = ownAt(name, r.start_time, r.end_time)
+            return `<div class="duty-row">
+              <div class="d-time"><div class="p">${esc(periodNo(r.class_name, r.period_number) || '—')}</div><div class="t">${fmt(r.start_time)}–${fmt(r.end_time)}</div></div>
+              <div class="d-main">
+                <div class="d-cls">${esc(romanClass(r.class_name))}</div>
+                <div class="d-sub">${esc(r.subject)}</div>
+                <div class="d-for">covering for <b>${esc(r.absent_teacher)}</b></div>
+              </div>
+              <div class="d-own"><div class="lbl">Your own period</div>${
+                own.length ? `<div class="clash">${own.map(esc).join('<br/>')}</div>` : '<div class="free">Free</div>'}</div>
+            </div>`
+          }).join('')}
+        </div>`
+      }).join('')
+
+      const gaps = rows.filter(r => !r.substitute_teacher)
+      const gapBox = gaps.length ? `<div class="gapbox"><div class="hd">Not yet covered (${gaps.length})</div>${
+        gaps.map(r => `<div class="ln">${fmt(r.start_time)}–${fmt(r.end_time)} · ${esc(romanClass(r.class_name))} · ${esc(r.subject)} — ${esc(r.absent_teacher)} absent</div>`).join('')}</div>` : ''
+
+      return headHtml('Substitution Duties', fmtDate(date),
+          `${rows.length} period${rows.length === 1 ? '' : 's'} · ${absentNames.length} teacher${absentNames.length === 1 ? '' : 's'} absent${gaps.length ? ` · ${gaps.length} not covered` : ''}`, schoolYearLabel)
+        + `<div class="absent-line">Absent today: <b>${absentNames.map(esc).join(', ')}</b></div>`
+        + gapBox + duties
+        + SIGNATURE_HTML + `<div class="foot">Premier Global School · AY ${esc(schoolYearLabel)}</div>`
+    }
 
     // ── one class, one day ──
     if (view === 'class') {
@@ -359,7 +444,7 @@ function PrintDay({ periods, classes, sortedTeachers, allTimetableData, currentS
   return (
     <div>
       <div style={{ display: 'flex', gap: 6, marginBottom: 12 }}>
-        {[['class', 'For a class'], ['teacher', 'For a teacher']].map(([k, label]) => (
+        {[['all', 'Whole day (all substitutions)'], ['class', 'For a class'], ['teacher', 'For a teacher']].map(([k, label]) => (
           <button key={k} onClick={() => switchView(k)}
             style={{ padding: '6px 14px', borderRadius: 999, fontSize: 12, fontWeight: 600, cursor: 'pointer',
               border: `1.5px solid ${view === k ? PURPLE_DARK : '#DDD6FE'}`,
@@ -368,10 +453,11 @@ function PrintDay({ periods, classes, sortedTeachers, allTimetableData, currentS
           </button>
         ))}
       </div>
-      <Toolbar onPrint={() => openPrint(html, `${selected} — ${date}`, true)} disabled={!selected || isWeekend}>
+      <Toolbar onPrint={() => openPrint(html, view === 'all' ? `Substitutions — ${date}` : `${selected} — ${date}`, true)}
+        disabled={isWeekend || (view !== 'all' && !selected)}>
         <input type="date" value={date} onChange={e => setDate(e.target.value)}
           style={{ ...SEL, minWidth: 160 }} />
-        {view === 'class' ? (
+        {view === 'all' ? null : view === 'class' ? (
           <select value={selected} onChange={e => setSelected(e.target.value)} style={SEL}>
             <option value="">— Select a class —</option>
             {classes.map(c => <option key={c.id} value={c.name}>{romanClass(c.name)}</option>)}
@@ -387,7 +473,7 @@ function PrintDay({ periods, classes, sortedTeachers, allTimetableData, currentS
         </span>
       </Toolbar>
       {isWeekend ? <Empty text={`${dayName} is not a school day`} />
-        : selected ? <Preview html={html} />
+        : (view === 'all' || selected) ? <Preview html={html} />
         : <Empty text={view === 'class' ? 'Select a date and class' : 'Select a date and teacher'} />}
     </div>
   )
